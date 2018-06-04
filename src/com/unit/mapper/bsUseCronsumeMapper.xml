@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.unit.dao.BsUseCronsumeMapper">
+  <resultMap id="BaseResultMap" type="com.unit.domain.BsUseCronsume">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="contract_no" jdbcType="INTEGER" property="contractNo" />
+    <result column="busi_no" jdbcType="INTEGER" property="busiNo" />
+    <result column="consume_desc" jdbcType="CHAR" property="consumeDesc" />
+    <result column="price" jdbcType="INTEGER" property="price" />
+    <result column="login_accept" jdbcType="CHAR" property="loginAccept" />
+    <result column="op_time" jdbcType="TIMESTAMP" property="opTime" />
+    <result column="food_id" jdbcType="INTEGER" property="foodId" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.unit.domain.BsUseCronsume">
+    <result column="op_note" jdbcType="LONGVARCHAR" property="opNote" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, contract_no, busi_no, consume_desc, price, login_accept, op_time, food_id
+  </sql>
+  <sql id="Blob_Column_List">
+    op_note
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="ResultMapWithBLOBs">
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from bs_use_cronsume
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from bs_use_cronsume
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.unit.domain.BsUseCronsume">
+    insert into bs_use_cronsume (id, contract_no, busi_no, 
+      consume_desc, price, login_accept, 
+      op_time, food_id, op_note
+      )
+    values (#{id,jdbcType=BIGINT}, #{contractNo,jdbcType=INTEGER}, #{busiNo,jdbcType=INTEGER}, 
+      #{consumeDesc,jdbcType=CHAR}, #{price,jdbcType=INTEGER}, #{loginAccept,jdbcType=CHAR}, 
+      #{opTime,jdbcType=TIMESTAMP}, #{foodId,jdbcType=INTEGER}, #{opNote,jdbcType=LONGVARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.unit.domain.BsUseCronsume">
+    insert into bs_use_cronsume
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="contractNo != null">
+        contract_no,
+      </if>
+      <if test="busiNo != null">
+        busi_no,
+      </if>
+      <if test="consumeDesc != null">
+        consume_desc,
+      </if>
+      <if test="price != null">
+        price,
+      </if>
+      <if test="loginAccept != null">
+        login_accept,
+      </if>
+      <if test="opTime != null">
+        op_time,
+      </if>
+      <if test="foodId != null">
+        food_id,
+      </if>
+      <if test="opNote != null">
+        op_note,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="contractNo != null">
+        #{contractNo,jdbcType=INTEGER},
+      </if>
+      <if test="busiNo != null">
+        #{busiNo,jdbcType=INTEGER},
+      </if>
+      <if test="consumeDesc != null">
+        #{consumeDesc,jdbcType=CHAR},
+      </if>
+      <if test="price != null">
+        #{price,jdbcType=INTEGER},
+      </if>
+      <if test="loginAccept != null">
+        #{loginAccept,jdbcType=CHAR},
+      </if>
+      <if test="opTime != null">
+        #{opTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="foodId != null">
+        #{foodId,jdbcType=INTEGER},
+      </if>
+      <if test="opNote != null">
+        #{opNote,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.unit.domain.BsUseCronsume">
+    update bs_use_cronsume
+    <set>
+      <if test="contractNo != null">
+        contract_no = #{contractNo,jdbcType=INTEGER},
+      </if>
+      <if test="busiNo != null">
+        busi_no = #{busiNo,jdbcType=INTEGER},
+      </if>
+      <if test="consumeDesc != null">
+        consume_desc = #{consumeDesc,jdbcType=CHAR},
+      </if>
+      <if test="price != null">
+        price = #{price,jdbcType=INTEGER},
+      </if>
+      <if test="loginAccept != null">
+        login_accept = #{loginAccept,jdbcType=CHAR},
+      </if>
+      <if test="opTime != null">
+        op_time = #{opTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="foodId != null">
+        food_id = #{foodId,jdbcType=INTEGER},
+      </if>
+      <if test="opNote != null">
+        op_note = #{opNote,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.unit.domain.BsUseCronsume">
+    update bs_use_cronsume
+    set contract_no = #{contractNo,jdbcType=INTEGER},
+      busi_no = #{busiNo,jdbcType=INTEGER},
+      consume_desc = #{consumeDesc,jdbcType=CHAR},
+      price = #{price,jdbcType=INTEGER},
+      login_accept = #{loginAccept,jdbcType=CHAR},
+      op_time = #{opTime,jdbcType=TIMESTAMP},
+      food_id = #{foodId,jdbcType=INTEGER},
+      op_note = #{opNote,jdbcType=LONGVARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.unit.domain.BsUseCronsume">
+    update bs_use_cronsume
+    set contract_no = #{contractNo,jdbcType=INTEGER},
+      busi_no = #{busiNo,jdbcType=INTEGER},
+      consume_desc = #{consumeDesc,jdbcType=CHAR},
+      price = #{price,jdbcType=INTEGER},
+      login_accept = #{loginAccept,jdbcType=CHAR},
+      op_time = #{opTime,jdbcType=TIMESTAMP},
+      food_id = #{foodId,jdbcType=INTEGER}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <resultMap id="BaseResultMap" type="com.unit.domain.BsUseCronsume">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="contract_no" jdbcType="INTEGER" property="contractNo" />
+    <result column="busi_no" jdbcType="INTEGER" property="busiNo" />
+    <result column="consume_desc" jdbcType="CHAR" property="consumeDesc" />
+    <result column="price" jdbcType="INTEGER" property="price" />
+    <result column="login_accept" jdbcType="CHAR" property="loginAccept" />
+    <result column="op_time" jdbcType="TIMESTAMP" property="opTime" />
+    <result column="food_id" jdbcType="INTEGER" property="foodId" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.unit.domain.BsUseCronsume">
+    <result column="op_note" jdbcType="LONGVARCHAR" property="opNote" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, contract_no, busi_no, consume_desc, price, login_accept, op_time, food_id
+  </sql>
+  <sql id="Blob_Column_List">
+    op_note
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="ResultMapWithBLOBs">
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from bs_use_cronsume
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from bs_use_cronsume
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.unit.domain.BsUseCronsume">
+    insert into bs_use_cronsume (id, contract_no, busi_no, 
+      consume_desc, price, login_accept, 
+      op_time, food_id, op_note
+      )
+    values (#{id,jdbcType=BIGINT}, #{contractNo,jdbcType=INTEGER}, #{busiNo,jdbcType=INTEGER}, 
+      #{consumeDesc,jdbcType=CHAR}, #{price,jdbcType=INTEGER}, #{loginAccept,jdbcType=CHAR}, 
+      #{opTime,jdbcType=TIMESTAMP}, #{foodId,jdbcType=INTEGER}, #{opNote,jdbcType=LONGVARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.unit.domain.BsUseCronsume">
+    insert into bs_use_cronsume
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="contractNo != null">
+        contract_no,
+      </if>
+      <if test="busiNo != null">
+        busi_no,
+      </if>
+      <if test="consumeDesc != null">
+        consume_desc,
+      </if>
+      <if test="price != null">
+        price,
+      </if>
+      <if test="loginAccept != null">
+        login_accept,
+      </if>
+      <if test="opTime != null">
+        op_time,
+      </if>
+      <if test="foodId != null">
+        food_id,
+      </if>
+      <if test="opNote != null">
+        op_note,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="contractNo != null">
+        #{contractNo,jdbcType=INTEGER},
+      </if>
+      <if test="busiNo != null">
+        #{busiNo,jdbcType=INTEGER},
+      </if>
+      <if test="consumeDesc != null">
+        #{consumeDesc,jdbcType=CHAR},
+      </if>
+      <if test="price != null">
+        #{price,jdbcType=INTEGER},
+      </if>
+      <if test="loginAccept != null">
+        #{loginAccept,jdbcType=CHAR},
+      </if>
+      <if test="opTime != null">
+        #{opTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="foodId != null">
+        #{foodId,jdbcType=INTEGER},
+      </if>
+      <if test="opNote != null">
+        #{opNote,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.unit.domain.BsUseCronsume">
+    update bs_use_cronsume
+    <set>
+      <if test="contractNo != null">
+        contract_no = #{contractNo,jdbcType=INTEGER},
+      </if>
+      <if test="busiNo != null">
+        busi_no = #{busiNo,jdbcType=INTEGER},
+      </if>
+      <if test="consumeDesc != null">
+        consume_desc = #{consumeDesc,jdbcType=CHAR},
+      </if>
+      <if test="price != null">
+        price = #{price,jdbcType=INTEGER},
+      </if>
+      <if test="loginAccept != null">
+        login_accept = #{loginAccept,jdbcType=CHAR},
+      </if>
+      <if test="opTime != null">
+        op_time = #{opTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="foodId != null">
+        food_id = #{foodId,jdbcType=INTEGER},
+      </if>
+      <if test="opNote != null">
+        op_note = #{opNote,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.unit.domain.BsUseCronsume">
+    update bs_use_cronsume
+    set contract_no = #{contractNo,jdbcType=INTEGER},
+      busi_no = #{busiNo,jdbcType=INTEGER},
+      consume_desc = #{consumeDesc,jdbcType=CHAR},
+      price = #{price,jdbcType=INTEGER},
+      login_accept = #{loginAccept,jdbcType=CHAR},
+      op_time = #{opTime,jdbcType=TIMESTAMP},
+      food_id = #{foodId,jdbcType=INTEGER},
+      op_note = #{opNote,jdbcType=LONGVARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.unit.domain.BsUseCronsume">
+    update bs_use_cronsume
+    set contract_no = #{contractNo,jdbcType=INTEGER},
+      busi_no = #{busiNo,jdbcType=INTEGER},
+      consume_desc = #{consumeDesc,jdbcType=CHAR},
+      price = #{price,jdbcType=INTEGER},
+      login_accept = #{loginAccept,jdbcType=CHAR},
+      op_time = #{opTime,jdbcType=TIMESTAMP},
+      food_id = #{foodId,jdbcType=INTEGER}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <resultMap id="BaseResultMap" type="com.unit.domain.bsUseCronsume">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="contract_no" jdbcType="INTEGER" property="contractNo" />
+    <result column="busi_no" jdbcType="INTEGER" property="busiNo" />
+    <result column="consume_desc" jdbcType="CHAR" property="consumeDesc" />
+    <result column="price" jdbcType="INTEGER" property="price" />
+    <result column="login_accept" jdbcType="CHAR" property="loginAccept" />
+    <result column="op_time" jdbcType="TIMESTAMP" property="opTime" />
+    <result column="food_id" jdbcType="INTEGER" property="foodId" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.unit.domain.bsUseCronsume">
+    <result column="op_note" jdbcType="LONGVARCHAR" property="opNote" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, contract_no, busi_no, consume_desc, price, login_accept, op_time, food_id
+  </sql>
+  <sql id="Blob_Column_List">
+    op_note
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="ResultMapWithBLOBs">
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from bs_use_cronsume
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from bs_use_cronsume
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.unit.domain.bsUseCronsume">
+    insert into bs_use_cronsume (id, contract_no, busi_no, 
+      consume_desc, price, login_accept, 
+      op_time, food_id, op_note
+      )
+    values (#{id,jdbcType=BIGINT}, #{contractNo,jdbcType=INTEGER}, #{busiNo,jdbcType=INTEGER}, 
+      #{consumeDesc,jdbcType=CHAR}, #{price,jdbcType=INTEGER}, #{loginAccept,jdbcType=CHAR}, 
+      #{opTime,jdbcType=TIMESTAMP}, #{foodId,jdbcType=INTEGER}, #{opNote,jdbcType=LONGVARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.unit.domain.bsUseCronsume">
+    insert into bs_use_cronsume
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="contractNo != null">
+        contract_no,
+      </if>
+      <if test="busiNo != null">
+        busi_no,
+      </if>
+      <if test="consumeDesc != null">
+        consume_desc,
+      </if>
+      <if test="price != null">
+        price,
+      </if>
+      <if test="loginAccept != null">
+        login_accept,
+      </if>
+      <if test="opTime != null">
+        op_time,
+      </if>
+      <if test="foodId != null">
+        food_id,
+      </if>
+      <if test="opNote != null">
+        op_note,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="contractNo != null">
+        #{contractNo,jdbcType=INTEGER},
+      </if>
+      <if test="busiNo != null">
+        #{busiNo,jdbcType=INTEGER},
+      </if>
+      <if test="consumeDesc != null">
+        #{consumeDesc,jdbcType=CHAR},
+      </if>
+      <if test="price != null">
+        #{price,jdbcType=INTEGER},
+      </if>
+      <if test="loginAccept != null">
+        #{loginAccept,jdbcType=CHAR},
+      </if>
+      <if test="opTime != null">
+        #{opTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="foodId != null">
+        #{foodId,jdbcType=INTEGER},
+      </if>
+      <if test="opNote != null">
+        #{opNote,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.unit.domain.bsUseCronsume">
+    update bs_use_cronsume
+    <set>
+      <if test="contractNo != null">
+        contract_no = #{contractNo,jdbcType=INTEGER},
+      </if>
+      <if test="busiNo != null">
+        busi_no = #{busiNo,jdbcType=INTEGER},
+      </if>
+      <if test="consumeDesc != null">
+        consume_desc = #{consumeDesc,jdbcType=CHAR},
+      </if>
+      <if test="price != null">
+        price = #{price,jdbcType=INTEGER},
+      </if>
+      <if test="loginAccept != null">
+        login_accept = #{loginAccept,jdbcType=CHAR},
+      </if>
+      <if test="opTime != null">
+        op_time = #{opTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="foodId != null">
+        food_id = #{foodId,jdbcType=INTEGER},
+      </if>
+      <if test="opNote != null">
+        op_note = #{opNote,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.unit.domain.bsUseCronsume">
+    update bs_use_cronsume
+    set contract_no = #{contractNo,jdbcType=INTEGER},
+      busi_no = #{busiNo,jdbcType=INTEGER},
+      consume_desc = #{consumeDesc,jdbcType=CHAR},
+      price = #{price,jdbcType=INTEGER},
+      login_accept = #{loginAccept,jdbcType=CHAR},
+      op_time = #{opTime,jdbcType=TIMESTAMP},
+      food_id = #{foodId,jdbcType=INTEGER},
+      op_note = #{opNote,jdbcType=LONGVARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.unit.domain.bsUseCronsume">
+    update bs_use_cronsume
+    set contract_no = #{contractNo,jdbcType=INTEGER},
+      busi_no = #{busiNo,jdbcType=INTEGER},
+      consume_desc = #{consumeDesc,jdbcType=CHAR},
+      price = #{price,jdbcType=INTEGER},
+      login_accept = #{loginAccept,jdbcType=CHAR},
+      op_time = #{opTime,jdbcType=TIMESTAMP},
+      food_id = #{foodId,jdbcType=INTEGER}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

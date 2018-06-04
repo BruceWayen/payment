@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.unit.dao.BsRechargeInfoMapper">
+  <resultMap id="BaseResultMap" type="com.unit.domain.BsRechargeInfo">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="contract_no" jdbcType="INTEGER" property="contractNo" />
+    <result column="money" jdbcType="INTEGER" property="money" />
+    <result column="op_time" jdbcType="TIMESTAMP" property="opTime" />
+    <result column="login_accept" jdbcType="CHAR" property="loginAccept" />
+    <result column="op_type" jdbcType="INTEGER" property="opType" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.unit.domain.BsRechargeInfo">
+    <result column="op_notes" jdbcType="LONGVARCHAR" property="opNotes" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, contract_no, money, op_time, login_accept, op_type
+  </sql>
+  <sql id="Blob_Column_List">
+    op_notes
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="ResultMapWithBLOBs">
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from bs_recharge_info
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from bs_recharge_info
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.unit.domain.BsRechargeInfo">
+    insert into bs_recharge_info (id, contract_no, money, 
+      op_time, login_accept, op_type, 
+      op_notes)
+    values (#{id,jdbcType=BIGINT}, #{contractNo,jdbcType=INTEGER}, #{money,jdbcType=INTEGER}, 
+      #{opTime,jdbcType=TIMESTAMP}, #{loginAccept,jdbcType=CHAR}, #{opType,jdbcType=INTEGER}, 
+      #{opNotes,jdbcType=LONGVARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.unit.domain.BsRechargeInfo">
+    insert into bs_recharge_info
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="contractNo != null">
+        contract_no,
+      </if>
+      <if test="money != null">
+        money,
+      </if>
+      <if test="opTime != null">
+        op_time,
+      </if>
+      <if test="loginAccept != null">
+        login_accept,
+      </if>
+      <if test="opType != null">
+        op_type,
+      </if>
+      <if test="opNotes != null">
+        op_notes,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="contractNo != null">
+        #{contractNo,jdbcType=INTEGER},
+      </if>
+      <if test="money != null">
+        #{money,jdbcType=INTEGER},
+      </if>
+      <if test="opTime != null">
+        #{opTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="loginAccept != null">
+        #{loginAccept,jdbcType=CHAR},
+      </if>
+      <if test="opType != null">
+        #{opType,jdbcType=INTEGER},
+      </if>
+      <if test="opNotes != null">
+        #{opNotes,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.unit.domain.BsRechargeInfo">
+    update bs_recharge_info
+    <set>
+      <if test="contractNo != null">
+        contract_no = #{contractNo,jdbcType=INTEGER},
+      </if>
+      <if test="money != null">
+        money = #{money,jdbcType=INTEGER},
+      </if>
+      <if test="opTime != null">
+        op_time = #{opTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="loginAccept != null">
+        login_accept = #{loginAccept,jdbcType=CHAR},
+      </if>
+      <if test="opType != null">
+        op_type = #{opType,jdbcType=INTEGER},
+      </if>
+      <if test="opNotes != null">
+        op_notes = #{opNotes,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.unit.domain.BsRechargeInfo">
+    update bs_recharge_info
+    set contract_no = #{contractNo,jdbcType=INTEGER},
+      money = #{money,jdbcType=INTEGER},
+      op_time = #{opTime,jdbcType=TIMESTAMP},
+      login_accept = #{loginAccept,jdbcType=CHAR},
+      op_type = #{opType,jdbcType=INTEGER},
+      op_notes = #{opNotes,jdbcType=LONGVARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.unit.domain.BsRechargeInfo">
+    update bs_recharge_info
+    set contract_no = #{contractNo,jdbcType=INTEGER},
+      money = #{money,jdbcType=INTEGER},
+      op_time = #{opTime,jdbcType=TIMESTAMP},
+      login_accept = #{loginAccept,jdbcType=CHAR},
+      op_type = #{opType,jdbcType=INTEGER}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <resultMap id="BaseResultMap" type="com.unit.domain.BsRechargeInfo">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="contract_no" jdbcType="INTEGER" property="contractNo" />
+    <result column="money" jdbcType="INTEGER" property="money" />
+    <result column="op_time" jdbcType="TIMESTAMP" property="opTime" />
+    <result column="login_accept" jdbcType="CHAR" property="loginAccept" />
+    <result column="op_type" jdbcType="INTEGER" property="opType" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.unit.domain.BsRechargeInfo">
+    <result column="op_notes" jdbcType="LONGVARCHAR" property="opNotes" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, contract_no, money, op_time, login_accept, op_type
+  </sql>
+  <sql id="Blob_Column_List">
+    op_notes
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="ResultMapWithBLOBs">
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from bs_recharge_info
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from bs_recharge_info
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.unit.domain.BsRechargeInfo">
+    insert into bs_recharge_info (id, contract_no, money, 
+      op_time, login_accept, op_type, 
+      op_notes)
+    values (#{id,jdbcType=BIGINT}, #{contractNo,jdbcType=INTEGER}, #{money,jdbcType=INTEGER}, 
+      #{opTime,jdbcType=TIMESTAMP}, #{loginAccept,jdbcType=CHAR}, #{opType,jdbcType=INTEGER}, 
+      #{opNotes,jdbcType=LONGVARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.unit.domain.BsRechargeInfo">
+    insert into bs_recharge_info
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="contractNo != null">
+        contract_no,
+      </if>
+      <if test="money != null">
+        money,
+      </if>
+      <if test="opTime != null">
+        op_time,
+      </if>
+      <if test="loginAccept != null">
+        login_accept,
+      </if>
+      <if test="opType != null">
+        op_type,
+      </if>
+      <if test="opNotes != null">
+        op_notes,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="contractNo != null">
+        #{contractNo,jdbcType=INTEGER},
+      </if>
+      <if test="money != null">
+        #{money,jdbcType=INTEGER},
+      </if>
+      <if test="opTime != null">
+        #{opTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="loginAccept != null">
+        #{loginAccept,jdbcType=CHAR},
+      </if>
+      <if test="opType != null">
+        #{opType,jdbcType=INTEGER},
+      </if>
+      <if test="opNotes != null">
+        #{opNotes,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.unit.domain.BsRechargeInfo">
+    update bs_recharge_info
+    <set>
+      <if test="contractNo != null">
+        contract_no = #{contractNo,jdbcType=INTEGER},
+      </if>
+      <if test="money != null">
+        money = #{money,jdbcType=INTEGER},
+      </if>
+      <if test="opTime != null">
+        op_time = #{opTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="loginAccept != null">
+        login_accept = #{loginAccept,jdbcType=CHAR},
+      </if>
+      <if test="opType != null">
+        op_type = #{opType,jdbcType=INTEGER},
+      </if>
+      <if test="opNotes != null">
+        op_notes = #{opNotes,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.unit.domain.BsRechargeInfo">
+    update bs_recharge_info
+    set contract_no = #{contractNo,jdbcType=INTEGER},
+      money = #{money,jdbcType=INTEGER},
+      op_time = #{opTime,jdbcType=TIMESTAMP},
+      login_accept = #{loginAccept,jdbcType=CHAR},
+      op_type = #{opType,jdbcType=INTEGER},
+      op_notes = #{opNotes,jdbcType=LONGVARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.unit.domain.BsRechargeInfo">
+    update bs_recharge_info
+    set contract_no = #{contractNo,jdbcType=INTEGER},
+      money = #{money,jdbcType=INTEGER},
+      op_time = #{opTime,jdbcType=TIMESTAMP},
+      login_accept = #{loginAccept,jdbcType=CHAR},
+      op_type = #{opType,jdbcType=INTEGER}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <resultMap id="BaseResultMap" type="com.unit.domain.bsRechargeInfo">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="contract_no" jdbcType="INTEGER" property="contractNo" />
+    <result column="money" jdbcType="INTEGER" property="money" />
+    <result column="op_time" jdbcType="TIMESTAMP" property="opTime" />
+    <result column="login_accept" jdbcType="CHAR" property="loginAccept" />
+    <result column="op_type" jdbcType="INTEGER" property="opType" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.unit.domain.bsRechargeInfo">
+    <result column="op_notes" jdbcType="LONGVARCHAR" property="opNotes" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, contract_no, money, op_time, login_accept, op_type
+  </sql>
+  <sql id="Blob_Column_List">
+    op_notes
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="ResultMapWithBLOBs">
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from bs_recharge_info
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from bs_recharge_info
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.unit.domain.bsRechargeInfo">
+    insert into bs_recharge_info (id, contract_no, money, 
+      op_time, login_accept, op_type, 
+      op_notes)
+    values (#{id,jdbcType=BIGINT}, #{contractNo,jdbcType=INTEGER}, #{money,jdbcType=INTEGER}, 
+      #{opTime,jdbcType=TIMESTAMP}, #{loginAccept,jdbcType=CHAR}, #{opType,jdbcType=INTEGER}, 
+      #{opNotes,jdbcType=LONGVARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.unit.domain.bsRechargeInfo">
+    insert into bs_recharge_info
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="contractNo != null">
+        contract_no,
+      </if>
+      <if test="money != null">
+        money,
+      </if>
+      <if test="opTime != null">
+        op_time,
+      </if>
+      <if test="loginAccept != null">
+        login_accept,
+      </if>
+      <if test="opType != null">
+        op_type,
+      </if>
+      <if test="opNotes != null">
+        op_notes,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="contractNo != null">
+        #{contractNo,jdbcType=INTEGER},
+      </if>
+      <if test="money != null">
+        #{money,jdbcType=INTEGER},
+      </if>
+      <if test="opTime != null">
+        #{opTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="loginAccept != null">
+        #{loginAccept,jdbcType=CHAR},
+      </if>
+      <if test="opType != null">
+        #{opType,jdbcType=INTEGER},
+      </if>
+      <if test="opNotes != null">
+        #{opNotes,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.unit.domain.bsRechargeInfo">
+    update bs_recharge_info
+    <set>
+      <if test="contractNo != null">
+        contract_no = #{contractNo,jdbcType=INTEGER},
+      </if>
+      <if test="money != null">
+        money = #{money,jdbcType=INTEGER},
+      </if>
+      <if test="opTime != null">
+        op_time = #{opTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="loginAccept != null">
+        login_accept = #{loginAccept,jdbcType=CHAR},
+      </if>
+      <if test="opType != null">
+        op_type = #{opType,jdbcType=INTEGER},
+      </if>
+      <if test="opNotes != null">
+        op_notes = #{opNotes,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.unit.domain.bsRechargeInfo">
+    update bs_recharge_info
+    set contract_no = #{contractNo,jdbcType=INTEGER},
+      money = #{money,jdbcType=INTEGER},
+      op_time = #{opTime,jdbcType=TIMESTAMP},
+      login_accept = #{loginAccept,jdbcType=CHAR},
+      op_type = #{opType,jdbcType=INTEGER},
+      op_notes = #{opNotes,jdbcType=LONGVARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.unit.domain.bsRechargeInfo">
+    update bs_recharge_info
+    set contract_no = #{contractNo,jdbcType=INTEGER},
+      money = #{money,jdbcType=INTEGER},
+      op_time = #{opTime,jdbcType=TIMESTAMP},
+      login_accept = #{loginAccept,jdbcType=CHAR},
+      op_type = #{opType,jdbcType=INTEGER}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

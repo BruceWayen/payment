@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.unit.dao.SysContractInfoMapper">
+  <resultMap id="BaseResultMap" type="com.unit.domain.SysContractInfo">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="user_id" jdbcType="INTEGER" property="userId" />
+    <result column="contract_name" jdbcType="CHAR" property="contractName" />
+    <result column="contract_status" jdbcType="INTEGER" property="contractStatus" />
+    <result column="contract_passwd" jdbcType="CHAR" property="contractPasswd" />
+    <result column="system_fee" jdbcType="INTEGER" property="systemFee" />
+    <result column="user_fee" jdbcType="INTEGER" property="userFee" />
+    <result column="pay_time" jdbcType="TIMESTAMP" property="payTime" />
+    <result column="pay_accept" jdbcType="CHAR" property="payAccept" />
+    <result column="pay_type" jdbcType="INTEGER" property="payType" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, user_id, contract_name, contract_status, contract_passwd, system_fee, user_fee, 
+    pay_time, pay_accept, pay_type
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from sys_contract_info
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from sys_contract_info
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.unit.domain.SysContractInfo">
+    insert into sys_contract_info (id, user_id, contract_name, 
+      contract_status, contract_passwd, system_fee, 
+      user_fee, pay_time, pay_accept, 
+      pay_type)
+    values (#{id,jdbcType=BIGINT}, #{userId,jdbcType=INTEGER}, #{contractName,jdbcType=CHAR}, 
+      #{contractStatus,jdbcType=INTEGER}, #{contractPasswd,jdbcType=CHAR}, #{systemFee,jdbcType=INTEGER}, 
+      #{userFee,jdbcType=INTEGER}, #{payTime,jdbcType=TIMESTAMP}, #{payAccept,jdbcType=CHAR}, 
+      #{payType,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="com.unit.domain.SysContractInfo">
+    insert into sys_contract_info
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="userId != null">
+        user_id,
+      </if>
+      <if test="contractName != null">
+        contract_name,
+      </if>
+      <if test="contractStatus != null">
+        contract_status,
+      </if>
+      <if test="contractPasswd != null">
+        contract_passwd,
+      </if>
+      <if test="systemFee != null">
+        system_fee,
+      </if>
+      <if test="userFee != null">
+        user_fee,
+      </if>
+      <if test="payTime != null">
+        pay_time,
+      </if>
+      <if test="payAccept != null">
+        pay_accept,
+      </if>
+      <if test="payType != null">
+        pay_type,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="userId != null">
+        #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="contractName != null">
+        #{contractName,jdbcType=CHAR},
+      </if>
+      <if test="contractStatus != null">
+        #{contractStatus,jdbcType=INTEGER},
+      </if>
+      <if test="contractPasswd != null">
+        #{contractPasswd,jdbcType=CHAR},
+      </if>
+      <if test="systemFee != null">
+        #{systemFee,jdbcType=INTEGER},
+      </if>
+      <if test="userFee != null">
+        #{userFee,jdbcType=INTEGER},
+      </if>
+      <if test="payTime != null">
+        #{payTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="payAccept != null">
+        #{payAccept,jdbcType=CHAR},
+      </if>
+      <if test="payType != null">
+        #{payType,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.unit.domain.SysContractInfo">
+    update sys_contract_info
+    <set>
+      <if test="userId != null">
+        user_id = #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="contractName != null">
+        contract_name = #{contractName,jdbcType=CHAR},
+      </if>
+      <if test="contractStatus != null">
+        contract_status = #{contractStatus,jdbcType=INTEGER},
+      </if>
+      <if test="contractPasswd != null">
+        contract_passwd = #{contractPasswd,jdbcType=CHAR},
+      </if>
+      <if test="systemFee != null">
+        system_fee = #{systemFee,jdbcType=INTEGER},
+      </if>
+      <if test="userFee != null">
+        user_fee = #{userFee,jdbcType=INTEGER},
+      </if>
+      <if test="payTime != null">
+        pay_time = #{payTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="payAccept != null">
+        pay_accept = #{payAccept,jdbcType=CHAR},
+      </if>
+      <if test="payType != null">
+        pay_type = #{payType,jdbcType=INTEGER},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.unit.domain.SysContractInfo">
+    update sys_contract_info
+    set user_id = #{userId,jdbcType=INTEGER},
+      contract_name = #{contractName,jdbcType=CHAR},
+      contract_status = #{contractStatus,jdbcType=INTEGER},
+      contract_passwd = #{contractPasswd,jdbcType=CHAR},
+      system_fee = #{systemFee,jdbcType=INTEGER},
+      user_fee = #{userFee,jdbcType=INTEGER},
+      pay_time = #{payTime,jdbcType=TIMESTAMP},
+      pay_accept = #{payAccept,jdbcType=CHAR},
+      pay_type = #{payType,jdbcType=INTEGER}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <resultMap id="BaseResultMap" type="com.unit.domain.SysContractInfo">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="user_id" jdbcType="INTEGER" property="userId" />
+    <result column="contract_name" jdbcType="CHAR" property="contractName" />
+    <result column="contract_status" jdbcType="INTEGER" property="contractStatus" />
+    <result column="contract_passwd" jdbcType="CHAR" property="contractPasswd" />
+    <result column="system_fee" jdbcType="INTEGER" property="systemFee" />
+    <result column="user_fee" jdbcType="INTEGER" property="userFee" />
+    <result column="pay_time" jdbcType="TIMESTAMP" property="payTime" />
+    <result column="pay_accept" jdbcType="CHAR" property="payAccept" />
+    <result column="pay_type" jdbcType="INTEGER" property="payType" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, user_id, contract_name, contract_status, contract_passwd, system_fee, user_fee, 
+    pay_time, pay_accept, pay_type
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from sys_contract_info
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from sys_contract_info
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.unit.domain.SysContractInfo">
+    insert into sys_contract_info (id, user_id, contract_name, 
+      contract_status, contract_passwd, system_fee, 
+      user_fee, pay_time, pay_accept, 
+      pay_type)
+    values (#{id,jdbcType=BIGINT}, #{userId,jdbcType=INTEGER}, #{contractName,jdbcType=CHAR}, 
+      #{contractStatus,jdbcType=INTEGER}, #{contractPasswd,jdbcType=CHAR}, #{systemFee,jdbcType=INTEGER}, 
+      #{userFee,jdbcType=INTEGER}, #{payTime,jdbcType=TIMESTAMP}, #{payAccept,jdbcType=CHAR}, 
+      #{payType,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="com.unit.domain.SysContractInfo">
+    insert into sys_contract_info
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="userId != null">
+        user_id,
+      </if>
+      <if test="contractName != null">
+        contract_name,
+      </if>
+      <if test="contractStatus != null">
+        contract_status,
+      </if>
+      <if test="contractPasswd != null">
+        contract_passwd,
+      </if>
+      <if test="systemFee != null">
+        system_fee,
+      </if>
+      <if test="userFee != null">
+        user_fee,
+      </if>
+      <if test="payTime != null">
+        pay_time,
+      </if>
+      <if test="payAccept != null">
+        pay_accept,
+      </if>
+      <if test="payType != null">
+        pay_type,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="userId != null">
+        #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="contractName != null">
+        #{contractName,jdbcType=CHAR},
+      </if>
+      <if test="contractStatus != null">
+        #{contractStatus,jdbcType=INTEGER},
+      </if>
+      <if test="contractPasswd != null">
+        #{contractPasswd,jdbcType=CHAR},
+      </if>
+      <if test="systemFee != null">
+        #{systemFee,jdbcType=INTEGER},
+      </if>
+      <if test="userFee != null">
+        #{userFee,jdbcType=INTEGER},
+      </if>
+      <if test="payTime != null">
+        #{payTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="payAccept != null">
+        #{payAccept,jdbcType=CHAR},
+      </if>
+      <if test="payType != null">
+        #{payType,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.unit.domain.SysContractInfo">
+    update sys_contract_info
+    <set>
+      <if test="userId != null">
+        user_id = #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="contractName != null">
+        contract_name = #{contractName,jdbcType=CHAR},
+      </if>
+      <if test="contractStatus != null">
+        contract_status = #{contractStatus,jdbcType=INTEGER},
+      </if>
+      <if test="contractPasswd != null">
+        contract_passwd = #{contractPasswd,jdbcType=CHAR},
+      </if>
+      <if test="systemFee != null">
+        system_fee = #{systemFee,jdbcType=INTEGER},
+      </if>
+      <if test="userFee != null">
+        user_fee = #{userFee,jdbcType=INTEGER},
+      </if>
+      <if test="payTime != null">
+        pay_time = #{payTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="payAccept != null">
+        pay_accept = #{payAccept,jdbcType=CHAR},
+      </if>
+      <if test="payType != null">
+        pay_type = #{payType,jdbcType=INTEGER},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.unit.domain.SysContractInfo">
+    update sys_contract_info
+    set user_id = #{userId,jdbcType=INTEGER},
+      contract_name = #{contractName,jdbcType=CHAR},
+      contract_status = #{contractStatus,jdbcType=INTEGER},
+      contract_passwd = #{contractPasswd,jdbcType=CHAR},
+      system_fee = #{systemFee,jdbcType=INTEGER},
+      user_fee = #{userFee,jdbcType=INTEGER},
+      pay_time = #{payTime,jdbcType=TIMESTAMP},
+      pay_accept = #{payAccept,jdbcType=CHAR},
+      pay_type = #{payType,jdbcType=INTEGER}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <resultMap id="BaseResultMap" type="com.unit.domain.sysContractInfo">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="user_id" jdbcType="INTEGER" property="userId" />
+    <result column="contract_name" jdbcType="CHAR" property="contractName" />
+    <result column="contract_status" jdbcType="INTEGER" property="contractStatus" />
+    <result column="contract_passwd" jdbcType="CHAR" property="contractPasswd" />
+    <result column="system_fee" jdbcType="INTEGER" property="systemFee" />
+    <result column="user_fee" jdbcType="INTEGER" property="userFee" />
+    <result column="pay_time" jdbcType="TIMESTAMP" property="payTime" />
+    <result column="pay_accept" jdbcType="CHAR" property="payAccept" />
+    <result column="pay_type" jdbcType="INTEGER" property="payType" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, user_id, contract_name, contract_status, contract_passwd, system_fee, user_fee, 
+    pay_time, pay_accept, pay_type
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from sys_contract_info
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from sys_contract_info
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.unit.domain.sysContractInfo">
+    insert into sys_contract_info (id, user_id, contract_name, 
+      contract_status, contract_passwd, system_fee, 
+      user_fee, pay_time, pay_accept, 
+      pay_type)
+    values (#{id,jdbcType=BIGINT}, #{userId,jdbcType=INTEGER}, #{contractName,jdbcType=CHAR}, 
+      #{contractStatus,jdbcType=INTEGER}, #{contractPasswd,jdbcType=CHAR}, #{systemFee,jdbcType=INTEGER}, 
+      #{userFee,jdbcType=INTEGER}, #{payTime,jdbcType=TIMESTAMP}, #{payAccept,jdbcType=CHAR}, 
+      #{payType,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="com.unit.domain.sysContractInfo">
+    insert into sys_contract_info
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="userId != null">
+        user_id,
+      </if>
+      <if test="contractName != null">
+        contract_name,
+      </if>
+      <if test="contractStatus != null">
+        contract_status,
+      </if>
+      <if test="contractPasswd != null">
+        contract_passwd,
+      </if>
+      <if test="systemFee != null">
+        system_fee,
+      </if>
+      <if test="userFee != null">
+        user_fee,
+      </if>
+      <if test="payTime != null">
+        pay_time,
+      </if>
+      <if test="payAccept != null">
+        pay_accept,
+      </if>
+      <if test="payType != null">
+        pay_type,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="userId != null">
+        #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="contractName != null">
+        #{contractName,jdbcType=CHAR},
+      </if>
+      <if test="contractStatus != null">
+        #{contractStatus,jdbcType=INTEGER},
+      </if>
+      <if test="contractPasswd != null">
+        #{contractPasswd,jdbcType=CHAR},
+      </if>
+      <if test="systemFee != null">
+        #{systemFee,jdbcType=INTEGER},
+      </if>
+      <if test="userFee != null">
+        #{userFee,jdbcType=INTEGER},
+      </if>
+      <if test="payTime != null">
+        #{payTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="payAccept != null">
+        #{payAccept,jdbcType=CHAR},
+      </if>
+      <if test="payType != null">
+        #{payType,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.unit.domain.sysContractInfo">
+    update sys_contract_info
+    <set>
+      <if test="userId != null">
+        user_id = #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="contractName != null">
+        contract_name = #{contractName,jdbcType=CHAR},
+      </if>
+      <if test="contractStatus != null">
+        contract_status = #{contractStatus,jdbcType=INTEGER},
+      </if>
+      <if test="contractPasswd != null">
+        contract_passwd = #{contractPasswd,jdbcType=CHAR},
+      </if>
+      <if test="systemFee != null">
+        system_fee = #{systemFee,jdbcType=INTEGER},
+      </if>
+      <if test="userFee != null">
+        user_fee = #{userFee,jdbcType=INTEGER},
+      </if>
+      <if test="payTime != null">
+        pay_time = #{payTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="payAccept != null">
+        pay_accept = #{payAccept,jdbcType=CHAR},
+      </if>
+      <if test="payType != null">
+        pay_type = #{payType,jdbcType=INTEGER},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.unit.domain.sysContractInfo">
+    update sys_contract_info
+    set user_id = #{userId,jdbcType=INTEGER},
+      contract_name = #{contractName,jdbcType=CHAR},
+      contract_status = #{contractStatus,jdbcType=INTEGER},
+      contract_passwd = #{contractPasswd,jdbcType=CHAR},
+      system_fee = #{systemFee,jdbcType=INTEGER},
+      user_fee = #{userFee,jdbcType=INTEGER},
+      pay_time = #{payTime,jdbcType=TIMESTAMP},
+      pay_accept = #{payAccept,jdbcType=CHAR},
+      pay_type = #{payType,jdbcType=INTEGER}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

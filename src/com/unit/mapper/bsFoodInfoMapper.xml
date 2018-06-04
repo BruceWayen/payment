@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.unit.dao.BsFoodInfoMapper">
+  <resultMap id="BaseResultMap" type="com.unit.domain.BsFoodInfo">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="food_name" jdbcType="CHAR" property="foodName" />
+    <result column="food_desc" jdbcType="CHAR" property="foodDesc" />
+    <result column="busi_no" jdbcType="INTEGER" property="busiNo" />
+    <result column="price" jdbcType="INTEGER" property="price" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, food_name, food_desc, busi_no, price, status, create_time
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from bs_food_info    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from bs_food_info
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.unit.domain.BsFoodInfo">
+    insert into bs_food_info (id, food_name, food_desc, 
+      busi_no, price, status, 
+      create_time)
+    values (#{id,jdbcType=BIGINT}, #{foodName,jdbcType=CHAR}, #{foodDesc,jdbcType=CHAR}, 
+      #{busiNo,jdbcType=INTEGER}, #{price,jdbcType=INTEGER}, #{status,jdbcType=INTEGER}, 
+      #{createTime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.unit.domain.BsFoodInfo">
+    insert into bs_food_info
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="foodName != null">
+        food_name,
+      </if>
+      <if test="foodDesc != null">
+        food_desc,
+      </if>
+      <if test="busiNo != null">
+        busi_no,
+      </if>
+      <if test="price != null">
+        price,
+      </if>
+      <if test="status != null">
+        status,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="foodName != null">
+        #{foodName,jdbcType=CHAR},
+      </if>
+      <if test="foodDesc != null">
+        #{foodDesc,jdbcType=CHAR},
+      </if>
+      <if test="busiNo != null">
+        #{busiNo,jdbcType=INTEGER},
+      </if>
+      <if test="price != null">
+        #{price,jdbcType=INTEGER},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.unit.domain.BsFoodInfo">
+    update bs_food_info
+    <set>
+      <if test="foodName != null">
+        food_name = #{foodName,jdbcType=CHAR},
+      </if>
+      <if test="foodDesc != null">
+        food_desc = #{foodDesc,jdbcType=CHAR},
+      </if>
+      <if test="busiNo != null">
+        busi_no = #{busiNo,jdbcType=INTEGER},
+      </if>
+      <if test="price != null">
+        price = #{price,jdbcType=INTEGER},
+      </if>
+      <if test="status != null">
+        status = #{status,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.unit.domain.BsFoodInfo">
+    update bs_food_info
+    set food_name = #{foodName,jdbcType=CHAR},
+      food_desc = #{foodDesc,jdbcType=CHAR},
+      busi_no = #{busiNo,jdbcType=INTEGER},
+      price = #{price,jdbcType=INTEGER},
+      status = #{status,jdbcType=INTEGER},
+      create_time = #{createTime,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <resultMap id="BaseResultMap" type="com.unit.domain.BsFoodInfo">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="food_name" jdbcType="CHAR" property="foodName" />
+    <result column="food_desc" jdbcType="CHAR" property="foodDesc" />
+    <result column="busi_no" jdbcType="INTEGER" property="busiNo" />
+    <result column="price" jdbcType="INTEGER" property="price" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, food_name, food_desc, busi_no, price, status, create_time
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from bs_food_info
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from bs_food_info
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.unit.domain.BsFoodInfo">
+    insert into bs_food_info (id, food_name, food_desc, 
+      busi_no, price, status, 
+      create_time)
+    values (#{id,jdbcType=BIGINT}, #{foodName,jdbcType=CHAR}, #{foodDesc,jdbcType=CHAR}, 
+      #{busiNo,jdbcType=INTEGER}, #{price,jdbcType=INTEGER}, #{status,jdbcType=INTEGER}, 
+      #{createTime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.unit.domain.BsFoodInfo">
+    insert into bs_food_info
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="foodName != null">
+        food_name,
+      </if>
+      <if test="foodDesc != null">
+        food_desc,
+      </if>
+      <if test="busiNo != null">
+        busi_no,
+      </if>
+      <if test="price != null">
+        price,
+      </if>
+      <if test="status != null">
+        status,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="foodName != null">
+        #{foodName,jdbcType=CHAR},
+      </if>
+      <if test="foodDesc != null">
+        #{foodDesc,jdbcType=CHAR},
+      </if>
+      <if test="busiNo != null">
+        #{busiNo,jdbcType=INTEGER},
+      </if>
+      <if test="price != null">
+        #{price,jdbcType=INTEGER},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.unit.domain.BsFoodInfo">
+    update bs_food_info
+    <set>
+      <if test="foodName != null">
+        food_name = #{foodName,jdbcType=CHAR},
+      </if>
+      <if test="foodDesc != null">
+        food_desc = #{foodDesc,jdbcType=CHAR},
+      </if>
+      <if test="busiNo != null">
+        busi_no = #{busiNo,jdbcType=INTEGER},
+      </if>
+      <if test="price != null">
+        price = #{price,jdbcType=INTEGER},
+      </if>
+      <if test="status != null">
+        status = #{status,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.unit.domain.BsFoodInfo">
+    update bs_food_info
+    set food_name = #{foodName,jdbcType=CHAR},
+      food_desc = #{foodDesc,jdbcType=CHAR},
+      busi_no = #{busiNo,jdbcType=INTEGER},
+      price = #{price,jdbcType=INTEGER},
+      status = #{status,jdbcType=INTEGER},
+      create_time = #{createTime,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <resultMap id="BaseResultMap" type="com.unit.domain.bsFoodInfo">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="food_name" jdbcType="CHAR" property="foodName" />
+    <result column="food_desc" jdbcType="CHAR" property="foodDesc" />
+    <result column="busi_no" jdbcType="INTEGER" property="busiNo" />
+    <result column="price" jdbcType="INTEGER" property="price" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, food_name, food_desc, busi_no, price, status, create_time
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from bs_food_info
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from bs_food_info
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.unit.domain.bsFoodInfo">
+    insert into bs_food_info (id, food_name, food_desc, 
+      busi_no, price, status, 
+      create_time)
+    values (#{id,jdbcType=BIGINT}, #{foodName,jdbcType=CHAR}, #{foodDesc,jdbcType=CHAR}, 
+      #{busiNo,jdbcType=INTEGER}, #{price,jdbcType=INTEGER}, #{status,jdbcType=INTEGER}, 
+      #{createTime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.unit.domain.bsFoodInfo">
+    insert into bs_food_info
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="foodName != null">
+        food_name,
+      </if>
+      <if test="foodDesc != null">
+        food_desc,
+      </if>
+      <if test="busiNo != null">
+        busi_no,
+      </if>
+      <if test="price != null">
+        price,
+      </if>
+      <if test="status != null">
+        status,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="foodName != null">
+        #{foodName,jdbcType=CHAR},
+      </if>
+      <if test="foodDesc != null">
+        #{foodDesc,jdbcType=CHAR},
+      </if>
+      <if test="busiNo != null">
+        #{busiNo,jdbcType=INTEGER},
+      </if>
+      <if test="price != null">
+        #{price,jdbcType=INTEGER},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.unit.domain.bsFoodInfo">
+    update bs_food_info
+    <set>
+      <if test="foodName != null">
+        food_name = #{foodName,jdbcType=CHAR},
+      </if>
+      <if test="foodDesc != null">
+        food_desc = #{foodDesc,jdbcType=CHAR},
+      </if>
+      <if test="busiNo != null">
+        busi_no = #{busiNo,jdbcType=INTEGER},
+      </if>
+      <if test="price != null">
+        price = #{price,jdbcType=INTEGER},
+      </if>
+      <if test="status != null">
+        status = #{status,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.unit.domain.bsFoodInfo">
+    update bs_food_info
+    set food_name = #{foodName,jdbcType=CHAR},
+      food_desc = #{foodDesc,jdbcType=CHAR},
+      busi_no = #{busiNo,jdbcType=INTEGER},
+      price = #{price,jdbcType=INTEGER},
+      status = #{status,jdbcType=INTEGER},
+      create_time = #{createTime,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>
