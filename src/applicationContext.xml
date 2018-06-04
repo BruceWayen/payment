@@ -100,13 +100,13 @@ http://www.springframework.org/schema/data/jpa ">
     <aop:aspectj-autoproxy proxy-target-class="true"/>
 
     <!-- aop日志监控START -->
-    <bean id="myRiZhi" class="com.unit.utils.MyLog"></bean>
-    <aop:config>
-        <aop:aspect id="aopRiZhiAspect" ref="myRiZhi">
-            <aop:pointcut id="aopRiZhi" expression="execution(* com.unit.test..*(..))"/>
-            <aop:around pointcut-ref="aopRiZhi" method="doAround"/>
-        </aop:aspect>
-    </aop:config>
+    <!--<bean id="myRiZhi" class="com.unit.utils.MyLog"></bean>-->
+    <!--<aop:config>-->
+        <!--<aop:aspect id="aopRiZhiAspect" ref="myRiZhi">-->
+            <!--<aop:pointcut id="aopRiZhi" expression="execution(* com.unit.test..*(..))"/>-->
+            <!--<aop:around pointcut-ref="aopRiZhi" method="doAround"/>-->
+        <!--</aop:aspect>-->
+    <!--</aop:config>-->
     <!-- aop日志监控START -->
 
 
