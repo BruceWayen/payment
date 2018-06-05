@@ -6,8 +6,25 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0113442-cf39-4e91-a330-7128f8ca817b" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/applicationContext.xml" />
+    <list default="true" id="f0113442-cf39-4e91-a330-7128f8ca817b" name="Default" comment="删除多余位置文件">
+      <change beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/lib/mybatis-generator-core-1.3.6.jar" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/resources/generateConfig.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/com/unit/domain/BsFoodInfo.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/com/unit/domain/BsRechargeInfo.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/com/unit/domain/BsShopConsume.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/com/unit/domain/BsUseCronsume.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/com/unit/domain/SysContractInfo.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/com/unit/domain/SysDept.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/com/unit/domain/SysFeeInfo.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/com/unit/domain/SysMenu.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/com/unit/domain/SysRole.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/com/unit/domain/SysRoleAction.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/com/unit/domain/SysRoleFee.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/com/unit/domain/SysSequence.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/com/unit/domain/SysUnicodeDict.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/com/unit/domain/SysUserRole.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/com/unit/domain/SysUsers.java" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/build/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,21 +52,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyLog.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MyLog.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/unit/utils/MyLog.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1474">
               <caret line="72" column="44" lean-forward="false" selection-start-line="72" selection-start-column="43" selection-end-line="72" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="applicationContext.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/applicationContext.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="99" column="38" lean-forward="false" selection-start-line="99" selection-start-column="38" selection-end-line="99" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -63,6 +70,14 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>sys</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>Sys</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
@@ -83,6 +98,10 @@
         <option value="$PROJECT_DIR$/resources/applicationContext.xml" />
         <option value="$PROJECT_DIR$/src/com/unit/test/Test.java" />
         <option value="$PROJECT_DIR$/src/com/unit/utils/MyLog.java" />
+        <option value="$PROJECT_DIR$/src/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/resources/generateConfig.xml" />
+        <option value="$PROJECT_DIR$/src/com/unit/mapper/bsFoodInfoMapper.xml" />
+        <option value="$PROJECT_DIR$/src/com/unit/controller/UserController.java" />
       </list>
     </option>
   </component>
@@ -99,9 +118,9 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="1043" />
-    <option name="y" value="53" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-93" />
+    <option name="y" value="153" />
     <option name="width" value="960" />
     <option name="height" value="1040" />
   </component>
@@ -157,37 +176,13 @@
             <path>
               <item name="payment" type="b2602c69:ProjectViewProjectNode" />
               <item name="payment" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="payment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="payment" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="payment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="payment" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="unit" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="payment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="payment" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="unit" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="payment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="payment" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="unit" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="WebRoot" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="payment" type="b2602c69:ProjectViewProjectNode" />
               <item name="payment" type="462c0819:PsiDirectoryNode" />
               <item name="WebRoot" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -208,14 +203,15 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\MyWorkSpace\payment\WebRoot\WEB-INF" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\PaymentSpace\payment\WebRoot\WEB-INF\lib" />
       <recent name="E:\PaymentSpace\payment\src" />
       <recent name="E:\MyWorkSpace\payment\WebRoot\WEB-INF" />
       <recent name="E:\MyWorkSpace\payment\src\com\unit\utils" />
       <recent name="E:\MyWorkSpace\payment\resources" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\MyWorkSpace\payment\WebRoot\WEB-INF" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -465,7 +461,7 @@
       <workItem from="1527557726271" duration="2608000" />
       <workItem from="1527560355221" duration="1446000" />
       <workItem from="1527562545353" duration="612000" />
-      <workItem from="1528084148778" duration="657000" />
+      <workItem from="1528084148778" duration="4592000" />
     </task>
     <task id="LOCAL-00001" summary="songhongwei">
       <created>1527558673160</created>
@@ -488,14 +484,35 @@
       <option name="project" value="LOCAL" />
       <updated>1527562684445</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="songhongwei">
+      <created>1528094525894</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1528094525894</updated>
+    </task>
+    <task id="LOCAL-00005" summary="删除多余位置文件">
+      <created>1528094695444</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1528094695444</updated>
+    </task>
+    <task id="LOCAL-00006" summary="提交实体类">
+      <created>1528100327316</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1528100327316</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7941000" />
+    <option name="totallyTimeSpent" value="11876000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -519,7 +536,7 @@
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23933902" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23933902" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -542,7 +559,9 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="songhongwei" />
-    <option name="LAST_COMMIT_MESSAGE" value="songhongwei" />
+    <MESSAGE value="删除多余位置文件" />
+    <MESSAGE value="提交实体类" />
+    <option name="LAST_COMMIT_MESSAGE" value="提交实体类" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -643,25 +662,90 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="106" column="53" lean-forward="false" selection-start-line="106" selection-start-column="53" selection-end-line="106" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/mysql-connector-java-5.1.8-bin.jar!/com/mysql/jdbc/Driver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/unit/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/unit/dao/BsFoodInfoMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/unit/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/unit/mapper/bsFoodInfoMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="21" lean-forward="false" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+          <folding>
+            <marker date="1528100272272" expanded="true" signature="958:1064" ph="select from bs_food_info" />
+            <marker date="1528100272272" expanded="true" signature="1147:1208" ph="delete from bs_food_info... " />
+            <marker date="1528100272272" expanded="true" signature="1291:1613" ph="insert into bs_food_info... " />
+            <marker date="1528100272272" expanded="true" signature="2975:3613" ph="update bs_food_info... " />
+            <marker date="1528100272272" expanded="true" signature="3708:4037" ph="update bs_food_info... " />
+            <marker date="1528100272272" expanded="true" signature="4810:4917" ph="select from bs_food_info" />
+            <marker date="1528100272272" expanded="true" signature="5000:5061" ph="delete from bs_food_info... " />
+            <marker date="1528100272272" expanded="true" signature="5144:5466" ph="insert into bs_food_info... " />
+            <marker date="1528100272272" expanded="true" signature="6828:7466" ph="update bs_food_info... " />
+            <marker date="1528100272272" expanded="true" signature="7561:7890" ph="update bs_food_info... " />
+            <marker date="1528100272272" expanded="true" signature="8663:8770" ph="select from bs_food_info" />
+            <marker date="1528100272272" expanded="true" signature="8853:8914" ph="delete from bs_food_info... " />
+            <marker date="1528100272272" expanded="true" signature="8997:9319" ph="insert into bs_food_info... " />
+            <marker date="1528100272272" expanded="true" signature="10681:11319" ph="update bs_food_info... " />
+            <marker date="1528100272272" expanded="true" signature="11414:11743" ph="update bs_food_info... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/generateConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/jdbc.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="16" />
+        <state relative-caret-position="44">
+          <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/unit/utils/MyLog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1474">
-          <caret line="72" column="44" lean-forward="false" selection-start-line="72" selection-start-column="43" selection-end-line="72" selection-end-column="44" />
+        <state relative-caret-position="418">
+          <caret line="28" column="62" lean-forward="false" selection-start-line="28" selection-start-column="62" selection-end-line="28" selection-end-column="62" />
           <folding />
         </state>
       </provider>
@@ -677,10 +761,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/applicationContext.xml">
+    <entry file="file://$PROJECT_DIR$/src/com/unit/utils/MyLog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="99" column="38" lean-forward="false" selection-start-line="99" selection-start-column="38" selection-end-line="99" selection-end-column="38" />
+        <state relative-caret-position="1474">
+          <caret line="72" column="44" lean-forward="false" selection-start-line="72" selection-start-column="43" selection-end-line="72" selection-end-column="44" />
           <folding />
         </state>
       </provider>
