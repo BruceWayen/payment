@@ -1,6 +1,6 @@
-package main.java.com.unit.service;
+package com.unit.service;
 
-import main.java.com.unit.domain.User;
+import com.unit.domain.SysUsers;
 
 import java.util.List;
 import java.util.Map;
@@ -13,19 +13,19 @@ import java.util.Map;
  **/
 public interface IUserService
 {
-    public List<User> getAll();
+    public List<SysUsers> getAll();
 
-    public User getUser(User user);
+    public SysUsers getUser(SysUsers user);
 
     public int delete(int id);
 
-    public int update(User user);
+    public int update(SysUsers user);
 
-    public int add(User user);
+    public int add(SysUsers user);
 
-    public List<User> find(Map<String, Object> map);
+    public List<SysUsers> find(Map<String, Object> map);
 
     public Long getTotal(Map<String, Object> map);
 
-    public User getUserById(int id);
+    public SysUsers getUserById(int id);
 }

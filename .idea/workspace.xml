@@ -6,27 +6,87 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0113442-cf39-4e91-a330-7128f8ca817b" name="Default" comment="删除多余位置文件">
-      <change beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/lib/mybatis-generator-core-1.3.6.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/generateConfig.xml" />
+    <list default="true" id="87c7bb7c-9aa7-4139-8e74-9d1767f455d6" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.classpath" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/com/unit/domain/BsFoodInfo.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/com/unit/domain/BsRechargeInfo.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/com/unit/domain/BsShopConsume.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/com/unit/domain/BsUseCronsume.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/com/unit/domain/SysContractInfo.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/com/unit/domain/SysDept.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/com/unit/domain/SysFeeInfo.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/com/unit/domain/SysMenu.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/com/unit/domain/SysRole.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/com/unit/domain/SysRoleAction.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/com/unit/domain/SysRoleFee.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/com/unit/domain/SysSequence.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/com/unit/domain/SysUnicodeDict.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/com/unit/domain/SysUserRole.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/com/unit/domain/SysUsers.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.settings/.jsdtscope" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.wst.common.component" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.wst.common.project.facet.core.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.wst.jsdt.ui.superType.container" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.wst.jsdt.ui.superType.name" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/web.xml" />
+      <change beforePath="$PROJECT_DIR$/build/classes/applicationContext.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/unit/mapper/UserManage.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/unit/test/Test.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/unit/utils/MyLog.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/classes/jdbc.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/classes/log4j.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/java/com/unit/controller/UserController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/java/com/unit/dao/UserDao.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/java/com/unit/domain/SyAction.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/java/com/unit/domain/SyContract.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/java/com/unit/domain/SyMenu.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/java/com/unit/domain/SyRole.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/java/com/unit/domain/SyRoleAction.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/java/com/unit/domain/SyUserRole.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/java/com/unit/domain/SyUsers.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/java/com/unit/domain/User.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/java/com/unit/service/IUserService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/java/com/unit/service/impl/UserServiceImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/java/com/unit/utils/PageBean.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/java/com/unit/utils/ResponseUtil.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/java/com/unit/utils/StringUtil.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/payment/WEB-INF/classes/applicationContext.xml" afterPath="$PROJECT_DIR$/classes/artifacts/payment/WEB-INF/classes/applicationContext.xml" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/payment/WEB-INF/classes/com/unit/mapper/UserManage.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/payment/WEB-INF/classes/com/unit/test/Test.class" afterPath="$PROJECT_DIR$/classes/artifacts/payment/WEB-INF/classes/com/unit/test/Test.class" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/payment/WEB-INF/classes/com/unit/utils/MyLog.class" afterPath="$PROJECT_DIR$/classes/artifacts/payment/WEB-INF/classes/com/unit/utils/MyLog.class" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/payment/WEB-INF/classes/log4j.properties" afterPath="$PROJECT_DIR$/classes/artifacts/payment/WEB-INF/classes/log4j.properties" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/payment/WEB-INF/classes/main/java/com/unit/controller/UserController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/payment/WEB-INF/classes/main/java/com/unit/dao/UserDao.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/payment/WEB-INF/classes/main/java/com/unit/domain/SyAction.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/payment/WEB-INF/classes/main/java/com/unit/domain/SyContract.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/payment/WEB-INF/classes/main/java/com/unit/domain/SyMenu.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/payment/WEB-INF/classes/main/java/com/unit/domain/SyRole.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/payment/WEB-INF/classes/main/java/com/unit/domain/SyRoleAction.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/payment/WEB-INF/classes/main/java/com/unit/domain/SyUserRole.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/payment/WEB-INF/classes/main/java/com/unit/domain/SyUsers.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/payment/WEB-INF/classes/main/java/com/unit/domain/User.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/payment/WEB-INF/classes/main/java/com/unit/service/IUserService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/payment/WEB-INF/classes/main/java/com/unit/service/impl/UserServiceImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/payment/WEB-INF/classes/main/java/com/unit/utils/PageBean.class" afterPath="$PROJECT_DIR$/classes/artifacts/payment/WEB-INF/classes/main/java/com/unit/utils/PageBean.class" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/payment/WEB-INF/classes/main/java/com/unit/utils/ResponseUtil.class" afterPath="$PROJECT_DIR$/classes/artifacts/payment/WEB-INF/classes/main/java/com/unit/utils/ResponseUtil.class" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/payment/WEB-INF/classes/main/java/com/unit/utils/StringUtil.class" afterPath="$PROJECT_DIR$/classes/artifacts/payment/WEB-INF/classes/main/java/com/unit/utils/StringUtil.class" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/payment/WEB-INF/lib/.sigar_shellrc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/payment/WEB-INF/lib/commons-codec-1.8.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/payment/WEB-INF/lib/commons-collections-3.1.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/payment/WEB-INF/lib/commons-fileupload.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/payment/WEB-INF/lib/commons-io-2.0.1.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/payment/WEB-INF/lib/commons-logging.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/payment/WEB-INF/lib/commons-pool.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/payment/WEB-INF/lib/fastjson-1.2.2-sources.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/payment/WEB-INF/lib/httpmime-4.1.2.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/payment/WEB-INF/lib/json-lib-2.2.3-jdk15.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/payment/WEB-INF/lib/libsigar-ia64-hpux-11.sl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/payment/WEB-INF/lib/libsigar-pa-hpux-11.sl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/payment/WEB-INF/lib/libsigar-universal-macosx.dylib" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/payment/WEB-INF/lib/libsigar-universal64-macosx.dylib" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/payment/WEB-INF/lib/log4j-1.2.16.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/payment/WEB-INF/lib/sigar-amd64-winnt.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/payment/WEB-INF/lib/sigar.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/payment/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/classes/artifacts/payment/WEB-INF/web.xml" />
+      <change beforePath="$PROJECT_DIR$/payment.iml" afterPath="$PROJECT_DIR$/payment.iml" />
+      <change beforePath="$PROJECT_DIR$/resources/applicationContext.xml" afterPath="$PROJECT_DIR$/resources/applicationContext.xml" />
+      <change beforePath="$PROJECT_DIR$/resources/log4j.properties" afterPath="$PROJECT_DIR$/resources/log4j.properties" />
+      <change beforePath="$PROJECT_DIR$/src/com/unit/controller/UserController.java" afterPath="$PROJECT_DIR$/src/com/unit/controller/UserController.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/unit/service/IUserService.java" afterPath="$PROJECT_DIR$/src/com/unit/service/IUserService.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/unit/service/impl/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/com/unit/service/impl/UserServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/unit/utils/MyLog.java" afterPath="$PROJECT_DIR$/src/com/unit/utils/MyLog.java" />
     </list>
-    <ignored path="$PROJECT_DIR$/build/classes/" />
+    <ignored path="$PROJECT_DIR$/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,25 +98,22 @@
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/unit/test/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="37" column="5" lean-forward="false" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="docComment;class#Test#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="190">
+              <caret line="15" column="46" lean-forward="true" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyLog.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/unit/utils/MyLog.java">
+      <file leaf-file-name="applicationContext.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/applicationContext.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1474">
-              <caret line="72" column="44" lean-forward="false" selection-start-line="72" selection-start-column="43" selection-end-line="72" selection-end-column="44" />
+            <state relative-caret-position="308">
+              <caret line="99" column="54" lean-forward="true" selection-start-line="99" selection-start-column="54" selection-end-line="99" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -64,27 +121,8 @@
       </file>
     </leaf>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>sys</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>Sys</replace>
-    </replaceStrings>
-  </component>
   <component name="Git.Settings">
-    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <push-targets>
-      <push-target-info target-remote="payment" target-branch="master" repo="$PROJECT_DIR$" source="master" />
-    </push-targets>
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -94,14 +132,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/WebRoot/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/resources/applicationContext.xml" />
-        <option value="$PROJECT_DIR$/src/com/unit/test/Test.java" />
-        <option value="$PROJECT_DIR$/src/com/unit/utils/MyLog.java" />
-        <option value="$PROJECT_DIR$/src/applicationContext.xml" />
-        <option value="$PROJECT_DIR$/resources/generateConfig.xml" />
-        <option value="$PROJECT_DIR$/src/com/unit/mapper/bsFoodInfoMapper.xml" />
-        <option value="$PROJECT_DIR$/src/com/unit/controller/UserController.java" />
       </list>
     </option>
   </component>
@@ -124,31 +155,6 @@
     <option name="width" value="960" />
     <option name="height" value="1040" />
   </component>
-  <component name="ProjectInspectionProfilesVisibleTreeState">
-    <entry key="Project Default">
-      <profile-state>
-        <expanded-state>
-          <State>
-            <id />
-          </State>
-          <State>
-            <id>CodeSpring CoreSpring</id>
-          </State>
-          <State>
-            <id>Spring</id>
-          </State>
-          <State>
-            <id>Spring CoreSpring</id>
-          </State>
-        </expanded-state>
-        <selected-state>
-          <State>
-            <id>SpringJavaInjectionPointsAutowiringInspection</id>
-          </State>
-        </selected-state>
-      </profile-state>
-    </entry>
-  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -164,8 +170,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -176,43 +182,43 @@
             <path>
               <item name="payment" type="b2602c69:ProjectViewProjectNode" />
               <item name="payment" type="462c0819:PsiDirectoryNode" />
-              <item name="WebRoot" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="payment" type="b2602c69:ProjectViewProjectNode" />
               <item name="payment" type="462c0819:PsiDirectoryNode" />
-              <item name="WebRoot" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="payment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="payment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="unit" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="payment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="payment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="unit" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="settings.github" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="settings.editor.selected.configurable" value="com.zeroturnaround.javarebel.idea.plugin.settings.startup.StartupConfigurable" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15429688" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="android.sdk.path" value="D:/Android/android-sdk" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\MyWorkSpace\payment\WebRoot\WEB-INF" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\PaymentSpace\payment\WebRoot\WEB-INF\lib" />
-      <recent name="E:\PaymentSpace\payment\src" />
-      <recent name="E:\MyWorkSpace\payment\WebRoot\WEB-INF" />
-      <recent name="E:\MyWorkSpace\payment\src\com\unit\utils" />
-      <recent name="E:\MyWorkSpace\payment\resources" />
-    </key>
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/WebRoot/WEB-INF/lib/xmlbeans-2.3.0.jar!/" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -322,8 +328,7 @@
       <listeners />
     </configuration>
     <configuration name="payment" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.79" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8090/payment" />
-      <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8" />
+      <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8 -Xms2048m -Xmx2048m -XX:PermSize=2048m -XX:MaxPermSize=2048m" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="payment">
@@ -333,7 +338,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="Unnamed_payment_2" />
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_payment_3" />
       </server-settings>
       <predefined_log_file id="Tomcat" enabled="true" />
       <predefined_log_file id="Tomcat Catalina" enabled="true" />
@@ -342,10 +347,10 @@
       <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="56136" />
+        <option name="DEBUG_PORT" value="58925" />
       </RunnerSettings>
       <RunnerSettings RunnerId="JRebel Debug">
-        <option name="DEBUG_PORT" value="56158" />
+        <option name="DEBUG_PORT" value="58926" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -452,101 +457,53 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f0113442-cf39-4e91-a330-7128f8ca817b" name="Default" comment="" />
-      <created>1527496346394</created>
+      <changelist id="87c7bb7c-9aa7-4139-8e74-9d1767f455d6" name="Default" comment="" />
+      <created>1528273530529</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1527496346394</updated>
-      <workItem from="1527496355554" duration="2618000" />
-      <workItem from="1527557726271" duration="2608000" />
-      <workItem from="1527560355221" duration="1446000" />
-      <workItem from="1527562545353" duration="612000" />
-      <workItem from="1528084148778" duration="4592000" />
+      <updated>1528273530529</updated>
+      <workItem from="1528273535122" duration="594000" />
     </task>
-    <task id="LOCAL-00001" summary="songhongwei">
-      <created>1527558673160</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1527558673161</updated>
-    </task>
-    <task id="LOCAL-00002" summary="songhongwei">
-      <created>1527561563956</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1527561563956</updated>
-    </task>
-    <task id="LOCAL-00003" summary="songhongwei">
-      <created>1527562684445</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1527562684445</updated>
-    </task>
-    <task id="LOCAL-00004" summary="songhongwei">
-      <created>1528094525894</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1528094525894</updated>
-    </task>
-    <task id="LOCAL-00005" summary="删除多余位置文件">
-      <created>1528094695444</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1528094695444</updated>
-    </task>
-    <task id="LOCAL-00006" summary="提交实体类">
-      <created>1528100327316</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1528100327316</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11876000" />
+    <option name="totallyTimeSpent" value="594000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29837838" sideWeight="0.5042644" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5708108" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29837838" sideWeight="0.49573562" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23933902" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.119936034" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -555,216 +512,31 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="songhongwei" />
-    <MESSAGE value="删除多余位置文件" />
-    <MESSAGE value="提交实体类" />
-    <option name="LAST_COMMIT_MESSAGE" value="提交实体类" />
-  </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/unit/utils/MyLog.java</url>
-          <line>37</line>
-          <properties />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="1" />
-    </breakpoint-manager>
+    <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/unit/test/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#Test#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/unit/utils/MyLog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1474">
-          <caret line="72" column="44" lean-forward="false" selection-start-line="72" selection-start-column="43" selection-end-line="72" selection-end-column="44" />
+        <state relative-caret-position="190">
+          <caret line="15" column="46" lean-forward="true" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/applicationContext.xml">
+    <entry file="file://$PROJECT_DIR$/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="462">
+          <caret line="21" column="40" lean-forward="false" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/unit/test/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#Test#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/unit/utils/MyLog.java">
+    <entry file="file://$PROJECT_DIR$/resources/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/unit/test/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#Test#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/unit/test/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#Test#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/db.properties" />
-    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="106" column="53" lean-forward="false" selection-start-line="106" selection-start-column="53" selection-end-line="106" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/mysql-connector-java-5.1.8-bin.jar!/com/mysql/jdbc/Driver.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/unit/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/unit/dao/BsFoodInfoMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/unit/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/unit/mapper/bsFoodInfoMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="21" lean-forward="false" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-          <folding>
-            <marker date="1528100272272" expanded="true" signature="958:1064" ph="select from bs_food_info" />
-            <marker date="1528100272272" expanded="true" signature="1147:1208" ph="delete from bs_food_info... " />
-            <marker date="1528100272272" expanded="true" signature="1291:1613" ph="insert into bs_food_info... " />
-            <marker date="1528100272272" expanded="true" signature="2975:3613" ph="update bs_food_info... " />
-            <marker date="1528100272272" expanded="true" signature="3708:4037" ph="update bs_food_info... " />
-            <marker date="1528100272272" expanded="true" signature="4810:4917" ph="select from bs_food_info" />
-            <marker date="1528100272272" expanded="true" signature="5000:5061" ph="delete from bs_food_info... " />
-            <marker date="1528100272272" expanded="true" signature="5144:5466" ph="insert into bs_food_info... " />
-            <marker date="1528100272272" expanded="true" signature="6828:7466" ph="update bs_food_info... " />
-            <marker date="1528100272272" expanded="true" signature="7561:7890" ph="update bs_food_info... " />
-            <marker date="1528100272272" expanded="true" signature="8663:8770" ph="select from bs_food_info" />
-            <marker date="1528100272272" expanded="true" signature="8853:8914" ph="delete from bs_food_info... " />
-            <marker date="1528100272272" expanded="true" signature="8997:9319" ph="insert into bs_food_info... " />
-            <marker date="1528100272272" expanded="true" signature="10681:11319" ph="update bs_food_info... " />
-            <marker date="1528100272272" expanded="true" signature="11414:11743" ph="update bs_food_info... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/generateConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/jdbc.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="28" column="62" lean-forward="false" selection-start-line="28" selection-start-column="62" selection-end-line="28" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/unit/test/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="37" column="5" lean-forward="false" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#Test#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/unit/utils/MyLog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1474">
-          <caret line="72" column="44" lean-forward="false" selection-start-line="72" selection-start-column="43" selection-end-line="72" selection-end-column="44" />
+          <caret line="99" column="54" lean-forward="true" selection-start-line="99" selection-start-column="54" selection-end-line="99" selection-end-column="54" />
           <folding />
         </state>
       </provider>
@@ -828,6 +600,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
