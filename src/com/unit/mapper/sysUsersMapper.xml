@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.unit.dao.SysUsersMapper">
-    <select id="getUserByName" parameterType="string" resultType="com.shixu.model.User">
+    <select id="getUserByName" parameterType="string" resultType="com.unit.domain.SysUsers">
     select * from s_user where user_name = #{user_account} and is_disenable='0'
   </select>
 
@@ -39,7 +39,7 @@
     update s_user set user_password =#{psw} where id=#{userId}
   </update>
     <!-- 重置用户密码 -->
-    <update id="resetPassword" parameterType="com.shixu.model.User">
+    <update id="resetPassword" parameterType="com.unit.domain.SysUsers">
     update s_user set user_password=#{user.user_password} where id = #{user.id}
   </update>
 
@@ -49,7 +49,7 @@
   </update>
 
     <!-- 新增管理员 -->
-    <insert id="addUser" parameterType="com.shixu.model.User" useGeneratedKeys="true">
+    <insert id="addUser" parameterType="com.unit.domain.SysUsers" useGeneratedKeys="true">
         insert into s_user(user_account,user_name,phone_no,user_password) values
         (#{user.user_account},#{user.user_name},#{user.phone_no},#{user.user_password})
         <selectKey keyProperty="id" resultType="java.lang.Integer">
@@ -65,7 +65,7 @@
 
 
     <!-- 添加权限 -->
-    <insert id="addUserRole" parameterType="com.shixu.model.Userrole">
+    <insert id="addUserRole" parameterType="com.unit.domain.SysUsersrole">
     insert into s_user_role (user_id,role_id) values
     (#{userRole.user_id},#{userRole.role_id})
   </insert>
@@ -76,14 +76,14 @@
   </select>
 
     <!-- 查询管理员信息 -->
-    <select id="getUserList" resultType="com.shixu.model.User">
+    <select id="getUserList" resultType="com.unit.domain.SysUsers">
         SELECT u.id,u.user_account,u.user_name,u.phone_no FROM s_user u JOIN s_user_role r ON u.id=r.user_id WHERE
         r.role_id=2 and u.is_disenable = '0'
         <if test="page.page>0">limit #{page.start},#{page.end}</if>
     </select>
 
     <!-- 修改管理员信息 -->
-    <update id="editUser" parameterType="com.shixu.model.User">
+    <update id="editUser" parameterType="com.unit.domain.SysUsers">
     update s_user set user_name=#{user.user_name},phone_no=#{user.phone_no} where id=#{user.id}
   </update>
 
@@ -113,7 +113,7 @@
   </select>
 
     <!-- 根据账号修改新的密码 -->
-    <update id="changePwd" parameterType="com.shixu.model.User">
+    <update id="changePwd" parameterType="com.unit.domain.SysUsers">
     update s_user set user_password = #{user_password} where user_account = #{user_account}
   </update>
 
