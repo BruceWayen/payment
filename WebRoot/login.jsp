@@ -22,7 +22,7 @@
                 $.messager.alert('用户名还没填呢！','info');
                 $('#username').focus();
             } else if ($('#password').val() == '') {
-                $.messager.alert('密码还没填呢！','info');
+                alert('密码还没填呢！');
                 $('#password').focus();
             } else if ($('#username').val() != '' && $('#password').val() != '' && $('#j_captcha').val() != '') {
                 document.login.submit();
@@ -45,7 +45,7 @@
                 <ul>
                     <li><span>用户名：</span><input name="username" type="text" id="username" placeholder="登录名"  value="admin"
                                                 class="SearchKeyword"></li>
-                    <li><span>密码：</span><input type="password" name="password" id="password" placeholder="密码" value="123456"
+                    <li><span>密码：</span><input type="password" name="password" id="password" placeholder="密码" value=""
                                                class="SearchKeyword2"></li>
                     <li>
                         <button class="tijiao" id="submit_btn">登录</button>

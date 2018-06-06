@@ -33,11 +33,11 @@
     where id = #{id,jdbcType=INTEGER}
   </delete>
     <insert id="insert" parameterType="com.unit.domain.SysUnicodeDict">
-    insert into sys_unicode_dict (id, code_class, code_name, 
-      code_desc, code_value, eff_date, 
+    insert into sys_unicode_dict (id, code_class, code_name,
+      code_desc, code_value, eff_date,
       exp_date, create_time)
-    values (#{id,jdbcType=INTEGER}, #{codeClass,jdbcType=CHAR}, #{codeName,jdbcType=CHAR}, 
-      #{codeDesc,jdbcType=CHAR}, #{codeValue,jdbcType=INTEGER}, #{effDate,jdbcType=TIMESTAMP}, 
+    values (#{id,jdbcType=INTEGER}, #{codeClass,jdbcType=CHAR}, #{codeName,jdbcType=CHAR},
+      #{codeDesc,jdbcType=CHAR}, #{codeValue,jdbcType=INTEGER}, #{effDate,jdbcType=TIMESTAMP},
       #{expDate,jdbcType=TIMESTAMP}, #{createTime,jdbcType=TIMESTAMP})
   </insert>
     <insert id="insertSelective" parameterType="com.unit.domain.SysUnicodeDict">

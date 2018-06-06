@@ -16,10 +16,9 @@
         <result column="register_type" jdbcType="INTEGER" property="registerType"/>
         <result column="role_id" jdbcType="INTEGER" property="roleId"/>
         <result column="last_login_time" jdbcType="TIMESTAMP" property="lastLoginTime"/>
-        <result column="count_childrens" jdbcType="INTEGER" property="countChildrens"/>
     </resultMap>
 
-    <select id="getUserByName" parameterType="string" resultType="com.unit.domain.SysUsers">
+    <select id="getUserByName" parameterType="string" resultMap="BaseResultMap">
       select * from sys_users where user_name = #{userName} AND user_satus='0'
     </select>
     <select id="getMenuByUserId" resultType="com.unit.domain.SysMenu">
