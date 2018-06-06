@@ -6,16 +6,8 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87c7bb7c-9aa7-4139-8e74-9d1767f455d6" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/unit/controller/LoginController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/unit/domain/Tree.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/unit/service/LoginService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/unit/utils/Const.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/unit/utils/MD5Util.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/unit/utils/UserCookieUtil.java" />
+    <list default="true" id="87c7bb7c-9aa7-4139-8e74-9d1767f455d6" name="Default" comment="增加LoginController">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/index.html" afterPath="$PROJECT_DIR$/WebRoot/index.html" />
       <change beforePath="$PROJECT_DIR$/build/classes/applicationContext.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/build/classes/com/unit/mapper/UserManage.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/build/classes/com/unit/test/Test.class" afterPath="" />
@@ -75,13 +67,7 @@
       <change beforePath="$PROJECT_DIR$/classes/artifacts/payment/WEB-INF/lib/sigar-amd64-winnt.dll" afterPath="" />
       <change beforePath="$PROJECT_DIR$/classes/artifacts/payment/WEB-INF/lib/sigar.jar" afterPath="" />
       <change beforePath="$PROJECT_DIR$/classes/artifacts/payment/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/classes/artifacts/payment/WEB-INF/web.xml" />
-      <change beforePath="$PROJECT_DIR$/src/com/unit/controller/UserController.java" afterPath="$PROJECT_DIR$/src/com/unit/controller/UserController.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/unit/dao/SysUsersMapper.java" afterPath="$PROJECT_DIR$/src/com/unit/dao/SysUsersMapper.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/unit/domain/SysMenu.java" afterPath="$PROJECT_DIR$/src/com/unit/domain/SysMenu.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/unit/mapper/sysUsersMapper.xml" afterPath="$PROJECT_DIR$/src/com/unit/mapper/sysUsersMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/src/com/unit/service/IUserService.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/com/unit/service/impl/UserServiceImpl.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/com/unit/test/Test.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resources/payment.sql" afterPath="$PROJECT_DIR$/resources/payment.sql" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/bin/" />
@@ -121,7 +107,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/unit/mapper/SysUsersMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
-              <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="20" />
+              <caret line="15" column="41" lean-forward="true" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
               <folding>
                 <marker date="1528275619668" expanded="true" signature="289:364" ph="select * fro... s_user" />
                 <marker date="1528275619668" expanded="true" signature="454:1146" ph="select m.men... sys_menu" />
@@ -272,7 +258,7 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-93" />
     <option name="y" value="153" />
     <option name="width" value="960" />
@@ -315,13 +301,6 @@
               <item name="payment" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="unit" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="payment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="payment" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="unit" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -591,7 +570,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1528273530529</updated>
-      <workItem from="1528273535122" duration="2827000" />
+      <workItem from="1528273535122" duration="3166000" />
     </task>
     <task id="LOCAL-00001" summary="调整一下">
       <created>1528274189990</created>
@@ -600,14 +579,22 @@
       <option name="project" value="LOCAL" />
       <updated>1528274189990</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="增加LoginController">
+      <created>1528277861700</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1528277861700</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2827000" />
+    <option name="totallyTimeSpent" value="3166000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -631,7 +618,7 @@
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15938166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15938166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -650,8 +637,11 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="调整一下" />
-    <option name="LAST_COMMIT_MESSAGE" value="调整一下" />
+    <MESSAGE value="增加LoginController" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加LoginController" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -775,7 +765,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/unit/mapper/SysUsersMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
-          <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="20" />
+          <caret line="15" column="41" lean-forward="true" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
           <folding>
             <marker date="1528275619668" expanded="true" signature="289:364" ph="select * fro... s_user" />
             <marker date="1528275619668" expanded="true" signature="454:1146" ph="select m.men... sys_menu" />
