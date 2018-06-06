@@ -1,16 +1,16 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : page
-Source Server Version : 50559
+Source Server         : localhost
+Source Server Version : 50560
 Source Host           : localhost:3306
 Source Database       : payment
 
 Target Server Type    : MYSQL
-Target Server Version : 50559
+Target Server Version : 50560
 File Encoding         : 65001
 
-Date: 2018-06-06 17:40:07
+Date: 2018-06-06 23:05:00
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -99,17 +99,20 @@ CREATE TABLE `bs_use_cronsume` (
 -- ----------------------------
 DROP TABLE IF EXISTS `sys_action`;
 CREATE TABLE `sys_action` (
-  `id` int(11) NOT NULL COMMENT '主键标识',
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键标识',
   `menu_id` int(11) DEFAULT NULL COMMENT '菜单标识',
   `action_name` char(50) DEFAULT NULL COMMENT '动作名称',
   `action_url` char(255) DEFAULT NULL COMMENT '动作的URL',
   `action_sort` int(11) DEFAULT NULL COMMENT '排序标识',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='权限表，备用';
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COMMENT='权限表，备用';
 
 -- ----------------------------
 -- Records of sys_action
 -- ----------------------------
+INSERT INTO `sys_action` VALUES ('1', '1', '用户管理', '123', '0');
+INSERT INTO `sys_action` VALUES ('2', '2', '消费管理', '123', null);
+INSERT INTO `sys_action` VALUES ('3', '3', '系统管理', '1231', '1');
 
 -- ----------------------------
 -- Table structure for sys_contract_info
@@ -226,15 +229,18 @@ INSERT INTO `sys_role` VALUES ('00000000001', '管理员', '获取所有权限')
 -- ----------------------------
 DROP TABLE IF EXISTS `sys_role_action`;
 CREATE TABLE `sys_role_action` (
-  `id` int(11) NOT NULL COMMENT '主键标识',
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键标识',
   `action_id` int(11) DEFAULT NULL COMMENT '动作标识',
-  `user_id` int(11) DEFAULT NULL COMMENT 'y用户标识',
+  `role_id` int(11) unsigned zerofill DEFAULT NULL COMMENT '角色标识',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='系统角色权限关系表';
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COMMENT='系统角色权限关系表';
 
 -- ----------------------------
 -- Records of sys_role_action
 -- ----------------------------
+INSERT INTO `sys_role_action` VALUES ('1', '1', '00000000001');
+INSERT INTO `sys_role_action` VALUES ('2', '2', '00000000001');
+INSERT INTO `sys_role_action` VALUES ('3', '3', '00000000001');
 
 -- ----------------------------
 -- Table structure for sys_role_fee
@@ -296,8 +302,8 @@ INSERT INTO `sys_unicode_dict` VALUES ('00000000007', 'pay_type', '系统充值'
 INSERT INTO `sys_unicode_dict` VALUES ('00000000008', 'pay_type', '自助充值', '充值方式', '1', '2018-05-25 02:49:20', '2018-05-25 02:49:16', '2018-05-25 02:49:22');
 INSERT INTO `sys_unicode_dict` VALUES ('00000000009', 'op_type', '系统充值', '充值方式', '0', '2018-05-25 02:44:30', '2050-01-25 02:44:33', '2018-05-25 02:44:47');
 INSERT INTO `sys_unicode_dict` VALUES ('00000000010', 'op_type', '自助充值', '充值方式', '1', '2018-05-25 02:49:20', '2018-05-25 02:49:16', '2018-05-25 02:49:22');
-INSERT INTO `sys_unicode_dict` VALUES ('00000000011', 'status', '正常', '菜系状态', '0', '2018-05-25 02:44:30', '2050-01-25 02:44:33', '2018-05-25 02:44:47');
-INSERT INTO `sys_unicode_dict` VALUES ('00000000012', 'status', '下架', '菜系状态', '1', '2018-05-25 02:49:20', '2018-05-25 02:49:16', '2018-05-25 02:49:22');
+INSERT INTO `sys_unicode_dict` VALUES ('00000000011', 'menu_status', 'normal', '菜系状态正常', '0', '2018-05-25 02:44:30', '2050-01-25 02:44:33', '2018-05-25 02:44:47');
+INSERT INTO `sys_unicode_dict` VALUES ('00000000012', 'menu_status', 'abnormal', '菜系状态异常', '1', '2018-05-25 02:49:20', '2018-05-25 02:49:16', '2018-05-25 02:49:22');
 
 -- ----------------------------
 -- Table structure for sys_users
@@ -309,7 +315,7 @@ CREATE TABLE `sys_users` (
   `user_name` char(5) NOT NULL COMMENT '用户姓名',
   `sex` int(1) DEFAULT NULL COMMENT '性别',
   `login_no` char(9) NOT NULL COMMENT '工号',
-  `pass_word` char(16) NOT NULL COMMENT '密码',
+  `pass_word` char(255) NOT NULL COMMENT '密码',
   `id_iccid` char(18) DEFAULT NULL COMMENT '用户身份证号',
   `dept_id` int(11) DEFAULT NULL COMMENT '部门编号',
   `phone_no` char(11) NOT NULL COMMENT '手机号',
@@ -324,7 +330,7 @@ CREATE TABLE `sys_users` (
 -- ----------------------------
 -- Records of sys_users
 -- ----------------------------
-INSERT INTO `sys_users` VALUES ('00000000000001', '0', 'admin', '1', 'system', '1', '123456', '1', '18130091249', '0', '2018-06-06 17:28:45', '1', '1', '2018-06-06 17:29:06');
+INSERT INTO `sys_users` VALUES ('00000000000001', '0', 'admin', '1', 'system', '4QrcOUm6Wau+VuBX8g+IPg==', '123456', '1', '18130091249', '0', '2018-06-06 17:28:45', '1', '1', '2018-06-06 17:29:06');
 
 -- ----------------------------
 -- Table structure for sys_user_role
