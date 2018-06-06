@@ -1,199 +1,151 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.unit.dao.SysUsersMapper">
-  <resultMap id="BaseResultMap" type="com.unit.domain.SysUsers">
-    <id column="id" jdbcType="BIGINT" property="id" />
-    <result column="contract_no" jdbcType="BIGINT" property="contractNo" />
-    <result column="user_name" jdbcType="CHAR" property="userName" />
-    <result column="sex" jdbcType="INTEGER" property="sex" />
-    <result column="login_no" jdbcType="CHAR" property="loginNo" />
-    <result column="pass_word" jdbcType="CHAR" property="passWord" />
-    <result column="id_iccid" jdbcType="CHAR" property="idIccid" />
-    <result column="dept_id" jdbcType="INTEGER" property="deptId" />
-    <result column="phone_no" jdbcType="CHAR" property="phoneNo" />
-    <result column="user_satus" jdbcType="INTEGER" property="userSatus" />
-    <result column="register_time" jdbcType="TIMESTAMP" property="registerTime" />
-    <result column="register_type" jdbcType="INTEGER" property="registerType" />
-    <result column="role_id" jdbcType="INTEGER" property="roleId" />
-    <result column="last_login_time" jdbcType="TIMESTAMP" property="lastLoginTime" />
-  </resultMap>
-  <sql id="Base_Column_List">
-    id, contract_no, user_name, sex, login_no, pass_word, id_iccid, dept_id, phone_no, 
-    user_satus, register_time, register_type, role_id, last_login_time
-  </sql>
-  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
-    select 
-    <include refid="Base_Column_List" />
-    from sys_users
-    where id = #{id,jdbcType=BIGINT}
+    <select id="getUserByName" parameterType="string" resultType="com.shixu.model.User">
+    select * from s_user where user_name = #{user_account} and is_disenable='0'
   </select>
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
-    delete from sys_users
-    where id = #{id,jdbcType=BIGINT}
-  </delete>
-  <insert id="insert" parameterType="com.unit.domain.SysUsers">
-    insert into sys_users (id, contract_no, user_name, 
-      sex, login_no, pass_word, id_iccid, 
-      dept_id, phone_no, user_satus, 
-      register_time, register_type, role_id, 
-      last_login_time)
-    values (#{id,jdbcType=BIGINT}, #{contractNo,jdbcType=BIGINT}, #{userName,jdbcType=CHAR}, 
-      #{sex,jdbcType=INTEGER}, #{loginNo,jdbcType=CHAR}, #{passWord,jdbcType=CHAR}, #{idIccid,jdbcType=CHAR}, 
-      #{deptId,jdbcType=INTEGER}, #{phoneNo,jdbcType=CHAR}, #{userSatus,jdbcType=INTEGER}, 
-      #{registerTime,jdbcType=TIMESTAMP}, #{registerType,jdbcType=INTEGER}, #{roleId,jdbcType=INTEGER}, 
-      #{lastLoginTime,jdbcType=TIMESTAMP})
-  </insert>
-  <insert id="insertSelective" parameterType="com.unit.domain.SysUsers">
-    insert into sys_users
-    <trim prefix="(" suffix=")" suffixOverrides=",">
-      <if test="id != null">
-        id,
-      </if>
-      <if test="contractNo != null">
-        contract_no,
-      </if>
-      <if test="userName != null">
-        user_name,
-      </if>
-      <if test="sex != null">
-        sex,
-      </if>
-      <if test="loginNo != null">
-        login_no,
-      </if>
-      <if test="passWord != null">
-        pass_word,
-      </if>
-      <if test="idIccid != null">
-        id_iccid,
-      </if>
-      <if test="deptId != null">
-        dept_id,
-      </if>
-      <if test="phoneNo != null">
-        phone_no,
-      </if>
-      <if test="userSatus != null">
-        user_satus,
-      </if>
-      <if test="registerTime != null">
-        register_time,
-      </if>
-      <if test="registerType != null">
-        register_type,
-      </if>
-      <if test="roleId != null">
-        role_id,
-      </if>
-      <if test="lastLoginTime != null">
-        last_login_time,
-      </if>
-    </trim>
-    <trim prefix="values (" suffix=")" suffixOverrides=",">
-      <if test="id != null">
-        #{id,jdbcType=BIGINT},
-      </if>
-      <if test="contractNo != null">
-        #{contractNo,jdbcType=BIGINT},
-      </if>
-      <if test="userName != null">
-        #{userName,jdbcType=CHAR},
-      </if>
-      <if test="sex != null">
-        #{sex,jdbcType=INTEGER},
-      </if>
-      <if test="loginNo != null">
-        #{loginNo,jdbcType=CHAR},
-      </if>
-      <if test="passWord != null">
-        #{passWord,jdbcType=CHAR},
-      </if>
-      <if test="idIccid != null">
-        #{idIccid,jdbcType=CHAR},
-      </if>
-      <if test="deptId != null">
-        #{deptId,jdbcType=INTEGER},
-      </if>
-      <if test="phoneNo != null">
-        #{phoneNo,jdbcType=CHAR},
-      </if>
-      <if test="userSatus != null">
-        #{userSatus,jdbcType=INTEGER},
-      </if>
-      <if test="registerTime != null">
-        #{registerTime,jdbcType=TIMESTAMP},
-      </if>
-      <if test="registerType != null">
-        #{registerType,jdbcType=INTEGER},
-      </if>
-      <if test="roleId != null">
-        #{roleId,jdbcType=INTEGER},
-      </if>
-      <if test="lastLoginTime != null">
-        #{lastLoginTime,jdbcType=TIMESTAMP},
-      </if>
-    </trim>
-  </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.unit.domain.SysUsers">
-    update sys_users
-    <set>
-      <if test="contractNo != null">
-        contract_no = #{contractNo,jdbcType=BIGINT},
-      </if>
-      <if test="userName != null">
-        user_name = #{userName,jdbcType=CHAR},
-      </if>
-      <if test="sex != null">
-        sex = #{sex,jdbcType=INTEGER},
-      </if>
-      <if test="loginNo != null">
-        login_no = #{loginNo,jdbcType=CHAR},
-      </if>
-      <if test="passWord != null">
-        pass_word = #{passWord,jdbcType=CHAR},
-      </if>
-      <if test="idIccid != null">
-        id_iccid = #{idIccid,jdbcType=CHAR},
-      </if>
-      <if test="deptId != null">
-        dept_id = #{deptId,jdbcType=INTEGER},
-      </if>
-      <if test="phoneNo != null">
-        phone_no = #{phoneNo,jdbcType=CHAR},
-      </if>
-      <if test="userSatus != null">
-        user_satus = #{userSatus,jdbcType=INTEGER},
-      </if>
-      <if test="registerTime != null">
-        register_time = #{registerTime,jdbcType=TIMESTAMP},
-      </if>
-      <if test="registerType != null">
-        register_type = #{registerType,jdbcType=INTEGER},
-      </if>
-      <if test="roleId != null">
-        role_id = #{roleId,jdbcType=INTEGER},
-      </if>
-      <if test="lastLoginTime != null">
-        last_login_time = #{lastLoginTime,jdbcType=TIMESTAMP},
-      </if>
-    </set>
-    where id = #{id,jdbcType=BIGINT}
+
+    <select id="getMenuByUserId" resultType="com.unit.domain.SysMenu">
+
+    select m.menu_no,m.menu_name,m.parent_no,m.icon_class,m.menu_url,
+    (select count(1) from sys_menu s where s.parent_no !=0 and s.parent_no=m.menu_no) as countChildrens
+    from sys_menu m
+    left join s_role_menu rm on m.menu_no=rm.menu_no
+    left join s_role r on rm.role_id=r.id
+    left join s_user_role ur on r.id=ur.role_id
+    left join s_user u on ur.user_id=u.id
+    where m.is_disenable=0 and u.id=#{userId} and m.parent_no='00'  and m.menu_no not in
+    (select tt.menu_no from (select m.menu_no,(select count(parent_no) from s_menu sp
+    where sp.is_disenable=0 and sp.parent_no=m.menu_no and m.parent_no=0)
+    countch from sys_menu m where m.parent_no=0) tt where countch=0)
+
+  </select>
+
+    <select id="getChildrenMenu" resultType="com.shixu.model.Menu">
+
+        select m.menu_no,m.menu_name,m.parent_no,m.icon_class,m.menu_url,
+        (select count(1) from s_menu s where s.parent_no !=0 and s.parent_no=m.menu_no) as countChildrens
+        from s_menu m
+        left join s_role_menu rm on m.menu_no=rm.menu_no
+        left join s_role r on rm.role_id=r.id
+        left join s_user_role ur on r.id=ur.role_id
+        left join s_user u on ur.user_id=u.id
+        where m.is_disenable=0 and u.id=#{userId} and m.parent_no=#{pid} and m.menu_no not in
+        (select tt.menu_no from (select m.menu_no,(select count(parent_no) from s_menu sp
+        where sp.is_disenable=0 and sp.parent_no=m.menu_no and m.parent_no=0)
+        countch from s_menu m where m.parent_no=0) tt where countch=0)
+    </select>
+    <update id="editPassword">
+    update s_user set user_password =#{psw} where id=#{userId}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.unit.domain.SysUsers">
-    update sys_users
-    set contract_no = #{contractNo,jdbcType=BIGINT},
-      user_name = #{userName,jdbcType=CHAR},
-      sex = #{sex,jdbcType=INTEGER},
-      login_no = #{loginNo,jdbcType=CHAR},
-      pass_word = #{passWord,jdbcType=CHAR},
-      id_iccid = #{idIccid,jdbcType=CHAR},
-      dept_id = #{deptId,jdbcType=INTEGER},
-      phone_no = #{phoneNo,jdbcType=CHAR},
-      user_satus = #{userSatus,jdbcType=INTEGER},
-      register_time = #{registerTime,jdbcType=TIMESTAMP},
-      register_type = #{registerType,jdbcType=INTEGER},
-      role_id = #{roleId,jdbcType=INTEGER},
-      last_login_time = #{lastLoginTime,jdbcType=TIMESTAMP}
-    where id = #{id,jdbcType=BIGINT}
+    <!-- 重置用户密码 -->
+    <update id="resetPassword" parameterType="com.shixu.model.User">
+    update s_user set user_password=#{user.user_password} where id = #{user.id}
+  </update>
+
+    <!-- 重置用户密码,默认为123456 -->
+    <update id="reset" parameterType="java.lang.Integer">
+    update s_user set user_password='4QrcOUm6Wau+VuBX8g+IPg==' where teach_stu_id = #{id}
+  </update>
+
+    <!-- 新增管理员 -->
+    <insert id="addUser" parameterType="com.shixu.model.User" useGeneratedKeys="true">
+        insert into s_user(user_account,user_name,phone_no,user_password) values
+        (#{user.user_account},#{user.user_name},#{user.phone_no},#{user.user_password})
+        <selectKey keyProperty="id" resultType="java.lang.Integer">
+            select
+            LAST_INSERT_ID()
+        </selectKey>
+    </insert>
+
+    <!-- 查询报名老师ID -->
+    <select id="getUserId" resultType="int" parameterType="java.lang.String">
+    select id from s_user where user_account=#{userName} and is_disenable = '0'
+  </select>
+
+
+    <!-- 添加权限 -->
+    <insert id="addUserRole" parameterType="com.shixu.model.Userrole">
+    insert into s_user_role (user_id,role_id) values
+    (#{userRole.user_id},#{userRole.role_id})
+  </insert>
+
+    <!-- 查询管理员总数 -->
+    <select id="getUserListSize" resultType="long">
+    SELECT COUNT(*) FROM s_user u JOIN s_user_role r ON u.id=r.user_id WHERE r.role_id=2 and u.is_disenable = '0'
+  </select>
+
+    <!-- 查询管理员信息 -->
+    <select id="getUserList" resultType="com.shixu.model.User">
+        SELECT u.id,u.user_account,u.user_name,u.phone_no FROM s_user u JOIN s_user_role r ON u.id=r.user_id WHERE
+        r.role_id=2 and u.is_disenable = '0'
+        <if test="page.page>0">limit #{page.start},#{page.end}</if>
+    </select>
+
+    <!-- 修改管理员信息 -->
+    <update id="editUser" parameterType="com.shixu.model.User">
+    update s_user set user_name=#{user.user_name},phone_no=#{user.phone_no} where id=#{user.id}
+  </update>
+
+    <!-- 删除管理员权限 -->
+    <delete id="deleteTeacherRole" parameterType="int">
+    delete from s_user_role where user_id=#{id}
+  </delete>
+    <!-- 逻辑删除管理员 -->
+    <!--
+    <delete id="deleteTeacher">
+        delete from s_user where id=#{id}
+    </delete>
+     -->
+    <update id="deleteTeacher" parameterType="java.lang.Integer">
+    update s_user set is_disenable='1' where id = #{id}
+  </update>
+
+    <!-- 添加操作记录 -->
+    <insert id="addOperate" parameterType="com.shixu.model.Operate">
+    insert into t_operate(oper_time,oper_user,oper_module,content,remark)
+    values(now(),#{oper_user},#{oper_module},#{content},#{remark})
+  </insert>
+
+    <!-- 根据账号检查原密码是否正确   这里只做查询-->
+    <select id="findPwdByName" resultType="java.lang.String">
+    select user_password from s_user where user_account = #{user_account}
+  </select>
+
+    <!-- 根据账号修改新的密码 -->
+    <update id="changePwd" parameterType="com.shixu.model.User">
+    update s_user set user_password = #{user_password} where user_account = #{user_account}
+  </update>
+
+    <!--获取权限ID-->
+    <select id="getRoleIdByUserId" resultType="int">
+    select role_id from s_user_role where user_id=#{userId}
+  </select>
+    <!-- 新增教师用户 -->
+    <insert id="addTeacher" parameterType="com.shixu.model.Teacher">
+        <selectKey keyProperty="id" order="AFTER"
+                   resultType="int">
+            select LAST_INSERT_ID()
+        </selectKey>
+        insert into s_user(user_name,user_password,teach_stu_flag,teach_stu_id,remark,is_disenable,create_time) values
+        ('${card_no}','${password}','1',${id},'教师用户','0',now())
+    </insert>
+
+    <!-- 新增学生用户 -->
+    <insert id="addUserStudent" parameterType="com.shixu.model.Student">
+    insert into s_user(user_name,user_password,teach_stu_flag,teach_stu_id,remark,is_disenable,create_time) values
+    ('${card_no}','${password}','2',${id},'学生用户','0',now())
+  </insert>
+    <!-- 更新教师用户 -->
+    <update id="updateTeacher" parameterType="com.shixu.model.Teacher">
+    update s_user set user_name = #{teach_name},edit_time=now() where teach_stu_id=#{id}
+  </update>
+
+    <!-- 修改学生信息 -->
+    <update id="editUserStudent" parameterType="com.shixu.model.Student">
+    update s_user set
+    user_name = #{card_no},
+    edit_time = now()
+    where id=#{id}
   </update>
 </mapper>

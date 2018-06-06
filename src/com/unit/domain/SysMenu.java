@@ -14,7 +14,7 @@ public class SysMenu {
     private String menuIconUrl;
 
     private String menuUrl;
-
+    private Integer countChildrens;
     public Integer getId() {
         return id;
     }
@@ -69,5 +69,15 @@ public class SysMenu {
 
     public void setMenuUrl(String menuUrl) {
         this.menuUrl = menuUrl == null ? null : menuUrl.trim();
+    }
+
+    public Integer getCountChildrens()
+    {
+        return countChildrens;
+    }
+
+    public void setCountChildrens(Integer countChildrens)
+    {
+        this.countChildrens = countChildrens;
     }
 }
