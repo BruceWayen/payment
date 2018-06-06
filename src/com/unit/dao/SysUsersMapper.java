@@ -8,7 +8,8 @@ import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
-public interface SysUsersMapper {
+public interface SysUsersMapper
+{
     /**
      * 根据账号查询用户 查询单条记录
      *
@@ -16,25 +17,25 @@ public interface SysUsersMapper {
      * @return 返回用户对象
      * @see [类、类#方法、类#成员]
      */
-    SysUsers getUserByName(String user_account);
+    SysUsers getUserByName(@Param("usreName") String usreName);
 
     /**
      * 菜单列表 根据用户ID获取菜单
      *
-     * @param id 根据用户ID查找
+     * @param id     根据用户ID查找
      * @param roleId 角色id
      * @return 返回后台菜单集合
      * @see [类、类#方法、类#成员]
      */
-    List<SysMenu> getMenuByUserId(@Param("userId")
-        long id, @Param("roleId")
-        int roleId);
+    List<SysMenu> getMenuByUserId(@Param("id")
+        long id, @Param("menuStatus")
+        int menuStatus);
 
     /**
      * <一句话功能简述> <功能详细描述>
      *
      * @param password 用户修改的密码
-     * @param userId 根据用户userId修改密码
+     * @param userId   根据用户userId修改密码
      * @see [类、类#方法、类#成员]
      */
     void editPassword(@Param("psw")
@@ -138,6 +139,7 @@ public interface SysUsersMapper {
         int id);
 
     // 添加操作记录
+
     /**
      * <添加操作记录> <功能详细描述>
      *
@@ -188,6 +190,5 @@ public interface SysUsersMapper {
         long id, @Param("roleId")
         int roleId, @Param("pid")
         String pid);
-
 
 }

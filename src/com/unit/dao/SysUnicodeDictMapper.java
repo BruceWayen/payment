@@ -2,7 +2,8 @@ package com.unit.dao;
 
 import com.unit.domain.SysUnicodeDict;
 
-public interface SysUnicodeDictMapper {
+public interface SysUnicodeDictMapper
+{
     int deleteByPrimaryKey(Integer id);
 
     int insert(SysUnicodeDict record);
@@ -10,6 +11,8 @@ public interface SysUnicodeDictMapper {
     int insertSelective(SysUnicodeDict record);
 
     SysUnicodeDict selectByPrimaryKey(Integer id);
+
+    SysUnicodeDict selectByCodeClassAndCodeName(String codeClass,String codeName);
 
     int updateByPrimaryKeySelective(SysUnicodeDict record);
 

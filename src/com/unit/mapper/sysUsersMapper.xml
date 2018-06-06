@@ -1,27 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.unit.dao.SysUsersMapper">
+    <resultMap id="BaseResultMap" type="com.unit.domain.SysUsers">
+        <id column="id" jdbcType="BIGINT" property="id"/>
+        <result column="contract_no" jdbcType="BIGINT" property="contractNo"/>
+        <result column="user_name" jdbcType="CHAR" property="userName"/>
+        <result column="sex" jdbcType="INTEGER" property="sex"/>
+        <result column="login_no" jdbcType="CHAR" property="loginNo"/>
+        <result column="pass_word" jdbcType="CHAR" property="passWord"/>
+        <result column="id_iccid" jdbcType="CHAR" property="idIccid"/>
+        <result column="dept_id" jdbcType="INTEGER" property="deptId"/>
+        <result column="phone_no" jdbcType="CHAR" property="phoneNo"/>
+        <result column="user_satus" jdbcType="INTEGER" property="userSatus"/>
+        <result column="register_time" jdbcType="TIMESTAMP" property="registerTime"/>
+        <result column="register_type" jdbcType="INTEGER" property="registerType"/>
+        <result column="role_id" jdbcType="INTEGER" property="roleId"/>
+        <result column="last_login_time" jdbcType="TIMESTAMP" property="lastLoginTime"/>
+        <result column="count_childrens" jdbcType="INTEGER" property="countChildrens"/>
+    </resultMap>
+
     <select id="getUserByName" parameterType="string" resultType="com.unit.domain.SysUsers">
-    select * from s_user where user_name = #{user_account} and is_disenable='0'
-  </select>
-
+      select * from sys_users where user_name = #{userName} AND user_satus='0'
+    </select>
     <select id="getMenuByUserId" resultType="com.unit.domain.SysMenu">
+         SELECT
+            m.id,m.menu_super_id,m.menu_status,m.menu_sort,m.menu_name,m.menu_icon_url,m.menu_url,
+         (select count(1) from sys_menu s where s.menu_super_id  !=0 and s.menu_super_id=m.id) as count_childrens
+        FROM
+            sys_menu m
+        LEFT JOIN sys_action a ON a.menu_id = m.id
+        LEFT JOIN sys_role_action ra ON ra.action_id = a.id
+        LEFT JOIN sys_role r ON r.id = ra.role_id
+        LEFT JOIN sys_user_role ur ON ur.role_id = r.id
+        LEFT JOIN sys_users u ON u.id = ur.user_id
+        where  u.id=#{id}
+        AND m.menu_status =#{menuStatus}
+   </select>
 
-    select m.menu_no,m.menu_name,m.parent_no,m.icon_class,m.menu_url,
-    (select count(1) from sys_menu s where s.parent_no !=0 and s.parent_no=m.menu_no) as countChildrens
-    from sys_menu m
-    left join s_role_menu rm on m.menu_no=rm.menu_no
-    left join s_role r on rm.role_id=r.id
-    left join s_user_role ur on r.id=ur.role_id
-    left join s_user u on ur.user_id=u.id
-    where m.is_disenable=0 and u.id=#{userId} and m.parent_no='00'  and m.menu_no not in
-    (select tt.menu_no from (select m.menu_no,(select count(parent_no) from s_menu sp
-    where sp.is_disenable=0 and sp.parent_no=m.menu_no and m.parent_no=0)
-    countch from sys_menu m where m.parent_no=0) tt where countch=0)
-
-  </select>
-
-    <select id="getChildrenMenu" resultType="com.shixu.model.Menu">
+    <select id="getChildrenMenu" resultType="com.unit.domain.SysMenu">
 
         select m.menu_no,m.menu_name,m.parent_no,m.icon_class,m.menu_url,
         (select count(1) from s_menu s where s.parent_no !=0 and s.parent_no=m.menu_no) as countChildrens
@@ -65,7 +81,7 @@
 
 
     <!-- 添加权限 -->
-    <insert id="addUserRole" parameterType="com.unit.domain.SysUsersrole">
+    <insert id="addUserRole" parameterType="com.unit.domain.SysUserRole">
     insert into s_user_role (user_id,role_id) values
     (#{userRole.user_id},#{userRole.role_id})
   </insert>
@@ -102,7 +118,7 @@
   </update>
 
     <!-- 添加操作记录 -->
-    <insert id="addOperate" parameterType="com.shixu.model.Operate">
+    <insert id="addOperate" parameterType="com.unit.domain.SysOperate">
     insert into t_operate(oper_time,oper_user,oper_module,content,remark)
     values(now(),#{oper_user},#{oper_module},#{content},#{remark})
   </insert>
@@ -121,31 +137,10 @@
     <select id="getRoleIdByUserId" resultType="int">
     select role_id from s_user_role where user_id=#{userId}
   </select>
-    <!-- 新增教师用户 -->
-    <insert id="addTeacher" parameterType="com.shixu.model.Teacher">
-        <selectKey keyProperty="id" order="AFTER"
-                   resultType="int">
-            select LAST_INSERT_ID()
-        </selectKey>
-        insert into s_user(user_name,user_password,teach_stu_flag,teach_stu_id,remark,is_disenable,create_time) values
-        ('${card_no}','${password}','1',${id},'教师用户','0',now())
-    </insert>
 
-    <!-- 新增学生用户 -->
-    <insert id="addUserStudent" parameterType="com.shixu.model.Student">
-    insert into s_user(user_name,user_password,teach_stu_flag,teach_stu_id,remark,is_disenable,create_time) values
-    ('${card_no}','${password}','2',${id},'学生用户','0',now())
-  </insert>
-    <!-- 更新教师用户 -->
-    <update id="updateTeacher" parameterType="com.shixu.model.Teacher">
-    update s_user set user_name = #{teach_name},edit_time=now() where teach_stu_id=#{id}
-  </update>
 
-    <!-- 修改学生信息 -->
-    <update id="editUserStudent" parameterType="com.shixu.model.Student">
-    update s_user set
-    user_name = #{card_no},
-    edit_time = now()
-    where id=#{id}
-  </update>
+
+
+
+
 </mapper>
