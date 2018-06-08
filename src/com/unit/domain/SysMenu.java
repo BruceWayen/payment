@@ -14,7 +14,9 @@ public class SysMenu {
     private String menuIconUrl;
 
     private String menuUrl;
+
     private Integer countChildrens;
+
     public Integer getId() {
         return id;
     }

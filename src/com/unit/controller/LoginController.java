@@ -56,7 +56,7 @@ public class LoginController
             List<Tree> treeList = userService.getMenu(session, parentId);
             
             session.setAttribute("tree", treeList);
-            modelAndView.setViewName("new_index");
+            modelAndView.setViewName("index");
         }
         else
         {

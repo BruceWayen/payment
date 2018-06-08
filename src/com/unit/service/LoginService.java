@@ -10,8 +10,10 @@
  */
 package com.unit.service;
 
+import com.unit.dao.SysUnicodeDictMapper;
 import com.unit.dao.SysUsersMapper;
 import com.unit.domain.SysMenu;
+import com.unit.domain.SysUnicodeDict;
 import com.unit.domain.SysUsers;
 import com.unit.domain.Tree;
 import com.unit.utils.Const;
@@ -40,6 +42,8 @@ public class LoginService
      */
     @Autowired
     private SysUsersMapper sysUsersMapper;
+    @Autowired
+    private SysUnicodeDictMapper sysUnicodeDictMapper;
 
     /**
      * 登录匹配 根据账号查询相关信息并返回结果
@@ -84,11 +88,13 @@ public class LoginService
     {
         List<SysMenu> menuList = new ArrayList<SysMenu>();
         SysUsers user = (SysUsers)session.getAttribute(Const.SESSION_USER);
+        SysUnicodeDict sysUnicodeDict = sysUnicodeDictMapper.selectByCodeClassAndCodeName("menu_status", "normal");
         int roleId = sysUsersMapper.getRoleIdByUserId(user.getId());
+        Integer menuStatus = sysUnicodeDict.getCodeValue();
         session.setAttribute("roleId", roleId);
         if (parentId == 0)
         {
-            menuList = sysUsersMapper.getMenuByUserId(user.getId(), roleId);
+            menuList = sysUsersMapper.getMenuByUserId(user.getId(), menuStatus);
         }
         else if (parentId > 0)
         {
@@ -101,6 +107,7 @@ public class LoginService
             {
                 pid = Integer.toString(parentId);
             }
+            //获取子菜单
             menuList = sysUsersMapper.getChildrenMenu(user.getId(), roleId, pid);
         }
         List<Tree> treeList = new ArrayList<Tree>();
