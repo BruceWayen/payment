@@ -8,11 +8,16 @@
   <component name="ChangeListManager">
     <list default="true" id="87c7bb7c-9aa7-4139-8e74-9d1767f455d6" name="Default" comment="增加LoginController">
       <change beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/jsp/index.jsp" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/WebRoot/index.jsp" afterPath="$PROJECT_DIR$/WebRoot/index.jsp" />
       <change beforePath="$PROJECT_DIR$/WebRoot/login.jsp" afterPath="$PROJECT_DIR$/WebRoot/login.jsp" />
       <change beforePath="$PROJECT_DIR$/src/com/unit/controller/LoginController.java" afterPath="$PROJECT_DIR$/src/com/unit/controller/LoginController.java" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/com/unit/mapper/sysUsersMapper.xml" afterPath="$PROJECT_DIR$/src/com/unit/mapper/sysUsersMapper.xml" />
+>>>>>>> songhw
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/bin/" />
@@ -41,28 +46,116 @@
       <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/unit/controller/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="-127">
               <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+=======
+            <state relative-caret-position="178">
+              <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+>>>>>>> songhw
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+=======
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/jsp/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1528434539465" expanded="true" signature="1977:1989" ph="..." />
+                <marker date="1528434539465" expanded="true" signature="2345:2357" ph="..." />
+                <marker date="1528434539465" expanded="true" signature="4281:4304" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+>>>>>>> songhw
       <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebRoot/login.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="44">
+<<<<<<< HEAD
               <caret line="17" column="19" lean-forward="true" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+=======
+              <caret line="17" column="19" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="LoginService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/unit/service/LoginService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="257">
+              <caret line="86" column="51" lean-forward="false" selection-start-line="86" selection-start-column="51" selection-end-line="86" selection-end-column="51" />
+>>>>>>> songhw
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
+=======
+      <file leaf-file-name="SysUsersMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/unit/dao/SysUsersMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="177">
+              <caret line="167" column="19" lean-forward="true" selection-start-line="167" selection-start-column="8" selection-end-line="167" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sysUsersMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/unit/mapper/sysUsersMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2621">
+              <caret line="130" column="33" lean-forward="true" selection-start-line="130" selection-start-column="33" selection-end-line="130" selection-end-column="33" />
+              <folding>
+                <marker date="1528434851589" expanded="true" signature="1410:1482" ph="select * fro... sys_users" />
+                <marker date="1528434851589" expanded="true" signature="1577:2167" ph="SELECT m.id,... sys_menu" />
+                <marker date="1528434851589" expanded="true" signature="2262:2989" ph="select m.men... s_menu" />
+                <marker date="1528434851589" expanded="true" signature="2760:2988" ph="select tt.me... menu_no" />
+                <marker date="1528434851589" expanded="true" signature="2784:2968" ph="select m.men... s_menu" />
+                <marker date="1528434851589" expanded="true" signature="2802:2917" ph="select count... s_menu" />
+                <marker date="1528434851589" expanded="true" signature="3039:3097" ph="update s_user... " />
+                <marker date="1528434851589" expanded="true" signature="3207:3282" ph="update s_user... " />
+                <marker date="1528434851589" expanded="true" signature="3388:3473" ph="update s_user... " />
+                <marker date="1528434851589" expanded="true" signature="3605:3765" ph="insert into s_user... " />
+                <marker date="1528434851589" expanded="true" signature="3846:3881" ph="select LAST_... " />
+                <marker date="1528434851589" expanded="true" signature="4022:4097" ph="select id fr... s_user" />
+                <marker date="1528434851589" expanded="true" signature="4208:4302" ph="insert into s_user_role... " />
+                <marker date="1528434851589" expanded="true" signature="4393:4502" ph="SELECT COUNT... s_user" />
+                <marker date="1528434851589" expanded="true" signature="4613:4827" ph="SELECT u.id,... s_user" />
+                <marker date="1528434851589" expanded="true" signature="4941:5032" ph="update s_user... " />
+                <marker date="1528434851589" expanded="true" signature="5127:5170" ph="delete from s_user_role... " />
+                <marker date="1528434851589" expanded="true" signature="5380:5431" ph="update s_user... " />
+                <marker date="1528434851589" expanded="true" signature="5541:5677" ph="insert into t_operate... " />
+                <marker date="1528434851589" expanded="true" signature="5792:5861" ph="select user_... s_user" />
+                <marker date="1528434851589" expanded="true" signature="5972:6062" ph="update sys_users... " />
+                <marker date="1528434851589" expanded="true" signature="6151:6208" ph="select role_... sys_user_role" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+>>>>>>> songhw
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
+<<<<<<< HEAD
       <find>admin</find>
+=======
+      <find>com.shixu.model.Menu</find>
+>>>>>>> songhw
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -86,16 +179,28 @@
         <option value="$PROJECT_DIR$/src/com/unit/domain/Tree.java" />
         <option value="$PROJECT_DIR$/src/com/unit/utils/MD5Util.java" />
         <option value="$PROJECT_DIR$/src/com/unit/utils/Const.java" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/com/unit/dao/SysUsersMapper.java" />
+=======
+>>>>>>> songhw
         <option value="$PROJECT_DIR$/src/com/unit/domain/SysMenu.java" />
         <option value="$PROJECT_DIR$/src/com/unit/service/LoginService.java" />
         <option value="$PROJECT_DIR$/src/com/unit/utils/UserCookieUtil.java" />
         <option value="$PROJECT_DIR$/src/com/unit/mapper/SysUsersMapper.xml" />
         <option value="$PROJECT_DIR$/WebRoot/index.jsp" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/WebRoot/login.jsp" />
         <option value="$PROJECT_DIR$/WebRoot/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/WebRoot/WEB-INF/jsp/index.jsp" />
         <option value="$PROJECT_DIR$/src/com/unit/controller/LoginController.java" />
+=======
+        <option value="$PROJECT_DIR$/src/com/unit/dao/SysUnicodeDictMapper.java" />
+        <option value="$PROJECT_DIR$/src/com/unit/mapper/sysUnicodeDictMapper.xml" />
+        <option value="$PROJECT_DIR$/src/com/unit/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/WebRoot/login.jsp" />
+        <option value="$PROJECT_DIR$/src/com/unit/dao/SysUsersMapper.java" />
+        <option value="$PROJECT_DIR$/src/com/unit/mapper/sysUsersMapper.xml" />
+>>>>>>> songhw
       </list>
     </option>
   </component>
@@ -147,11 +252,14 @@
             <path>
               <item name="payment" type="b2602c69:ProjectViewProjectNode" />
               <item name="payment" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="payment" type="b2602c69:ProjectViewProjectNode" />
               <item name="payment" type="462c0819:PsiDirectoryNode" />
+=======
+>>>>>>> songhw
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -190,6 +298,10 @@
       </pane>
       <pane id="Scratches" />
       <pane id="Scope" />
+<<<<<<< HEAD
+=======
+      <pane id="AndroidView" />
+>>>>>>> songhw
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -201,17 +313,31 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$/WebRoot/WEB-INF/lib/xmlbeans-2.3.0.jar!/" />
   </component>
   <component name="RecentsManager">
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\PaymentSpace\payment\WebRoot\WEB-INF\jsp" />
+    </key>
+>>>>>>> songhw
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.unit.utils" />
       <recent name="com.unit.domain" />
       <recent name="com.unit.payment.service" />
       <recent name="com.unit.controller" />
     </key>
+<<<<<<< HEAD
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\PaymentSpace\payment\WebRoot\WEB-INF\jsp" />
+=======
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\JavaWorkSpace\payment\resources" />
+>>>>>>> songhw
     </key>
   </component>
   <component name="RunDashboard">
@@ -323,7 +449,12 @@
     </configuration>
     <configuration name="payment" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.79" ALTERNATIVE_JRE_ENABLED="false">
       <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8 -Xms2048m -Xmx2048m -XX:PermSize=2048m -XX:MaxPermSize=2048m" />
+<<<<<<< HEAD
       <option name="UPDATING_POLICY" value="restart-server" />
+=======
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+>>>>>>> songhw
       <deployment>
         <artifact name="payment">
           <settings>
@@ -457,11 +588,15 @@
       <option name="presentableId" value="Default" />
       <updated>1528273530529</updated>
       <workItem from="1528273535122" duration="3166000" />
+<<<<<<< HEAD
       <workItem from="1528337274838" duration="453000" />
       <workItem from="1528428068516" duration="1323000" />
       <workItem from="1528429611056" duration="380000" />
       <workItem from="1528430273416" duration="992000" />
       <workItem from="1528433853994" duration="641000" />
+=======
+      <workItem from="1528286612100" duration="73000" />
+>>>>>>> songhw
     </task>
     <task id="LOCAL-00001" summary="调整一下">
       <created>1528274189990</created>
@@ -481,10 +616,18 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="6955000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+=======
+    <option name="totallyTimeSpent" value="4411000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
+>>>>>>> songhw
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -498,7 +641,11 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36324325" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39459458" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+>>>>>>> songhw
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -508,17 +655,58 @@
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1673774" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+=======
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1673774" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+>>>>>>> songhw
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
+=======
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+>>>>>>> songhw
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
+=======
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14498934" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+>>>>>>> songhw
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
     </layout>
+<<<<<<< HEAD
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -542,9 +730,63 @@
     <MESSAGE value="调整一下" />
     <MESSAGE value="增加LoginController" />
     <option name="LAST_COMMIT_MESSAGE" value="增加LoginController" />
+=======
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.495671" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
+      <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1977612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
+>>>>>>> songhw
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="调整一下" />
+    <MESSAGE value="增加LoginController" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加LoginController" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+<<<<<<< HEAD
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/unit/controller/LoginController.java</url>
@@ -559,18 +801,43 @@
         </line-breakpoint>
       </breakpoints>
       <option name="time" value="2" />
+=======
+      <option name="time" value="5" />
+>>>>>>> songhw
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/com/unit/controller/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="726">
           <caret line="47" column="29" lean-forward="false" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/com/unit/utils/Const.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/unit/utils/UserCookieUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="36" column="66" lean-forward="true" selection-start-line="36" selection-start-column="66" selection-end-line="36" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/unit/domain/SysUsers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+>>>>>>> songhw
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/WebRoot/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -580,21 +847,54 @@
             <marker date="1528276964710" expanded="true" signature="2021:2033" ph="..." />
             <marker date="1528276964710" expanded="true" signature="3823:3846" ph="..." />
           </folding>
+=======
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/index.jsp">
+    <entry file="file://$PROJECT_DIR$/src/com/unit/mapper/BsShopConsumeMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+>>>>>>> songhw
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/unit/utils/MD5Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="28" column="4" lean-forward="false" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/unit/domain/SysMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="110">
           <caret line="5" column="2" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
           <folding>
             <marker date="1528429537177" expanded="true" signature="2128:2140" ph="..." />
             <marker date="1528429537177" expanded="true" signature="2496:2508" ph="..." />
             <marker date="1528429537177" expanded="true" signature="4432:4455" ph="..." />
+=======
+        <state relative-caret-position="154">
+          <caret line="7" column="30" lean-forward="false" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="30" />
+          <folding>
+            <element signature="e#1535#1536#0" expanded="false" />
+            <element signature="e#1572#1573#0" expanded="false" />
+            <element signature="e#1637#1638#0" expanded="false" />
+            <element signature="e#1689#1690#0" expanded="false" />
+>>>>>>> songhw
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
@@ -607,20 +907,76 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="616">
           <caret line="29" column="23" lean-forward="true" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/com/unit/mapper/BsRechargeInfoMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/unit/mapper/SysMenuMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="31" lean-forward="false" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="31" />
+>>>>>>> songhw
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/unit/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="36" column="23" lean-forward="false" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="254" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/js/jquery-1.8.0.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/spring-core-3.2.8.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="105" column="0" lean-forward="false" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/unit/service/LoginService.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="616">
           <caret line="51" column="5" lean-forward="false" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
+=======
+        <state relative-caret-position="1056">
+          <caret line="57" column="53" lean-forward="false" selection-start-line="57" selection-start-column="53" selection-end-line="57" selection-end-column="53" />
+>>>>>>> songhw
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/unit/domain/SysMenu.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="858">
           <caret line="59" column="5" lean-forward="false" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
           <folding />
@@ -632,6 +988,74 @@
         <state relative-caret-position="110">
           <caret line="5" column="2" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
           <folding />
+=======
+        <state relative-caret-position="396">
+          <caret line="18" column="27" lean-forward="false" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/unit/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/unit/mapper/sysUsersMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="7" column="64" lean-forward="false" selection-start-line="7" selection-start-column="64" selection-end-line="7" selection-end-column="64" />
+          <folding>
+            <marker date="1528434851589" expanded="true" signature="1410:1482" ph="select * fro... sys_users" />
+            <marker date="1528434851589" expanded="true" signature="1577:2167" ph="SELECT m.id,... sys_menu" />
+            <marker date="1528434851589" expanded="true" signature="2262:2989" ph="select m.men... s_menu" />
+            <marker date="1528434851589" expanded="true" signature="2760:2988" ph="select tt.me... menu_no" />
+            <marker date="1528434851589" expanded="true" signature="2784:2968" ph="select m.men... s_menu" />
+            <marker date="1528434851589" expanded="true" signature="2802:2917" ph="select count... s_menu" />
+            <marker date="1528434851589" expanded="true" signature="3039:3097" ph="update s_user... " />
+            <marker date="1528434851589" expanded="true" signature="3207:3282" ph="update s_user... " />
+            <marker date="1528434851589" expanded="true" signature="3388:3473" ph="update s_user... " />
+            <marker date="1528434851589" expanded="true" signature="3605:3765" ph="insert into s_user... " />
+            <marker date="1528434851589" expanded="true" signature="3846:3881" ph="select LAST_... " />
+            <marker date="1528434851589" expanded="true" signature="4022:4097" ph="select id fr... s_user" />
+            <marker date="1528434851589" expanded="true" signature="4208:4302" ph="insert into s_user_role... " />
+            <marker date="1528434851589" expanded="true" signature="4393:4502" ph="SELECT COUNT... s_user" />
+            <marker date="1528434851589" expanded="true" signature="4613:4827" ph="SELECT u.id,... s_user" />
+            <marker date="1528434851589" expanded="true" signature="4941:5032" ph="update s_user... " />
+            <marker date="1528434851589" expanded="true" signature="5127:5170" ph="delete from s_user_role... " />
+            <marker date="1528434851589" expanded="true" signature="5380:5431" ph="update s_user... " />
+            <marker date="1528434851589" expanded="true" signature="5541:5677" ph="insert into t_operate... " />
+            <marker date="1528434851589" expanded="true" signature="5792:5861" ph="select user_... s_user" />
+            <marker date="1528434851589" expanded="true" signature="5972:6062" ph="update sys_users... " />
+            <marker date="1528434851589" expanded="true" signature="6151:6208" ph="select role_... sys_user_role" />
+          </folding>
+>>>>>>> songhw
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="52" column="65" lean-forward="false" selection-start-line="52" selection-start-column="65" selection-end-line="52" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="934" column="12" lean-forward="true" selection-start-line="934" selection-start-column="12" selection-end-line="934" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/artifacts/payment.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -671,7 +1095,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="858">
           <caret line="59" column="5" lean-forward="true" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+<<<<<<< HEAD
           <folding />
+=======
+          <folding>
+            <element signature="e#1535#1536#0" expanded="false" />
+            <element signature="e#1572#1573#0" expanded="false" />
+            <element signature="e#1637#1638#0" expanded="false" />
+            <element signature="e#1689#1690#0" expanded="false" />
+          </folding>
+>>>>>>> songhw
         </state>
       </provider>
     </entry>
@@ -686,6 +1119,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -700,6 +1134,33 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="15" column="41" lean-forward="true" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+<<<<<<< HEAD
+=======
+          <folding>
+            <marker date="1528434851589" expanded="true" signature="1410:1482" ph="select * fro... sys_users" />
+            <marker date="1528434851589" expanded="true" signature="1577:2167" ph="SELECT m.id,... sys_menu" />
+            <marker date="1528434851589" expanded="true" signature="2262:2989" ph="select m.men... s_menu" />
+            <marker date="1528434851589" expanded="true" signature="2760:2988" ph="select tt.me... menu_no" />
+            <marker date="1528434851589" expanded="true" signature="2784:2968" ph="select m.men... s_menu" />
+            <marker date="1528434851589" expanded="true" signature="2802:2917" ph="select count... s_menu" />
+            <marker date="1528434851589" expanded="true" signature="3039:3097" ph="update s_user... " />
+            <marker date="1528434851589" expanded="true" signature="3207:3282" ph="update s_user... " />
+            <marker date="1528434851589" expanded="true" signature="3388:3473" ph="update s_user... " />
+            <marker date="1528434851589" expanded="true" signature="3605:3765" ph="insert into s_user... " />
+            <marker date="1528434851589" expanded="true" signature="3846:3881" ph="select LAST_... " />
+            <marker date="1528434851589" expanded="true" signature="4022:4097" ph="select id fr... s_user" />
+            <marker date="1528434851589" expanded="true" signature="4208:4302" ph="insert into s_user_role... " />
+            <marker date="1528434851589" expanded="true" signature="4393:4502" ph="SELECT COUNT... s_user" />
+            <marker date="1528434851589" expanded="true" signature="4613:4827" ph="SELECT u.id,... s_user" />
+            <marker date="1528434851589" expanded="true" signature="4941:5032" ph="update s_user... " />
+            <marker date="1528434851589" expanded="true" signature="5127:5170" ph="delete from s_user_role... " />
+            <marker date="1528434851589" expanded="true" signature="5380:5431" ph="update s_user... " />
+            <marker date="1528434851589" expanded="true" signature="5541:5677" ph="insert into t_operate... " />
+            <marker date="1528434851589" expanded="true" signature="5792:5861" ph="select user_... s_user" />
+            <marker date="1528434851589" expanded="true" signature="5972:6062" ph="update sys_users... " />
+            <marker date="1528434851589" expanded="true" signature="6151:6208" ph="select role_... sys_user_role" />
+          </folding>
+>>>>>>> songhw
         </state>
       </provider>
     </entry>
@@ -711,6 +1172,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/com/unit/controller/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1188">
@@ -730,10 +1192,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/resources/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="81" column="40" lean-forward="false" selection-start-line="81" selection-start-column="40" selection-end-line="81" selection-end-column="40" />
+>>>>>>> songhw
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/com/unit/service/LoginService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
@@ -758,12 +1227,38 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/unit/utils/MD5Util.java">
+=======
+    <entry file="file://$PROJECT_DIR$/src/com/unit/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/unit/domain/Tree.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/unit/utils/MD5Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/unit/utils/Const.java">
+>>>>>>> songhw
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/com/unit/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -825,10 +1320,60 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="616">
           <caret line="51" column="5" lean-forward="false" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/com/unit/utils/UserCookieUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="36" column="66" lean-forward="true" selection-start-line="36" selection-start-column="66" selection-end-line="36" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/unit/domain/SysUsers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/unit/dao/SysUnicodeDictMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/unit/mapper/sysUnicodeDictMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9">
+          <caret line="93" column="29" lean-forward="true" selection-start-line="93" selection-start-column="29" selection-end-line="93" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="858">
+          <caret line="50" column="32" lean-forward="true" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
+          <folding>
+            <element signature="e#3247#3277#0#HTML" expanded="false" />
+            <element signature="e#3646#3676#0#HTML" expanded="false" />
+            <element signature="e#3904#4054#0#HTML" expanded="false" />
+            <element signature="e#4998#5028#0#HTML" expanded="false" />
+            <element signature="e#14273#14279#0#HTML" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="17" column="19" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+>>>>>>> songhw
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/com/unit/mapper/sysUsersMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2491">
@@ -837,12 +1382,17 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitattributes">
+=======
+    <entry file="file://$PROJECT_DIR$/src/com/unit/mapper/SysRoleActionMapper.xml">
+>>>>>>> songhw
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -854,10 +1404,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="616">
           <caret line="29" column="23" lean-forward="false" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/com/unit/mapper/SysRoleFeeMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-414">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> songhw
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/WebRoot/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -866,10 +1423,22 @@
             <marker date="1528276964710" expanded="true" signature="1639:1651" ph="..." />
             <marker date="1528276964710" expanded="true" signature="2021:2033" ph="..." />
             <marker date="1528276964710" expanded="true" signature="3823:3846" ph="..." />
+=======
+    <entry file="file://$PROJECT_DIR$/src/com/unit/domain/SysMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding>
+            <element signature="e#1535#1536#0" expanded="false" />
+            <element signature="e#1572#1573#0" expanded="false" />
+            <element signature="e#1637#1638#0" expanded="false" />
+            <element signature="e#1689#1690#0" expanded="false" />
+>>>>>>> songhw
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/payment.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
@@ -889,12 +1458,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="6" column="46" lean-forward="false" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/com/unit/service/LoginService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="86" column="51" lean-forward="false" selection-start-line="86" selection-start-column="51" selection-end-line="86" selection-end-column="51" />
+>>>>>>> songhw
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/index.jsp">
+    <entry file="file://$PROJECT_DIR$/src/com/unit/dao/SysUsersMapper.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="22">
           <caret line="5" column="2" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
           <folding>
@@ -913,10 +1489,17 @@
             <marker date="1528434273978" expanded="true" signature="2127:2139" ph="..." />
             <marker date="1528434273978" expanded="true" signature="2495:2507" ph="..." />
             <marker date="1528434273978" expanded="true" signature="4431:4454" ph="..." />
+=======
+        <state relative-caret-position="177">
+          <caret line="167" column="19" lean-forward="true" selection-start-line="167" selection-start-column="8" selection-end-line="167" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+>>>>>>> songhw
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/WebRoot/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
@@ -961,6 +1544,55 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-127">
           <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/com/unit/mapper/sysUsersMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2621">
+          <caret line="130" column="33" lean-forward="true" selection-start-line="130" selection-start-column="33" selection-end-line="130" selection-end-column="33" />
+          <folding>
+            <marker date="1528434851589" expanded="true" signature="1410:1482" ph="select * fro... sys_users" />
+            <marker date="1528434851589" expanded="true" signature="1577:2167" ph="SELECT m.id,... sys_menu" />
+            <marker date="1528434851589" expanded="true" signature="2262:2989" ph="select m.men... s_menu" />
+            <marker date="1528434851589" expanded="true" signature="2760:2988" ph="select tt.me... menu_no" />
+            <marker date="1528434851589" expanded="true" signature="2784:2968" ph="select m.men... s_menu" />
+            <marker date="1528434851589" expanded="true" signature="2802:2917" ph="select count... s_menu" />
+            <marker date="1528434851589" expanded="true" signature="3039:3097" ph="update s_user... " />
+            <marker date="1528434851589" expanded="true" signature="3207:3282" ph="update s_user... " />
+            <marker date="1528434851589" expanded="true" signature="3388:3473" ph="update s_user... " />
+            <marker date="1528434851589" expanded="true" signature="3605:3765" ph="insert into s_user... " />
+            <marker date="1528434851589" expanded="true" signature="3846:3881" ph="select LAST_... " />
+            <marker date="1528434851589" expanded="true" signature="4022:4097" ph="select id fr... s_user" />
+            <marker date="1528434851589" expanded="true" signature="4208:4302" ph="insert into s_user_role... " />
+            <marker date="1528434851589" expanded="true" signature="4393:4502" ph="SELECT COUNT... s_user" />
+            <marker date="1528434851589" expanded="true" signature="4613:4827" ph="SELECT u.id,... s_user" />
+            <marker date="1528434851589" expanded="true" signature="4941:5032" ph="update s_user... " />
+            <marker date="1528434851589" expanded="true" signature="5127:5170" ph="delete from s_user_role... " />
+            <marker date="1528434851589" expanded="true" signature="5380:5431" ph="update s_user... " />
+            <marker date="1528434851589" expanded="true" signature="5541:5677" ph="insert into t_operate... " />
+            <marker date="1528434851589" expanded="true" signature="5792:5861" ph="select user_... s_user" />
+            <marker date="1528434851589" expanded="true" signature="5972:6062" ph="update sys_users... " />
+            <marker date="1528434851589" expanded="true" signature="6151:6208" ph="select role_... sys_user_role" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/jsp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1528434539465" expanded="true" signature="1977:1989" ph="..." />
+            <marker date="1528434539465" expanded="true" signature="2345:2357" ph="..." />
+            <marker date="1528434539465" expanded="true" signature="4281:4304" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/unit/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+>>>>>>> songhw
           <folding />
         </state>
       </provider>

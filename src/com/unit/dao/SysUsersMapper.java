@@ -17,7 +17,7 @@ public interface SysUsersMapper
      * @return 返回用户对象
      * @see [类、类#方法、类#成员]
      */
-    SysUsers getUserByName(@Param("usreName") String usreName);
+    SysUsers getUserByName(@Param("userName") String usreName);
 
     /**
      * 菜单列表 根据用户ID获取菜单
