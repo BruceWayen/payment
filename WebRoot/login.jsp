@@ -1,8 +1,8 @@
 <%@ page language="java" pageEncoding="UTF-8" %>
 <%
     String path = request.getContextPath();
-    String basePath =
-            request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path + "/";
+    String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+    String message=(String)request.getSession().getAttribute("message");
 %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -10,9 +10,9 @@
     <meta charset="utf-8">
     <title>支付系统后台管理</title>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
-    <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
-    <script type="text/javascript" src="easyui/1.3.4/jquery.easyui.min.js"></script>
-    <script type="text/javascript" src="easyui/1.3.4/locale/easyui-lang-zh_CN.js"></script>
+    <script type="text/javascript" src="<%=basePath%>js/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="<%=basePath%>easyui/1.3.4/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="<%=basePath%>easyui/1.3.4/locale/easyui-lang-zh_CN.js"></script>
 </head>
 <script type="text/javascript">
     $(function () {
@@ -62,7 +62,7 @@
         <div class="showMessge"></div>
     </div>
     <div style=" line-height:40px; font-size:14px; letter-spacing:1px;">
-        <a onclick="puc()">确定</a>
+
     </div>
 </div>
 <div style="text-align:center;">

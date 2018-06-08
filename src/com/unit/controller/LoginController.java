@@ -48,7 +48,6 @@ public class LoginController
         Integer parentId = 0;
         ModelAndView modelAndView = new ModelAndView();
         SysUsers user = userService.checkLogin(request);
-        
         if (user != null)
         {
             
