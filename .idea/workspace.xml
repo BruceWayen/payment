@@ -7,7 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87c7bb7c-9aa7-4139-8e74-9d1767f455d6" name="Default" comment="增加LoginController">
-      <change beforePath="$PROJECT_DIR$/resources/payment.sql" afterPath="$PROJECT_DIR$/resources/payment.sql" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/jsp/index.jsp" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/com/unit/mapper/sysUsersMapper.xml" afterPath="$PROJECT_DIR$/src/com/unit/mapper/sysUsersMapper.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/bin/" />
@@ -23,54 +25,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="sysUnicodeDictMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/unit/mapper/sysUnicodeDictMapper.xml">
+      <file leaf-file-name="applicationContext.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/applicationContext.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-9">
-              <caret line="93" column="29" lean-forward="true" selection-start-line="93" selection-start-column="29" selection-end-line="93" selection-end-column="29" />
-              <folding>
-                <marker date="1528296823354" expanded="true" signature="1126:1308" ph="select from sys_unicode_dict" />
-                <marker date="1528296823354" expanded="true" signature="1429:1551" ph="select from sys_unicode_dict" />
-                <marker date="1528296823354" expanded="true" signature="1641:1707" ph="delete from sys_unicode_dict... " />
-                <marker date="1528296823354" expanded="true" signature="1796:2177" ph="insert into sys_unicode_dict... " />
-                <marker date="1528296823354" expanded="true" signature="4084:5000" ph="update sys_unicode_dict... " />
-                <marker date="1528296823354" expanded="true" signature="5103:5502" ph="update sys_unicode_dict... " />
-              </folding>
+            <state relative-caret-position="176">
+              <caret line="81" column="40" lean-forward="false" selection-start-line="81" selection-start-column="40" selection-end-line="81" selection-end-column="40" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/unit/controller/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+            <state relative-caret-position="178">
+              <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebRoot/index.jsp">
+        <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/jsp/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="858">
-              <caret line="50" column="32" lean-forward="true" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <element signature="e#3247#3277#0#HTML" expanded="true" />
-                <element signature="e#3646#3676#0#HTML" expanded="true" />
-                <element signature="e#3904#4054#0#HTML" expanded="true" />
-                <element signature="e#4998#5028#0#HTML" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#3;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#4;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#5;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#6;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#14273#14279#0#HTML" expanded="true" />
-                <marker date="1528296730648" expanded="true" signature="1977:1989" ph="..." />
-                <marker date="1528296730648" expanded="true" signature="2345:2357" ph="..." />
-                <marker date="1528296730648" expanded="true" signature="4281:4304" ph="..." />
+                <marker date="1528434539465" expanded="true" signature="1977:1989" ph="..." />
+                <marker date="1528434539465" expanded="true" signature="2345:2357" ph="..." />
+                <marker date="1528434539465" expanded="true" signature="4281:4304" ph="..." />
               </folding>
             </state>
           </provider>
@@ -79,21 +62,18 @@
       <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebRoot/login.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="47" column="117" lean-forward="false" selection-start-line="47" selection-start-column="117" selection-end-line="47" selection-end-column="117" />
-              <folding>
-                <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="44">
+              <caret line="17" column="19" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginService.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LoginService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/unit/service/LoginService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+            <state relative-caret-position="257">
+              <caret line="86" column="51" lean-forward="false" selection-start-line="86" selection-start-column="51" selection-end-line="86" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -102,28 +82,10 @@
       <file leaf-file-name="SysUsersMapper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/unit/dao/SysUsersMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+            <state relative-caret-position="177">
+              <caret line="167" column="19" lean-forward="true" selection-start-line="167" selection-start-column="8" selection-end-line="167" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="docComment;method#getUserByName#0;class#SysUsersMapper#0" expanded="true" />
-                <element signature="docComment;method#getMenuByUserId#0;class#SysUsersMapper#0" expanded="true" />
-                <element signature="docComment;method#editPassword#0;class#SysUsersMapper#0" expanded="true" />
-                <element signature="docComment;method#addUser#0;class#SysUsersMapper#0" expanded="true" />
-                <element signature="docComment;method#resetPassword#0;class#SysUsersMapper#0" expanded="true" />
-                <element signature="docComment;method#reset#0;class#SysUsersMapper#0" expanded="true" />
-                <element signature="docComment;method#getUserId#0;class#SysUsersMapper#0" expanded="true" />
-                <element signature="docComment;method#addUserRole#0;class#SysUsersMapper#0" expanded="true" />
-                <element signature="docComment;method#getUserListSize#0;class#SysUsersMapper#0" expanded="true" />
-                <element signature="docComment;method#getUserList#0;class#SysUsersMapper#0" expanded="true" />
-                <element signature="docComment;method#editUser#0;class#SysUsersMapper#0" expanded="true" />
-                <element signature="docComment;method#deleteTeacherRole#0;class#SysUsersMapper#0" expanded="true" />
-                <element signature="docComment;method#deleteTeacher#0;class#SysUsersMapper#0" expanded="true" />
-                <element signature="docComment;method#addOperate#0;class#SysUsersMapper#0" expanded="true" />
-                <element signature="docComment;method#findPwdByName#0;class#SysUsersMapper#0" expanded="true" />
-                <element signature="docComment;method#getRoleIdByUserId#0;class#SysUsersMapper#0" expanded="true" />
-                <element signature="docComment;method#changePwd#0;class#SysUsersMapper#0" expanded="true" />
-                <element signature="docComment;method#getChildrenMenu#0;class#SysUsersMapper#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -132,42 +94,32 @@
       <file leaf-file-name="sysUsersMapper.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/unit/mapper/sysUsersMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="18" column="7" lean-forward="false" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+            <state relative-caret-position="2621">
+              <caret line="130" column="33" lean-forward="true" selection-start-line="130" selection-start-column="33" selection-end-line="130" selection-end-column="33" />
               <folding>
-                <marker date="1528297361326" expanded="true" signature="1410:1482" ph="select * fro... sys_users" />
-                <marker date="1528297361326" expanded="true" signature="1577:2167" ph="SELECT m.id,... sys_menu" />
-                <marker date="1528297361326" expanded="true" signature="2262:2989" ph="select m.men... s_menu" />
-                <marker date="1528297361326" expanded="true" signature="2760:2988" ph="select tt.me... menu_no" />
-                <marker date="1528297361326" expanded="true" signature="2784:2968" ph="select m.men... s_menu" />
-                <marker date="1528297361326" expanded="true" signature="2802:2917" ph="select count... s_menu" />
-                <marker date="1528297361326" expanded="true" signature="3039:3097" ph="update s_user... " />
-                <marker date="1528297361326" expanded="true" signature="3207:3282" ph="update s_user... " />
-                <marker date="1528297361326" expanded="true" signature="3388:3473" ph="update s_user... " />
-                <marker date="1528297361326" expanded="true" signature="3605:3765" ph="insert into s_user... " />
-                <marker date="1528297361326" expanded="true" signature="3846:3881" ph="select LAST_... " />
-                <marker date="1528297361326" expanded="true" signature="4022:4097" ph="select id fr... s_user" />
-                <marker date="1528297361326" expanded="true" signature="4208:4302" ph="insert into s_user_role... " />
-                <marker date="1528297361326" expanded="true" signature="4393:4502" ph="SELECT COUNT... s_user" />
-                <marker date="1528297361326" expanded="true" signature="4613:4827" ph="SELECT u.id,... s_user" />
-                <marker date="1528297361326" expanded="true" signature="4941:5032" ph="update s_user... " />
-                <marker date="1528297361326" expanded="true" signature="5127:5170" ph="delete from s_user_role... " />
-                <marker date="1528297361326" expanded="true" signature="5380:5431" ph="update s_user... " />
-                <marker date="1528297361326" expanded="true" signature="5541:5677" ph="insert into t_operate... " />
-                <marker date="1528297361326" expanded="true" signature="5792:5861" ph="select user_... s_user" />
-                <marker date="1528297361326" expanded="true" signature="5972:6059" ph="update s_user... " />
-                <marker date="1528297361326" expanded="true" signature="6148:6203" ph="select role_... s_user_role" />
+                <marker date="1528434851589" expanded="true" signature="1410:1482" ph="select * fro... sys_users" />
+                <marker date="1528434851589" expanded="true" signature="1577:2167" ph="SELECT m.id,... sys_menu" />
+                <marker date="1528434851589" expanded="true" signature="2262:2989" ph="select m.men... s_menu" />
+                <marker date="1528434851589" expanded="true" signature="2760:2988" ph="select tt.me... menu_no" />
+                <marker date="1528434851589" expanded="true" signature="2784:2968" ph="select m.men... s_menu" />
+                <marker date="1528434851589" expanded="true" signature="2802:2917" ph="select count... s_menu" />
+                <marker date="1528434851589" expanded="true" signature="3039:3097" ph="update s_user... " />
+                <marker date="1528434851589" expanded="true" signature="3207:3282" ph="update s_user... " />
+                <marker date="1528434851589" expanded="true" signature="3388:3473" ph="update s_user... " />
+                <marker date="1528434851589" expanded="true" signature="3605:3765" ph="insert into s_user... " />
+                <marker date="1528434851589" expanded="true" signature="3846:3881" ph="select LAST_... " />
+                <marker date="1528434851589" expanded="true" signature="4022:4097" ph="select id fr... s_user" />
+                <marker date="1528434851589" expanded="true" signature="4208:4302" ph="insert into s_user_role... " />
+                <marker date="1528434851589" expanded="true" signature="4393:4502" ph="SELECT COUNT... s_user" />
+                <marker date="1528434851589" expanded="true" signature="4613:4827" ph="SELECT u.id,... s_user" />
+                <marker date="1528434851589" expanded="true" signature="4941:5032" ph="update s_user... " />
+                <marker date="1528434851589" expanded="true" signature="5127:5170" ph="delete from s_user_role... " />
+                <marker date="1528434851589" expanded="true" signature="5380:5431" ph="update s_user... " />
+                <marker date="1528434851589" expanded="true" signature="5541:5677" ph="insert into t_operate... " />
+                <marker date="1528434851589" expanded="true" signature="5792:5861" ph="select user_... s_user" />
+                <marker date="1528434851589" expanded="true" signature="5972:6062" ph="update sys_users... " />
+                <marker date="1528434851589" expanded="true" signature="6151:6208" ph="select role_... sys_user_role" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SysUnicodeDictMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/unit/dao/SysUnicodeDictMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -227,9 +179,9 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="325" />
-    <option name="y" value="20" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-93" />
+    <option name="y" value="153" />
     <option name="width" value="960" />
     <option name="height" value="1040" />
   </component>
@@ -251,7 +203,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -262,20 +214,45 @@
             <path>
               <item name="payment" type="b2602c69:ProjectViewProjectNode" />
               <item name="payment" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="payment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="payment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="unit" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="payment" type="b2602c69:ProjectViewProjectNode" />
               <item name="payment" type="462c0819:PsiDirectoryNode" />
               <item name="WebRoot" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="payment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="payment" type="462c0819:PsiDirectoryNode" />
+              <item name="WebRoot" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="payment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="payment" type="462c0819:PsiDirectoryNode" />
+              <item name="WebRoot" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="payment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="payment" type="462c0819:PsiDirectoryNode" />
+              <item name="WebRoot" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -290,6 +267,9 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\PaymentSpace\payment\WebRoot\WEB-INF\jsp" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.unit.utils" />
       <recent name="com.unit.domain" />
@@ -407,7 +387,7 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="payment" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.27" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration name="payment" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.79" ALTERNATIVE_JRE_ENABLED="false">
       <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8 -Xms2048m -Xmx2048m -XX:PermSize=2048m -XX:MaxPermSize=2048m" />
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
@@ -564,39 +544,37 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4160000" />
+    <option name="totallyTimeSpent" value="4411000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="325" y="20" width="960" height="1040" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32488987" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39459458" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41222224" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1673774" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -626,11 +604,12 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14498934" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
     </layout>
@@ -688,37 +667,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/unit/controller/LoginController.java</url>
-          <line>49</line>
-          <properties />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/unit/service/LoginService.java</url>
-          <line>54</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/unit/service/LoginService.java</url>
-          <line>58</line>
-          <properties />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="3" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/unit/domain/Tree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/unit/utils/Const.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -748,18 +701,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/unit/mapper/bsShopConsumeMapper.xml">
+    <entry file="file://$PROJECT_DIR$/src/com/unit/mapper/BsShopConsumeMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1528286064394" expanded="true" signature="1215:1372" ph="select , fro... " />
-            <marker date="1528286064394" expanded="true" signature="1455:1519" ph="delete from bs_shop_consume... " />
-            <marker date="1528286064394" expanded="true" signature="1605:1977" ph="insert into bs_shop_consume... " />
-            <marker date="1528286064394" expanded="true" signature="3503:4246" ph="update bs_shop_consume... " />
-            <marker date="1528286064394" expanded="true" signature="4353:4739" ph="update bs_shop_consume... " />
-            <marker date="1528286064394" expanded="true" signature="4837:5175" ph="update bs_shop_consume... " />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -776,40 +722,27 @@
         <state relative-caret-position="154">
           <caret line="7" column="30" lean-forward="false" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="30" />
           <folding>
-            <element signature="e#1535#1536#0" expanded="true" />
-            <element signature="e#1572#1573#0" expanded="true" />
-            <element signature="e#1637#1638#0" expanded="true" />
-            <element signature="e#1689#1690#0" expanded="true" />
+            <element signature="e#1535#1536#0" expanded="false" />
+            <element signature="e#1572#1573#0" expanded="false" />
+            <element signature="e#1637#1638#0" expanded="false" />
+            <element signature="e#1689#1690#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/unit/mapper/bsRechargeInfoMapper.xml">
+    <entry file="file://$PROJECT_DIR$/src/com/unit/mapper/BsRechargeInfoMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1528286064393" expanded="true" signature="1143:1301" ph="select , fro... " />
-            <marker date="1528286064393" expanded="true" signature="1384:1449" ph="delete from bs_recharge_info... " />
-            <marker date="1528286064393" expanded="true" signature="1536:1874" ph="insert into bs_recharge_info... " />
-            <marker date="1528286064393" expanded="true" signature="3264:3920" ph="update bs_recharge_info... " />
-            <marker date="1528286064393" expanded="true" signature="4028:4373" ph="update bs_recharge_info... " />
-            <marker date="1528286064393" expanded="true" signature="4472:4767" ph="update bs_recharge_info... " />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/unit/mapper/sysMenuMapper.xml">
+    <entry file="file://$PROJECT_DIR$/src/com/unit/mapper/SysMenuMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="6" column="31" lean-forward="false" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="31" />
-          <folding>
-            <marker date="1528286064395" expanded="true" signature="995:1099" ph="select from sys_menu" />
-            <marker date="1528286064395" expanded="true" signature="1185:1243" ph="delete from sys_menu... " />
-            <marker date="1528286064395" expanded="true" signature="1323:1665" ph="insert into sys_menu... " />
-            <marker date="1528286064395" expanded="true" signature="3065:3735" ph="update sys_menu... " />
-            <marker date="1528286064395" expanded="true" signature="3827:4176" ph="update sys_menu... " />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -817,7 +750,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -840,9 +772,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -867,24 +796,6 @@
           <caret line="18" column="27" lean-forward="false" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="docComment;method#getUserByName#0;class#SysUsersMapper#0" expanded="true" />
-            <element signature="docComment;method#getMenuByUserId#0;class#SysUsersMapper#0" expanded="true" />
-            <element signature="docComment;method#editPassword#0;class#SysUsersMapper#0" expanded="true" />
-            <element signature="docComment;method#addUser#0;class#SysUsersMapper#0" expanded="true" />
-            <element signature="docComment;method#resetPassword#0;class#SysUsersMapper#0" expanded="true" />
-            <element signature="docComment;method#reset#0;class#SysUsersMapper#0" expanded="true" />
-            <element signature="docComment;method#getUserId#0;class#SysUsersMapper#0" expanded="true" />
-            <element signature="docComment;method#addUserRole#0;class#SysUsersMapper#0" expanded="true" />
-            <element signature="docComment;method#getUserListSize#0;class#SysUsersMapper#0" expanded="true" />
-            <element signature="docComment;method#getUserList#0;class#SysUsersMapper#0" expanded="true" />
-            <element signature="docComment;method#editUser#0;class#SysUsersMapper#0" expanded="true" />
-            <element signature="docComment;method#deleteTeacherRole#0;class#SysUsersMapper#0" expanded="true" />
-            <element signature="docComment;method#deleteTeacher#0;class#SysUsersMapper#0" expanded="true" />
-            <element signature="docComment;method#addOperate#0;class#SysUsersMapper#0" expanded="true" />
-            <element signature="docComment;method#findPwdByName#0;class#SysUsersMapper#0" expanded="true" />
-            <element signature="docComment;method#getRoleIdByUserId#0;class#SysUsersMapper#0" expanded="true" />
-            <element signature="docComment;method#changePwd#0;class#SysUsersMapper#0" expanded="true" />
-            <element signature="docComment;method#getChildrenMenu#0;class#SysUsersMapper#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -902,28 +813,28 @@
         <state relative-caret-position="39">
           <caret line="7" column="64" lean-forward="false" selection-start-line="7" selection-start-column="64" selection-end-line="7" selection-end-column="64" />
           <folding>
-            <marker date="1528297361326" expanded="true" signature="1410:1482" ph="select * fro... sys_users" />
-            <marker date="1528297361326" expanded="true" signature="1577:2167" ph="SELECT m.id,... sys_menu" />
-            <marker date="1528297361326" expanded="true" signature="2262:2989" ph="select m.men... s_menu" />
-            <marker date="1528297361326" expanded="true" signature="2760:2988" ph="select tt.me... menu_no" />
-            <marker date="1528297361326" expanded="true" signature="2784:2968" ph="select m.men... s_menu" />
-            <marker date="1528297361326" expanded="true" signature="2802:2917" ph="select count... s_menu" />
-            <marker date="1528297361326" expanded="true" signature="3039:3097" ph="update s_user... " />
-            <marker date="1528297361326" expanded="true" signature="3207:3282" ph="update s_user... " />
-            <marker date="1528297361326" expanded="true" signature="3388:3473" ph="update s_user... " />
-            <marker date="1528297361326" expanded="true" signature="3605:3765" ph="insert into s_user... " />
-            <marker date="1528297361326" expanded="true" signature="3846:3881" ph="select LAST_... " />
-            <marker date="1528297361326" expanded="true" signature="4022:4097" ph="select id fr... s_user" />
-            <marker date="1528297361326" expanded="true" signature="4208:4302" ph="insert into s_user_role... " />
-            <marker date="1528297361326" expanded="true" signature="4393:4502" ph="SELECT COUNT... s_user" />
-            <marker date="1528297361326" expanded="true" signature="4613:4827" ph="SELECT u.id,... s_user" />
-            <marker date="1528297361326" expanded="true" signature="4941:5032" ph="update s_user... " />
-            <marker date="1528297361326" expanded="true" signature="5127:5170" ph="delete from s_user_role... " />
-            <marker date="1528297361326" expanded="true" signature="5380:5431" ph="update s_user... " />
-            <marker date="1528297361326" expanded="true" signature="5541:5677" ph="insert into t_operate... " />
-            <marker date="1528297361326" expanded="true" signature="5792:5861" ph="select user_... s_user" />
-            <marker date="1528297361326" expanded="true" signature="5972:6059" ph="update s_user... " />
-            <marker date="1528297361326" expanded="true" signature="6148:6203" ph="select role_... s_user_role" />
+            <marker date="1528434851589" expanded="true" signature="1410:1482" ph="select * fro... sys_users" />
+            <marker date="1528434851589" expanded="true" signature="1577:2167" ph="SELECT m.id,... sys_menu" />
+            <marker date="1528434851589" expanded="true" signature="2262:2989" ph="select m.men... s_menu" />
+            <marker date="1528434851589" expanded="true" signature="2760:2988" ph="select tt.me... menu_no" />
+            <marker date="1528434851589" expanded="true" signature="2784:2968" ph="select m.men... s_menu" />
+            <marker date="1528434851589" expanded="true" signature="2802:2917" ph="select count... s_menu" />
+            <marker date="1528434851589" expanded="true" signature="3039:3097" ph="update s_user... " />
+            <marker date="1528434851589" expanded="true" signature="3207:3282" ph="update s_user... " />
+            <marker date="1528434851589" expanded="true" signature="3388:3473" ph="update s_user... " />
+            <marker date="1528434851589" expanded="true" signature="3605:3765" ph="insert into s_user... " />
+            <marker date="1528434851589" expanded="true" signature="3846:3881" ph="select LAST_... " />
+            <marker date="1528434851589" expanded="true" signature="4022:4097" ph="select id fr... s_user" />
+            <marker date="1528434851589" expanded="true" signature="4208:4302" ph="insert into s_user_role... " />
+            <marker date="1528434851589" expanded="true" signature="4393:4502" ph="SELECT COUNT... s_user" />
+            <marker date="1528434851589" expanded="true" signature="4613:4827" ph="SELECT u.id,... s_user" />
+            <marker date="1528434851589" expanded="true" signature="4941:5032" ph="update s_user... " />
+            <marker date="1528434851589" expanded="true" signature="5127:5170" ph="delete from s_user_role... " />
+            <marker date="1528434851589" expanded="true" signature="5380:5431" ph="update s_user... " />
+            <marker date="1528434851589" expanded="true" signature="5541:5677" ph="insert into t_operate... " />
+            <marker date="1528434851589" expanded="true" signature="5792:5861" ph="select user_... s_user" />
+            <marker date="1528434851589" expanded="true" signature="5972:6062" ph="update sys_users... " />
+            <marker date="1528434851589" expanded="true" signature="6151:6208" ph="select role_... sys_user_role" />
           </folding>
         </state>
       </provider>
@@ -940,7 +851,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="377">
           <caret line="934" column="12" lean-forward="true" selection-start-line="934" selection-start-column="12" selection-end-line="934" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -948,7 +858,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -988,10 +897,10 @@
         <state relative-caret-position="814">
           <caret line="59" column="5" lean-forward="true" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
           <folding>
-            <element signature="e#1535#1536#0" expanded="true" />
-            <element signature="e#1572#1573#0" expanded="true" />
-            <element signature="e#1637#1638#0" expanded="true" />
-            <element signature="e#1689#1690#0" expanded="true" />
+            <element signature="e#1535#1536#0" expanded="false" />
+            <element signature="e#1572#1573#0" expanded="false" />
+            <element signature="e#1637#1638#0" expanded="false" />
+            <element signature="e#1689#1690#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1002,24 +911,6 @@
           <caret line="187" column="12" lean-forward="false" selection-start-line="187" selection-start-column="12" selection-end-line="187" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="docComment;method#getUserByName#0;class#SysUsersMapper#0" expanded="true" />
-            <element signature="docComment;method#getMenuByUserId#0;class#SysUsersMapper#0" expanded="true" />
-            <element signature="docComment;method#editPassword#0;class#SysUsersMapper#0" expanded="true" />
-            <element signature="docComment;method#addUser#0;class#SysUsersMapper#0" expanded="true" />
-            <element signature="docComment;method#resetPassword#0;class#SysUsersMapper#0" expanded="true" />
-            <element signature="docComment;method#reset#0;class#SysUsersMapper#0" expanded="true" />
-            <element signature="docComment;method#getUserId#0;class#SysUsersMapper#0" expanded="true" />
-            <element signature="docComment;method#addUserRole#0;class#SysUsersMapper#0" expanded="true" />
-            <element signature="docComment;method#getUserListSize#0;class#SysUsersMapper#0" expanded="true" />
-            <element signature="docComment;method#getUserList#0;class#SysUsersMapper#0" expanded="true" />
-            <element signature="docComment;method#editUser#0;class#SysUsersMapper#0" expanded="true" />
-            <element signature="docComment;method#deleteTeacherRole#0;class#SysUsersMapper#0" expanded="true" />
-            <element signature="docComment;method#deleteTeacher#0;class#SysUsersMapper#0" expanded="true" />
-            <element signature="docComment;method#addOperate#0;class#SysUsersMapper#0" expanded="true" />
-            <element signature="docComment;method#findPwdByName#0;class#SysUsersMapper#0" expanded="true" />
-            <element signature="docComment;method#getRoleIdByUserId#0;class#SysUsersMapper#0" expanded="true" />
-            <element signature="docComment;method#changePwd#0;class#SysUsersMapper#0" expanded="true" />
-            <element signature="docComment;method#getChildrenMenu#0;class#SysUsersMapper#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1036,7 +927,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1045,28 +935,28 @@
         <state relative-caret-position="330">
           <caret line="15" column="41" lean-forward="true" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
           <folding>
-            <marker date="1528297361326" expanded="true" signature="1410:1482" ph="select * fro... sys_users" />
-            <marker date="1528297361326" expanded="true" signature="1577:2167" ph="SELECT m.id,... sys_menu" />
-            <marker date="1528297361326" expanded="true" signature="2262:2989" ph="select m.men... s_menu" />
-            <marker date="1528297361326" expanded="true" signature="2760:2988" ph="select tt.me... menu_no" />
-            <marker date="1528297361326" expanded="true" signature="2784:2968" ph="select m.men... s_menu" />
-            <marker date="1528297361326" expanded="true" signature="2802:2917" ph="select count... s_menu" />
-            <marker date="1528297361326" expanded="true" signature="3039:3097" ph="update s_user... " />
-            <marker date="1528297361326" expanded="true" signature="3207:3282" ph="update s_user... " />
-            <marker date="1528297361326" expanded="true" signature="3388:3473" ph="update s_user... " />
-            <marker date="1528297361326" expanded="true" signature="3605:3765" ph="insert into s_user... " />
-            <marker date="1528297361326" expanded="true" signature="3846:3881" ph="select LAST_... " />
-            <marker date="1528297361326" expanded="true" signature="4022:4097" ph="select id fr... s_user" />
-            <marker date="1528297361326" expanded="true" signature="4208:4302" ph="insert into s_user_role... " />
-            <marker date="1528297361326" expanded="true" signature="4393:4502" ph="SELECT COUNT... s_user" />
-            <marker date="1528297361326" expanded="true" signature="4613:4827" ph="SELECT u.id,... s_user" />
-            <marker date="1528297361326" expanded="true" signature="4941:5032" ph="update s_user... " />
-            <marker date="1528297361326" expanded="true" signature="5127:5170" ph="delete from s_user_role... " />
-            <marker date="1528297361326" expanded="true" signature="5380:5431" ph="update s_user... " />
-            <marker date="1528297361326" expanded="true" signature="5541:5677" ph="insert into t_operate... " />
-            <marker date="1528297361326" expanded="true" signature="5792:5861" ph="select user_... s_user" />
-            <marker date="1528297361326" expanded="true" signature="5972:6059" ph="update s_user... " />
-            <marker date="1528297361326" expanded="true" signature="6148:6203" ph="select role_... s_user_role" />
+            <marker date="1528434851589" expanded="true" signature="1410:1482" ph="select * fro... sys_users" />
+            <marker date="1528434851589" expanded="true" signature="1577:2167" ph="SELECT m.id,... sys_menu" />
+            <marker date="1528434851589" expanded="true" signature="2262:2989" ph="select m.men... s_menu" />
+            <marker date="1528434851589" expanded="true" signature="2760:2988" ph="select tt.me... menu_no" />
+            <marker date="1528434851589" expanded="true" signature="2784:2968" ph="select m.men... s_menu" />
+            <marker date="1528434851589" expanded="true" signature="2802:2917" ph="select count... s_menu" />
+            <marker date="1528434851589" expanded="true" signature="3039:3097" ph="update s_user... " />
+            <marker date="1528434851589" expanded="true" signature="3207:3282" ph="update s_user... " />
+            <marker date="1528434851589" expanded="true" signature="3388:3473" ph="update s_user... " />
+            <marker date="1528434851589" expanded="true" signature="3605:3765" ph="insert into s_user... " />
+            <marker date="1528434851589" expanded="true" signature="3846:3881" ph="select LAST_... " />
+            <marker date="1528434851589" expanded="true" signature="4022:4097" ph="select id fr... s_user" />
+            <marker date="1528434851589" expanded="true" signature="4208:4302" ph="insert into s_user_role... " />
+            <marker date="1528434851589" expanded="true" signature="4393:4502" ph="SELECT COUNT... s_user" />
+            <marker date="1528434851589" expanded="true" signature="4613:4827" ph="SELECT u.id,... s_user" />
+            <marker date="1528434851589" expanded="true" signature="4941:5032" ph="update s_user... " />
+            <marker date="1528434851589" expanded="true" signature="5127:5170" ph="delete from s_user_role... " />
+            <marker date="1528434851589" expanded="true" signature="5380:5431" ph="update s_user... " />
+            <marker date="1528434851589" expanded="true" signature="5541:5677" ph="insert into t_operate... " />
+            <marker date="1528434851589" expanded="true" signature="5792:5861" ph="select user_... s_user" />
+            <marker date="1528434851589" expanded="true" signature="5972:6062" ph="update sys_users... " />
+            <marker date="1528434851589" expanded="true" signature="6151:6208" ph="select role_... sys_user_role" />
           </folding>
         </state>
       </provider>
@@ -1081,8 +971,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2068">
-          <caret line="94" column="19" lean-forward="false" selection-start-line="94" selection-start-column="19" selection-end-line="94" selection-end-column="19" />
+        <state relative-caret-position="176">
+          <caret line="81" column="40" lean-forward="false" selection-start-line="81" selection-start-column="40" selection-end-line="81" selection-end-column="40" />
           <folding />
         </state>
       </provider>
@@ -1091,7 +981,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1135,7 +1024,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1143,14 +1031,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-9">
           <caret line="93" column="29" lean-forward="true" selection-start-line="93" selection-start-column="29" selection-end-line="93" selection-end-column="29" />
-          <folding>
-            <marker date="1528296823354" expanded="true" signature="1126:1308" ph="select from sys_unicode_dict" />
-            <marker date="1528296823354" expanded="true" signature="1429:1551" ph="select from sys_unicode_dict" />
-            <marker date="1528296823354" expanded="true" signature="1641:1707" ph="delete from sys_unicode_dict... " />
-            <marker date="1528296823354" expanded="true" signature="1796:2177" ph="insert into sys_unicode_dict... " />
-            <marker date="1528296823354" expanded="true" signature="4084:5000" ph="update sys_unicode_dict... " />
-            <marker date="1528296823354" expanded="true" signature="5103:5502" ph="update sys_unicode_dict... " />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1159,85 +1040,36 @@
         <state relative-caret-position="858">
           <caret line="50" column="32" lean-forward="true" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
           <folding>
-            <element signature="e#3247#3277#0#HTML" expanded="true" />
-            <element signature="e#3646#3676#0#HTML" expanded="true" />
-            <element signature="e#3904#4054#0#HTML" expanded="true" />
-            <element signature="e#4998#5028#0#HTML" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#4;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#5;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#6;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#14273#14279#0#HTML" expanded="true" />
-            <marker date="1528296730648" expanded="true" signature="1977:1989" ph="..." />
-            <marker date="1528296730648" expanded="true" signature="2345:2357" ph="..." />
-            <marker date="1528296730648" expanded="true" signature="4281:4304" ph="..." />
+            <element signature="e#3247#3277#0#HTML" expanded="false" />
+            <element signature="e#3646#3676#0#HTML" expanded="false" />
+            <element signature="e#3904#4054#0#HTML" expanded="false" />
+            <element signature="e#4998#5028#0#HTML" expanded="false" />
+            <element signature="e#14273#14279#0#HTML" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WebRoot/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="47" column="117" lean-forward="false" selection-start-line="47" selection-start-column="117" selection-end-line="47" selection-end-column="117" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="44">
+          <caret line="17" column="19" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/unit/dao/SysUsersMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;method#getUserByName#0;class#SysUsersMapper#0" expanded="true" />
-            <element signature="docComment;method#getMenuByUserId#0;class#SysUsersMapper#0" expanded="true" />
-            <element signature="docComment;method#editPassword#0;class#SysUsersMapper#0" expanded="true" />
-            <element signature="docComment;method#addUser#0;class#SysUsersMapper#0" expanded="true" />
-            <element signature="docComment;method#resetPassword#0;class#SysUsersMapper#0" expanded="true" />
-            <element signature="docComment;method#reset#0;class#SysUsersMapper#0" expanded="true" />
-            <element signature="docComment;method#getUserId#0;class#SysUsersMapper#0" expanded="true" />
-            <element signature="docComment;method#addUserRole#0;class#SysUsersMapper#0" expanded="true" />
-            <element signature="docComment;method#getUserListSize#0;class#SysUsersMapper#0" expanded="true" />
-            <element signature="docComment;method#getUserList#0;class#SysUsersMapper#0" expanded="true" />
-            <element signature="docComment;method#editUser#0;class#SysUsersMapper#0" expanded="true" />
-            <element signature="docComment;method#deleteTeacherRole#0;class#SysUsersMapper#0" expanded="true" />
-            <element signature="docComment;method#deleteTeacher#0;class#SysUsersMapper#0" expanded="true" />
-            <element signature="docComment;method#addOperate#0;class#SysUsersMapper#0" expanded="true" />
-            <element signature="docComment;method#findPwdByName#0;class#SysUsersMapper#0" expanded="true" />
-            <element signature="docComment;method#getRoleIdByUserId#0;class#SysUsersMapper#0" expanded="true" />
-            <element signature="docComment;method#changePwd#0;class#SysUsersMapper#0" expanded="true" />
-            <element signature="docComment;method#getChildrenMenu#0;class#SysUsersMapper#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/unit/mapper/sysRoleActionMapper.xml">
+    <entry file="file://$PROJECT_DIR$/src/com/unit/mapper/SysRoleActionMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1528286064395" expanded="true" signature="649:760" ph="select from sys_role_action" />
-            <marker date="1528286064395" expanded="true" signature="846:911" ph="delete from sys_role_action... " />
-            <marker date="1528286064395" expanded="true" signature="997:1157" ph="insert into sys_role_action... " />
-            <marker date="1528286064395" expanded="true" signature="1943:2212" ph="update sys_role_action... " />
-            <marker date="1528286064395" expanded="true" signature="2310:2463" ph="update sys_role_action... " />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/unit/mapper/sysRoleFeeMapper.xml">
+    <entry file="file://$PROJECT_DIR$/src/com/unit/mapper/SysRoleFeeMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-414">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1528286064395" expanded="true" signature="546:697" ph="insert into sys_role_fee... " />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1246,57 +1078,79 @@
         <state relative-caret-position="44">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding>
-            <element signature="e#1535#1536#0" expanded="true" />
-            <element signature="e#1572#1573#0" expanded="true" />
-            <element signature="e#1637#1638#0" expanded="true" />
-            <element signature="e#1689#1690#0" expanded="true" />
+            <element signature="e#1535#1536#0" expanded="false" />
+            <element signature="e#1572#1573#0" expanded="false" />
+            <element signature="e#1637#1638#0" expanded="false" />
+            <element signature="e#1689#1690#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/unit/service/LoginService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="86" column="51" lean-forward="false" selection-start-line="86" selection-start-column="51" selection-end-line="86" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/unit/dao/SysUsersMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="167" column="19" lean-forward="true" selection-start-line="167" selection-start-column="8" selection-end-line="167" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/unit/mapper/sysUsersMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="18" column="7" lean-forward="false" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+        <state relative-caret-position="2621">
+          <caret line="130" column="33" lean-forward="true" selection-start-line="130" selection-start-column="33" selection-end-line="130" selection-end-column="33" />
           <folding>
-            <marker date="1528297361326" expanded="true" signature="1410:1482" ph="select * fro... sys_users" />
-            <marker date="1528297361326" expanded="true" signature="1577:2167" ph="SELECT m.id,... sys_menu" />
-            <marker date="1528297361326" expanded="true" signature="2262:2989" ph="select m.men... s_menu" />
-            <marker date="1528297361326" expanded="true" signature="2760:2988" ph="select tt.me... menu_no" />
-            <marker date="1528297361326" expanded="true" signature="2784:2968" ph="select m.men... s_menu" />
-            <marker date="1528297361326" expanded="true" signature="2802:2917" ph="select count... s_menu" />
-            <marker date="1528297361326" expanded="true" signature="3039:3097" ph="update s_user... " />
-            <marker date="1528297361326" expanded="true" signature="3207:3282" ph="update s_user... " />
-            <marker date="1528297361326" expanded="true" signature="3388:3473" ph="update s_user... " />
-            <marker date="1528297361326" expanded="true" signature="3605:3765" ph="insert into s_user... " />
-            <marker date="1528297361326" expanded="true" signature="3846:3881" ph="select LAST_... " />
-            <marker date="1528297361326" expanded="true" signature="4022:4097" ph="select id fr... s_user" />
-            <marker date="1528297361326" expanded="true" signature="4208:4302" ph="insert into s_user_role... " />
-            <marker date="1528297361326" expanded="true" signature="4393:4502" ph="SELECT COUNT... s_user" />
-            <marker date="1528297361326" expanded="true" signature="4613:4827" ph="SELECT u.id,... s_user" />
-            <marker date="1528297361326" expanded="true" signature="4941:5032" ph="update s_user... " />
-            <marker date="1528297361326" expanded="true" signature="5127:5170" ph="delete from s_user_role... " />
-            <marker date="1528297361326" expanded="true" signature="5380:5431" ph="update s_user... " />
-            <marker date="1528297361326" expanded="true" signature="5541:5677" ph="insert into t_operate... " />
-            <marker date="1528297361326" expanded="true" signature="5792:5861" ph="select user_... s_user" />
-            <marker date="1528297361326" expanded="true" signature="5972:6059" ph="update s_user... " />
-            <marker date="1528297361326" expanded="true" signature="6148:6203" ph="select role_... s_user_role" />
+            <marker date="1528434851589" expanded="true" signature="1410:1482" ph="select * fro... sys_users" />
+            <marker date="1528434851589" expanded="true" signature="1577:2167" ph="SELECT m.id,... sys_menu" />
+            <marker date="1528434851589" expanded="true" signature="2262:2989" ph="select m.men... s_menu" />
+            <marker date="1528434851589" expanded="true" signature="2760:2988" ph="select tt.me... menu_no" />
+            <marker date="1528434851589" expanded="true" signature="2784:2968" ph="select m.men... s_menu" />
+            <marker date="1528434851589" expanded="true" signature="2802:2917" ph="select count... s_menu" />
+            <marker date="1528434851589" expanded="true" signature="3039:3097" ph="update s_user... " />
+            <marker date="1528434851589" expanded="true" signature="3207:3282" ph="update s_user... " />
+            <marker date="1528434851589" expanded="true" signature="3388:3473" ph="update s_user... " />
+            <marker date="1528434851589" expanded="true" signature="3605:3765" ph="insert into s_user... " />
+            <marker date="1528434851589" expanded="true" signature="3846:3881" ph="select LAST_... " />
+            <marker date="1528434851589" expanded="true" signature="4022:4097" ph="select id fr... s_user" />
+            <marker date="1528434851589" expanded="true" signature="4208:4302" ph="insert into s_user_role... " />
+            <marker date="1528434851589" expanded="true" signature="4393:4502" ph="SELECT COUNT... s_user" />
+            <marker date="1528434851589" expanded="true" signature="4613:4827" ph="SELECT u.id,... s_user" />
+            <marker date="1528434851589" expanded="true" signature="4941:5032" ph="update s_user... " />
+            <marker date="1528434851589" expanded="true" signature="5127:5170" ph="delete from s_user_role... " />
+            <marker date="1528434851589" expanded="true" signature="5380:5431" ph="update s_user... " />
+            <marker date="1528434851589" expanded="true" signature="5541:5677" ph="insert into t_operate... " />
+            <marker date="1528434851589" expanded="true" signature="5792:5861" ph="select user_... s_user" />
+            <marker date="1528434851589" expanded="true" signature="5972:6062" ph="update sys_users... " />
+            <marker date="1528434851589" expanded="true" signature="6151:6208" ph="select role_... sys_user_role" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/jsp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1528434539465" expanded="true" signature="1977:1989" ph="..." />
+            <marker date="1528434539465" expanded="true" signature="2345:2357" ph="..." />
+            <marker date="1528434539465" expanded="true" signature="4281:4304" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/unit/controller/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/unit/service/LoginService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+        <state relative-caret-position="178">
+          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
           <folding />
         </state>
       </provider>
