@@ -17,24 +17,36 @@
         <result column="role_id" jdbcType="INTEGER" property="roleId"/>
         <result column="last_login_time" jdbcType="TIMESTAMP" property="lastLoginTime"/>
     </resultMap>
-
+    <resultMap id="MenuResultMap" type="com.unit.domain.SysMenu">
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="menu_super_id" jdbcType="INTEGER" property="menuSuperId"/>
+        <result column="menu_status" jdbcType="INTEGER" property="menuStatus"/>
+        <result column="menu_sort" jdbcType="INTEGER" property="menuSort"/>
+        <result column="menu_name" jdbcType="CHAR" property="menuName"/>
+        <result column="menu_icon_url" jdbcType="CHAR" property="menuIconUrl"/>
+        <result column="menu_url" jdbcType="CHAR" property="menuUrl"/>
+        <result column="count_childrens" jdbcType="CHAR" property="countChildrens"/>
+    </resultMap>
     <select id="getUserByName" parameterType="string" resultMap="BaseResultMap">
       select * from sys_users where user_name = #{userName} AND user_satus='0'
     </select>
-    <select id="getMenuByUserId" resultType="com.unit.domain.SysMenu">
-         SELECT
-            m.id,m.menu_super_id,m.menu_status,m.menu_sort,m.menu_name,m.menu_icon_url,m.menu_url,
-         (select count(1) from sys_menu s where s.menu_super_id  !=0 and s.menu_super_id=m.id) as count_childrens
+    <select id="getMenuByUserId" resultMap="MenuResultMap">
+        SELECT
+        m.id,m.menu_super_id,m.menu_status,m.menu_sort,m.menu_name,m.menu_icon_url,m.menu_url,
+        (select count(1) from sys_menu s where s.menu_super_id !=0 and s.menu_super_id=m.id) as count_childrens
         FROM
-            sys_menu m
+        sys_menu m
         LEFT JOIN sys_action a ON a.menu_id = m.id
         LEFT JOIN sys_role_action ra ON ra.action_id = a.id
         LEFT JOIN sys_role r ON r.id = ra.role_id
         LEFT JOIN sys_user_role ur ON ur.role_id = r.id
         LEFT JOIN sys_users u ON u.id = ur.user_id
-        where  u.id=#{id}
+        WHERE u.id=#{id}
         AND m.menu_status =#{menuStatus}
-   </select>
+        <if test="menuSuperId !=null ">
+            AND m.menu_super_id = #{menuSuperId}
+        </if>
+    </select>
 
     <select id="getChildrenMenu" resultType="com.unit.domain.SysMenu">
 
@@ -136,10 +148,6 @@
     <select id="getRoleIdByUserId" resultType="int">
     select role_id from sys_user_role where user_id=#{userId}
   </select>
-
-
-
-
 
 
 </mapper>

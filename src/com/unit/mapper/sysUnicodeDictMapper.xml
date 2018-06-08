@@ -14,7 +14,7 @@
     <sql id="Base_Column_List">
     id, code_class, code_name, code_desc, code_value, eff_date, exp_date, create_time
   </sql>
-    <select id="selectByCodeClassAndCodeName" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    <select id="selectByCodeClassAndCodeName" parameterType="com.unit.domain.SysUnicodeDict" resultMap="BaseResultMap">
         select
         <include refid="Base_Column_List"/>
         from sys_unicode_dict

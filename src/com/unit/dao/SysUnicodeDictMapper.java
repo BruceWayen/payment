@@ -12,7 +12,7 @@ public interface SysUnicodeDictMapper
 
     SysUnicodeDict selectByPrimaryKey(Integer id);
 
-    SysUnicodeDict selectByCodeClassAndCodeName(String codeClass,String codeName);
+    SysUnicodeDict selectByCodeClassAndCodeName(SysUnicodeDict sysUnicodeDict);
 
     int updateByPrimaryKeySelective(SysUnicodeDict record);
 

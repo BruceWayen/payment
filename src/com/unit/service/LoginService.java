@@ -10,8 +10,10 @@
  */
 package com.unit.service;
 
+import com.unit.dao.SysUnicodeDictMapper;
 import com.unit.dao.SysUsersMapper;
 import com.unit.domain.SysMenu;
+import com.unit.domain.SysUnicodeDict;
 import com.unit.domain.SysUsers;
 import com.unit.domain.Tree;
 import com.unit.utils.Const;
@@ -40,6 +42,9 @@ public class LoginService
      */
     @Autowired
     private SysUsersMapper sysUsersMapper;
+
+    @Autowired
+    private SysUnicodeDictMapper sysUnicodeDictMapper;
 
     /**
      * 登录匹配 根据账号查询相关信息并返回结果
@@ -85,26 +90,13 @@ public class LoginService
         List<SysMenu> menuList = new ArrayList<SysMenu>();
         SysUsers user = (SysUsers)session.getAttribute(Const.SESSION_USER);
         int roleId = sysUsersMapper.getRoleIdByUserId(user.getId());
+        SysUnicodeDict sysUnicodeDict = new SysUnicodeDict();
+        sysUnicodeDict.setCodeClass("menu_status");
+        sysUnicodeDict.setCodeName("normal");
+        sysUnicodeDict = sysUnicodeDictMapper.selectByCodeClassAndCodeName(sysUnicodeDict);
         session.setAttribute("roleId", roleId);
-        if (parentId == 0)
-        {
-            menuList = sysUsersMapper.getMenuByUserId(user.getId(), roleId);
-        }
-        else if (parentId > 0)
-        {
-            String pid = null;
-            if (parentId < 10)
-            {
-                pid = "0" + Integer.toString(parentId);
-            }
-            else
-            {
-                pid = Integer.toString(parentId);
-            }
-            menuList = sysUsersMapper.getChildrenMenu(user.getId(), roleId, pid);
-        }
+        menuList = sysUsersMapper.getMenuByUserId(user.getId(), sysUnicodeDict.getCodeValue(), parentId);
         List<Tree> treeList = new ArrayList<Tree>();
-
         for (int i = 0; i < menuList.size(); i++)
         {
             SysMenu menu = menuList.get(i);
@@ -114,7 +106,7 @@ public class LoginService
             node.setText(menu.getMenuName());
             node.setIconCls(menu.getMenuIconUrl());
             node.setUrl(menu.getMenuUrl());
-            if (!"00".equals(menu.getMenuSuperId()))
+            if (!"0".equals(menu.getMenuSuperId()))
             { // 有父节点
                 node.setPid(menu.getMenuSuperId());
             }
@@ -122,9 +114,9 @@ public class LoginService
             { // 有子节点
                 node.setState("closed");
             }
-
             treeList.add(node);
         }
         return treeList;
     }
+
 }

@@ -32,6 +32,16 @@ public interface SysUsersMapper
         int menuStatus);
 
     /**
+     *@DESCRIPTION 查询一级菜单
+     *@AUTHOR SongHongWei
+     *@TIME 2018/6/8-16:17
+     *@CLASS_NAME SysUsersMapper
+     **/
+    List<SysMenu> getMenuByUserId(@Param("id")
+        long id, @Param("menuStatus")
+        int menuStatus, @Param("menuSuperId") int menuSuperId);
+
+    /**
      * <一句话功能简述> <功能详细描述>
      *
      * @param password 用户修改的密码
