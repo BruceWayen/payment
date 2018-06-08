@@ -129,12 +129,12 @@
 
     <!-- 根据账号修改新的密码 -->
     <update id="changePwd" parameterType="com.unit.domain.SysUsers">
-    update s_user set user_password = #{user_password} where user_account = #{user_account}
+    update sys_users set user_password = #{user_password} where user_account = #{user_account}
   </update>
 
     <!--获取权限ID-->
     <select id="getRoleIdByUserId" resultType="int">
-    select role_id from s_user_role where user_id=#{userId}
+    select role_id from sys_user_role where user_id=#{userId}
   </select>
 
 
