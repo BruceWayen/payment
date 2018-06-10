@@ -106,6 +106,7 @@ public class LoginService
             node.setText(menu.getMenuName());
             node.setIconCls(menu.getMenuIconUrl());
             node.setUrl(menu.getMenuUrl());
+            node.setAttributes(menu.getMenuUrl());
             if (!"0".equals(menu.getMenuSuperId()))
             { // 有父节点
                 node.setPid(menu.getMenuSuperId());

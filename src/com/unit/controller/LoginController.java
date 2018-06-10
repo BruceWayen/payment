@@ -54,7 +54,7 @@ public class LoginController
             //  List<Tree> treeList = userService.getMenu(session, parentId);
             // session.setAttribute("tree", treeList);
             session.setAttribute("user", user);
-            modelAndView.setViewName("test");
+            modelAndView.setViewName("index");
         }
         else
         {
@@ -125,22 +125,5 @@ public class LoginController
             throw new Exception("处理失败");
         }
         return childrenTreeList;
-    }
-
-    @RequestMapping("/index.do")
-    @ResponseBody
-    public ModelAndView index(HttpSession session)
-    {
-        ModelAndView model = new ModelAndView();
-        SysUsers user = (SysUsers)session.getAttribute("USER");
-        if (user != null)
-        {
-            model.setViewName("new_index");
-        }
-        else
-        {
-            model.setViewName("login");
-        }
-        return model;
     }
 }

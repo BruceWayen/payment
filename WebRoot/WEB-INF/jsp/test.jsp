@@ -70,6 +70,7 @@
                 <input id="layout_west_sc" class="easyui-searchbox" data-options="prompt:'请输入你需要的菜单'"
                        style="width: 180px; height: 25px;">
     </div>
+
 </div>
 </body>
 </html>

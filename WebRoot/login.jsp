@@ -45,7 +45,7 @@
                 <ul>
                     <li><span>用户名：</span><input name="username" type="text" id="username" placeholder="登录名"  value="admin"
                                                 class="SearchKeyword"></li>
-                    <li><span>密码：</span><input type="password" name="password" id="password" placeholder="密码" value=""
+                    <li><span>密码：</span><input type="password" name="password" id="password" placeholder="密码" value="123456"
                                                class="SearchKeyword2"></li>
                     <li>
                         <button class="tijiao" id="submit_btn">登录</button>
