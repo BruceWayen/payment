@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50560
 File Encoding         : 65001
 
-Date: 2018-06-06 23:05:00
+Date: 2018-06-11 22:43:08
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -105,14 +105,19 @@ CREATE TABLE `sys_action` (
   `action_url` char(255) DEFAULT NULL COMMENT '动作的URL',
   `action_sort` int(11) DEFAULT NULL COMMENT '排序标识',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COMMENT='权限表，备用';
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8 COMMENT='权限表，备用';
 
 -- ----------------------------
 -- Records of sys_action
 -- ----------------------------
-INSERT INTO `sys_action` VALUES ('1', '1', '用户管理', '123', '0');
-INSERT INTO `sys_action` VALUES ('2', '2', '消费管理', '123', null);
-INSERT INTO `sys_action` VALUES ('3', '3', '系统管理', '1231', '1');
+INSERT INTO `sys_action` VALUES ('1', '1', '系统管理', '123132', '0');
+INSERT INTO `sys_action` VALUES ('2', '2', '消费管理', '123132', null);
+INSERT INTO `sys_action` VALUES ('3', '3', '系统管理', '123132', '1');
+INSERT INTO `sys_action` VALUES ('4', '4', '菜单导航', '123132', null);
+INSERT INTO `sys_action` VALUES ('5', '5', '角色管理', '123132', null);
+INSERT INTO `sys_action` VALUES ('6', '6', '数据字典', '123132', null);
+INSERT INTO `sys_action` VALUES ('7', '7', '系统参数', '123132', null);
+INSERT INTO `sys_action` VALUES ('8', '8', '操作日志', '123132', null);
 
 -- ----------------------------
 -- Table structure for sys_contract_info
@@ -181,14 +186,19 @@ CREATE TABLE `sys_menu` (
   `menu_icon_url` char(100) DEFAULT NULL COMMENT '菜单图片路径',
   `menu_url` char(100) NOT NULL COMMENT '菜单执行url',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COMMENT='系统菜单表';
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8 COMMENT='系统菜单表';
 
 -- ----------------------------
 -- Records of sys_menu
 -- ----------------------------
-INSERT INTO `sys_menu` VALUES ('00000000001', '0', '0', '0', '用户管理', null, '12');
-INSERT INTO `sys_menu` VALUES ('00000000002', '0', '0', '0', '消费管理', null, '12');
-INSERT INTO `sys_menu` VALUES ('00000000003', '0', '0', '0', '系统管理', null, '12');
+INSERT INTO `sys_menu` VALUES ('00000000001', '0', '0', '0', '系统管理', 'icon-chart-organisation', '1');
+INSERT INTO `sys_menu` VALUES ('00000000002', '0', '0', '0', '消费管理', 'icon-users', '2');
+INSERT INTO `sys_menu` VALUES ('00000000003', '2', '0', '0', '系统管理', 'icon-user-group', '3');
+INSERT INTO `sys_menu` VALUES ('00000000004', '1', '0', '0', '菜单导航', 'icon-book', '4');
+INSERT INTO `sys_menu` VALUES ('00000000005', '1', '0', '0', '角色管理', 'icon-application-osx-error', 'user/user_list.do');
+INSERT INTO `sys_menu` VALUES ('00000000006', '1', '0', '0', '数据字典', 'icon-application-osx-error', '7');
+INSERT INTO `sys_menu` VALUES ('00000000007', '1', '0', '0', '系统参数', 'icon-cog', '6');
+INSERT INTO `sys_menu` VALUES ('00000000008', '1', '0', '0', '操作日志', 'icon-application-osx-error', '8');
 
 -- ----------------------------
 -- Table structure for sys_operate
@@ -233,7 +243,7 @@ CREATE TABLE `sys_role_action` (
   `action_id` int(11) DEFAULT NULL COMMENT '动作标识',
   `role_id` int(11) unsigned zerofill DEFAULT NULL COMMENT '角色标识',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COMMENT='系统角色权限关系表';
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8 COMMENT='系统角色权限关系表';
 
 -- ----------------------------
 -- Records of sys_role_action
@@ -241,6 +251,11 @@ CREATE TABLE `sys_role_action` (
 INSERT INTO `sys_role_action` VALUES ('1', '1', '00000000001');
 INSERT INTO `sys_role_action` VALUES ('2', '2', '00000000001');
 INSERT INTO `sys_role_action` VALUES ('3', '3', '00000000001');
+INSERT INTO `sys_role_action` VALUES ('4', '4', '00000000001');
+INSERT INTO `sys_role_action` VALUES ('5', '5', '00000000001');
+INSERT INTO `sys_role_action` VALUES ('6', '6', '00000000001');
+INSERT INTO `sys_role_action` VALUES ('7', '7', '00000000001');
+INSERT INTO `sys_role_action` VALUES ('8', '8', '00000000001');
 
 -- ----------------------------
 -- Table structure for sys_role_fee
@@ -310,9 +325,9 @@ INSERT INTO `sys_unicode_dict` VALUES ('00000000012', 'menu_status', 'abnormal',
 -- ----------------------------
 DROP TABLE IF EXISTS `sys_users`;
 CREATE TABLE `sys_users` (
-  `id` bigint(14) unsigned zerofill NOT NULL AUTO_INCREMENT COMMENT '用户标识',
+  `id` bigint(14) NOT NULL AUTO_INCREMENT COMMENT '用户标识',
   `contract_no` bigint(50) NOT NULL COMMENT '账户标识',
-  `user_name` char(5) NOT NULL COMMENT '用户姓名',
+  `user_name` char(16) NOT NULL COMMENT '用户姓名',
   `sex` int(1) DEFAULT NULL COMMENT '性别',
   `login_no` char(9) NOT NULL COMMENT '工号',
   `pass_word` char(255) NOT NULL COMMENT '密码',
@@ -325,12 +340,13 @@ CREATE TABLE `sys_users` (
   `role_id` int(11) NOT NULL COMMENT '角色标识',
   `last_login_time` datetime DEFAULT NULL COMMENT '最后一次登录时间',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COMMENT='用户信息表';
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COMMENT='用户信息表';
 
 -- ----------------------------
 -- Records of sys_users
 -- ----------------------------
-INSERT INTO `sys_users` VALUES ('00000000000001', '0', 'admin', '1', 'system', '4QrcOUm6Wau+VuBX8g+IPg==', '123456', '1', '18130091249', '0', '2018-06-06 17:28:45', '1', '1', '2018-06-06 17:29:06');
+INSERT INTO `sys_users` VALUES ('1', '0', 'admin', '1', 'system', '4QrcOUm6Wau+VuBX8g+IPg==', '123456', '1', '18130091249', '0', '2018-06-06 17:28:45', '1', '1', '2018-06-06 17:29:06');
+INSERT INTO `sys_users` VALUES ('2', '1', 'songhw', '1', 'system', '4QrcOUm6Wau+VuBX8g+IPg==', '340122199212131815', '1', '18130091249', '0', '2018-06-11 21:14:53', '1', '1', '2018-06-11 21:14:56');
 
 -- ----------------------------
 -- Table structure for sys_user_role
@@ -338,15 +354,16 @@ INSERT INTO `sys_users` VALUES ('00000000000001', '0', 'admin', '1', 'system', '
 DROP TABLE IF EXISTS `sys_user_role`;
 CREATE TABLE `sys_user_role` (
   `id` int(11) unsigned zerofill NOT NULL AUTO_INCREMENT COMMENT '主键标识',
-  `user_id` bigint(14) unsigned zerofill NOT NULL COMMENT '用户标识',
+  `user_id` bigint(14) NOT NULL COMMENT '用户标识',
   `role_id` int(11) NOT NULL COMMENT '角色标识',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COMMENT='用户角色关系表';
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COMMENT='用户角色关系表';
 
 -- ----------------------------
 -- Records of sys_user_role
 -- ----------------------------
-INSERT INTO `sys_user_role` VALUES ('00000000001', '00000000000001', '1');
+INSERT INTO `sys_user_role` VALUES ('00000000001', '1', '1');
+INSERT INTO `sys_user_role` VALUES ('00000000002', '2', '1');
 
 -- ----------------------------
 -- Function structure for currval

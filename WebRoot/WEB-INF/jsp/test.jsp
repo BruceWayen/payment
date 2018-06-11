@@ -62,6 +62,9 @@
         });
     });
 
+
+
+
 </script>
 <body>
 <div id="layout_west_accordion" class="easyui-accordion" data-options="fit:true,border:false,nimate:true,lines:true">

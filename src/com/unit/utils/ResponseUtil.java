@@ -1,4 +1,4 @@
-package main.java.com.unit.utils;
+package com.unit.utils;
 
 /**
  * @DESCRIPTION ${END}
@@ -7,8 +7,11 @@ package main.java.com.unit.utils;
  * @PACKAGE_NAME main.java.com.unit.payment.utils
  **/
 
+import org.springframework.web.servlet.ModelAndView;
+
 import javax.servlet.http.HttpServletResponse;
 import java.io.PrintWriter;
+import java.util.Map;
 
 /***
  * 主要用于返回json数据
@@ -24,5 +27,10 @@ public class ResponseUtil
         out.println(object);
         out.flush();
         out.close();
+    }
+
+    public static  ModelAndView forword(String viewName, Map<String, Object> content)
+    {
+        return new ModelAndView(viewName, content);
     }
 }

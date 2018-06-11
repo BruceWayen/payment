@@ -103,10 +103,12 @@
   </select>
 
     <!-- 查询管理员信息 -->
-    <select id="getUserList" resultType="com.unit.domain.SysUsers">
-        SELECT u.id,u.user_account,u.user_name,u.phone_no FROM s_user u JOIN s_user_role r ON u.id=r.user_id WHERE
-        r.role_id=2 and u.is_disenable = '0'
-        <if test="page.page>0">limit #{page.start},#{page.end}</if>
+    <select id="getUserList" resultMap="BaseResultMap">
+        SELECT
+            u.*
+        FROM
+            sys_users u
+        JOIN sys_user_role r ON u.id = r.user_id
     </select>
 
     <!-- 修改管理员信息 -->

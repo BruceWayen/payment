@@ -19,12 +19,12 @@
     <script type="text/javascript" src="<%=basePath%>easyui/1.3.4/locale/easyui-lang-zh_CN.js"></script>
 </head>
 <script type="text/javascript">
-    $(function(){
+    $(function () {
         jQuery("#layout_west_accordion").accordion({ //初始化accordion
-            fillSpace:true,
-            fit:true,
-            border:false,
-            animate:false
+            fillSpace: true,
+            fit: true,
+            border: false,
+            animate: false
         });
         $.post("${pageContext.request.contextPath}/getMenu.do", //获取第一层目录
             function (data) {
@@ -35,26 +35,25 @@
                     var id = e.id;
                     $('#layout_west_accordion').accordion('add', {
                         title: e.text,
-                        content: "<ul id='tree"+id+"' ></ul>",
+                        content: "<ul id='tree" + id + "' ></ul>",
                         selected: true,
-                        iconCls:e.iconCls//e.Icon
+                        iconCls: e.iconCls//e.Icon
                     });
                     $.parser.parse();
-                    $.post("${pageContext.request.contextPath}/children.do?treeId="+id,  function(data) {//循环创建树的项
-                        console.log("data===="+data)
+                    $.post("${pageContext.request.contextPath}/children.do?treeId=" + id, function (data) {//循环创建树的项
                         $("#tree" + id).tree({
                             data: data,
-                            onBeforeExpand:function(node,param){
+                            onBeforeExpand: function (node, param) {
                                 $("#tree" + id).tree('options').url = "/@info/Home/GetTreeByEasyui?id=" + node.id;
                             },
-                            onClick : function(node){
-                                if (node.state == 'closed'){
+                            onClick: function (node) {
+                                if (node.state == 'closed') {
                                     $(this).tree('expand', node.target);
-                                }else if (node.state == 'open'){
+                                } else if (node.state == 'open') {
                                     $(this).tree('collapse', node.target);
-                                }else{
+                                } else {
                                     var tabTitle = node.text;
-                                    var url = "../../" + node.attributes;
+                                    var url = "<%=basePath%>"+ node.attributes;
                                     var icon = node.iconCls;
                                     addTab(tabTitle, url);
                                 }
@@ -64,13 +63,26 @@
                 });
             }, "json");
     });
-    function addTab(title,url){
-        var content = '<iframe scrolling="auto" frameborder="0"  src="<%=basePath%>temp/layout-1.jsp" style="width:100%;height:100%;"></iframe>';
-            $('#wu-tabs').tabs('add',{
-                title:title,
-                content:content,
-                closable:true
-            });
+
+    function addTab(title, url) {
+        //判断选项卡是否重复打开
+        if ($('#wu-tabs').tabs('exists', title)) {
+            $('#wu-tabs').tabs('select', title);//选中并刷新
+        } else {
+            var content = createFrame(url); //创建Frame
+            $("#wu-tabs").tabs("add", {
+                title: title,
+                content: content,
+                closable: true
+
+            })
+        }
+    }
+    //创建Frame
+    function createFrame(url) {
+        var tabHeight = $("#tabs").height() - 35;
+        var s = '<iframe scrolling="auto" frameborder="0"  src="' + url + '" style="width:100%; height:' + tabHeight + 'px;"></iframe>';
+        return s;
     }
 
 </script>
@@ -81,8 +93,8 @@
         <h1>支付系统后台管理</h1>
     </div>
     <div class="wu-header-right">
-        <p><strong class="easyui-tooltip" title="">user.phoneNo</strong>，欢迎您！</p>
-        <p><a href="#">网站首页</a>|<a href="#">支持论坛</a>|<a href="#">帮助中心</a>|<a href="#">安全退出</a></p>
+        <p><strong class="easyui-tooltip" title="">${user.phoneNo}</strong>，欢迎您！</p>
+        <p><a href="<%=basePath%>login.do">网站首页</a>|<a href="#">支持论坛</a>|<a href="#">帮助中心</a>|<a href="#">安全退出</a></p>
     </div>
 </div>
 <!-- end of header -->

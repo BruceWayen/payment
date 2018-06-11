@@ -47,7 +47,10 @@ public class LoginController
     {
         Integer parentId = 0;
         ModelAndView modelAndView = new ModelAndView();
-        SysUsers user = userService.checkLogin(request);
+        SysUsers user = null;
+        user = (SysUsers)session.getAttribute("user");
+        if (user == null)
+            user = userService.checkLogin(request);
         if (user != null)
         {
             request.getSession().setAttribute(Const.SESSION_USER, user);
