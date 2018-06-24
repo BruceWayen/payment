@@ -185,4 +185,17 @@ public class UserService
         }
         return msg;
     }
+
+    public void updateUser(SysUsers users)
+        throws Exception
+    {
+        try
+        {
+            sysUsersMapper.updateByPrimaryKeySelective(users);
+        }
+        catch (Exception e)
+        {
+            throw new Exception("修改用户出错");
+        }
+    }
 }

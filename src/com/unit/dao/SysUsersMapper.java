@@ -77,4 +77,6 @@ public interface SysUsersMapper
     int deleteById(@Param("userId") String id);
 
     List<SysUsers> searchUser(SysUsers user);
+
+    int updateByPrimaryKeySelective(SysUsers user);
 }

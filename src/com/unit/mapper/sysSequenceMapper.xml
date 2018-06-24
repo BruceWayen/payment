@@ -90,6 +90,8 @@
     set current_val = #{currentVal}
    where seq_name = #{seqName}
   </update>
-
+    <select id="queryTime" resultType="java.lang.String">
+    SELECT SYSDATE()
+    </select>
 
 </mapper>

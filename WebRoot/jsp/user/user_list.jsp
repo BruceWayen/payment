@@ -15,7 +15,7 @@
          *  载入数据
          */
         loadData("all_user.do");
-        allRole("sRoleId");
+       // allRole("sRoleId",0);
     })
 
 
@@ -27,7 +27,7 @@
             <div class="wu-toolbar-button">
                 <a href="#" class="easyui-linkbutton" iconCls="icon-add" onclick="openAdd()" plain="true">添加</a>
                 <a href="#" class="easyui-linkbutton" iconCls="icon-upload" onclick="" plain="true">批量添加</a>
-                <a href="#" class="easyui-linkbutton" iconCls="icon-edit" onclick="" plain="true">修改</a>
+                <a href="#" class="easyui-linkbutton" iconCls="icon-edit" onclick="openEdit()" plain="true">修改</a>
                 <a href="#" class="easyui-linkbutton" iconCls="icon-remove" onclick="remove()" plain="true">删除</a>
                 <a href="#" class="easyui-linkbutton" iconCls="icon-reload" onclick="reload()" plain="true">刷新</a>
                 <label>注册时间：</label><input class="easyui-datetimebox" id="sRegisterTime" style="width:100px">

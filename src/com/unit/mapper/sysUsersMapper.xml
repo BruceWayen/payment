@@ -21,6 +21,7 @@
         <result column="register_type" jdbcType="INTEGER" property="registerType"/>
         <result column="role_id" jdbcType="INTEGER" property="roleId"/>
         <result column="last_login_time" jdbcType="TIMESTAMP" property="lastLoginTime"/>
+        <result column="login_time" jdbcType="TIMESTAMP" property="loginTime"/>
     </resultMap>
     <resultMap id="MenuResultMap" type="com.unit.domain.SysMenu">
         <id column="id" jdbcType="INTEGER" property="id"/>
@@ -70,14 +71,16 @@
     <!-- 查询用户信息 -->
     <select id="getUserList" resultMap="BaseResultMap">
        SELECT
-        u.id,
-        u.sex,
-        u.id_iccid,
-        u.contract_no,
-        u.user_name,
-        u.login_no,
-        u.phone_no,
-        u.register_time,
+        u.*,
+--         u.sex,
+--         u.id_iccid,
+--         u.contract_no,
+--         u.user_name,
+--         u.login_no,
+--         u.phone_no,
+--         u.dept_id,
+--         u.role_id,
+--         u.register_time,
         d.dept_name AS dept_name,
         r.role_name,
         c.system_fee+c.user_fee AS total_fee,
@@ -197,14 +200,16 @@
 
     <select id="searchUser" parameterType="com.unit.domain.SysUsers" resultMap="BaseResultMap">
         SELECT
-        u.id,
-        u.sex,
-        u.id_iccid,
-        u.contract_no,
-        u.user_name,
-        u.login_no,
-        u.phone_no,
-        u.register_time,
+        u.*,
+        -- u.sex,
+        -- u.id_iccid,
+        -- u.contract_no,
+        -- u.user_name,
+        -- u.login_no,
+        -- u.phone_no,
+        -- u.dept_id,
+        -- u.role_id,
+        -- u.register_time,
         d.dept_name AS dept_name,
         r.role_name,
         c.system_fee+c.user_fee AS total_fee,
@@ -227,4 +232,52 @@
             AND u.phone_no=#{phoneNo}
         </if>
     </select>
+    <update id="updateByPrimaryKeySelective" parameterType="com.unit.domain.SysUsers">
+        update sys_users
+        <set>
+            <if test="contractNo != null">
+                contract_no = #{contractNo,jdbcType=INTEGER},
+            </if>
+            <if test="userName != null">
+                user_name = #{userName,jdbcType=CHAR},
+            </if>
+            <if test="sex != null">
+                sex = #{sex,jdbcType=INTEGER},
+            </if>
+            <if test="loginNo != null">
+                login_no = #{loginNo,jdbcType=CHAR},
+            </if>
+            <if test="passWord != null">
+                pass_word = #{passWord,jdbcType=CHAR},
+            </if>
+            <if test="idIccid != null">
+                id_iccid = #{idIccid,jdbcType=CHAR},
+            </if>
+            <if test="deptId != null">
+                dept_id = #{deptId,jdbcType=INTEGER},
+            </if>
+            <if test="phoneNo != null">
+                phone_no = #{phoneNo,jdbcType=CHAR},
+            </if>
+            <if test="userSatus != null">
+                user_satus = #{userSatus,jdbcType=INTEGER},
+            </if>
+            <if test="registerTime != null">
+                register_time = #{registerTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="registerType != null">
+                register_type = #{registerType,jdbcType=INTEGER},
+            </if>
+            <if test="roleId != null">
+                role_id = #{roleId,jdbcType=INTEGER},
+            </if>
+            <if test="lastLoginTime != null">
+                last_login_time = #{lastLoginTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="loginTime != null">
+                login_time = #{loginTime,jdbcType=TIMESTAMP},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
 </mapper>

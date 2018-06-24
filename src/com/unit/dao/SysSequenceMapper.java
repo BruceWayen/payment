@@ -20,4 +20,6 @@ public interface SysSequenceMapper
     int updateByPrimaryKey(SysSequence record);
 
     int updateBySeqName(SysSequence record);
+
+    String queryTime();
 }

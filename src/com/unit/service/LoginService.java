@@ -10,6 +10,7 @@
  */
 package com.unit.service;
 
+import com.unit.dao.SysSequenceMapper;
 import com.unit.dao.SysUnicodeDictMapper;
 import com.unit.dao.SysUsersMapper;
 import com.unit.domain.SysMenu;
@@ -46,6 +47,9 @@ public class LoginService
     @Autowired
     private SysUnicodeDictMapper sysUnicodeDictMapper;
 
+    @Autowired
+    private SysSequenceMapper sysSequenceMapper;
+
     /**
      * 登录匹配 根据账号查询相关信息并返回结果
      *
@@ -63,6 +67,8 @@ public class LoginService
             SysUsers user = sysUsersMapper.getUserByName(userAccount);
             if (user != null && password.equals(user.getPassWord()))
             {
+
+                updateLoginTime(user);
                 return user;
             }
             else
@@ -73,6 +79,24 @@ public class LoginService
         else
         {
             return null;
+        }
+    }
+
+    public void updateLoginTime(SysUsers user)
+    {
+        String time = sysSequenceMapper.queryTime();
+        if (user.getLoginTime() != null)
+        {
+            user.setLastLoginTime(user.getLoginTime());
+        }
+        user.setLoginTime(time);
+        try
+        {
+            sysUsersMapper.updateByPrimaryKeySelective(user);//更新出错不影响登录
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
         }
     }
 

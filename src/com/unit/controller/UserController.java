@@ -52,7 +52,6 @@ public class UserController
      *@CLASS_NAME UserController
      **/
     @RequestMapping("/user_list.do")
-    @ResponseBody
     public ModelAndView userList(String ids, HttpServletResponse res)
         throws Exception
     {
@@ -114,6 +113,36 @@ public class UserController
         {
             j.setMsg(e.getMessage());
             throw new Exception("删除用户失败,事务回滚!!!");
+        }
+        return j;
+    }
+
+    /**
+     *@DESCRIPTION 修改用户信息
+     *@AUTHOR SongHongWei
+     *@TIME 2018/6/24-22:49
+     *@CLASS_NAME UserController
+     **/
+    @ResponseBody
+    @RequestMapping("edit_user")
+    public Json editUser(HttpServletRequest request)
+        throws Exception
+    {
+        Json j = new Json();
+        SysUsers users = new SysUsers();
+        users = RequestUtil.request2Bean(request, SysUsers.class);
+        //log.debug("穿过来的用户ID为：" + user.getId());
+        try
+        {
+            userService.updateUser(users);
+            j.setSuccess(true);
+            j.setMsg("编辑成功！");
+            j.setObj(users);
+        }
+        catch (Exception e)
+        {
+            j.setMsg(e.getMessage());
+            throw new Exception("修改用户失败,事务回滚!!!");
         }
         return j;
     }

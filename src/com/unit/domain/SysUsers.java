@@ -29,6 +29,7 @@ public class SysUsers
     private String roleId;
 
     private String lastLoginTime;
+    private String loginTime;
 
     private String roleName;
 
@@ -227,5 +228,15 @@ public class SysUsers
     public void setTotalFee(String totalFee)
     {
         this.totalFee = totalFee;
+    }
+
+    public String getLoginTime()
+    {
+        return loginTime;
+    }
+
+    public void setLoginTime(String loginTime)
+    {
+        this.loginTime = loginTime;
     }
 }

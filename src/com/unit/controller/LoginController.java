@@ -54,6 +54,7 @@ public class LoginController
         if (user != null)
         {
             request.getSession().setAttribute(Const.SESSION_USER, user);
+            userService.updateLoginTime(user);
             //  List<Tree> treeList = userService.getMenu(session, parentId);
             // session.setAttribute("tree", treeList);
             session.setAttribute("user", user);
