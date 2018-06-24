@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50560
 File Encoding         : 65001
 
-Date: 2018-06-24 21:40:50
+Date: 2018-06-24 23:11:31
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -349,6 +349,7 @@ CREATE TABLE `sys_users` (
   `register_time` datetime DEFAULT NULL COMMENT '注册时间',
   `register_type` int(11) NOT NULL COMMENT '注册方式',
   `role_id` int(11) NOT NULL COMMENT '角色标识',
+  `login_time` datetime DEFAULT NULL COMMENT '本次登录时间',
   `last_login_time` datetime DEFAULT NULL COMMENT '最后一次登录时间',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8 COMMENT='用户信息表';
@@ -356,19 +357,19 @@ CREATE TABLE `sys_users` (
 -- ----------------------------
 -- Records of sys_users
 -- ----------------------------
-INSERT INTO `sys_users` VALUES ('1', '0', 'admin', '1', 'system', '4QrcOUm6Wau+VuBX8g+IPg==', '123456', '1', '18130091249', '0', '2018-06-06 17:28:45', '1', '1', '2018-06-06 17:29:06');
-INSERT INTO `sys_users` VALUES ('5', '1', 'songhw', '0', 'system', '4QrcOUm6Wau+VuBX8g+IPg==', '340122199212131815', '1', '18130091249', '0', '2018-06-11 21:14:53', '1', '1', '2018-06-11 21:14:56');
-INSERT INTO `sys_users` VALUES ('7', '1', 'songhw', '1', 'system', '4QrcOUm6Wau+VuBX8g+IPg==', '340122199212131815', '3', '18130091249', '0', '2018-06-11 21:14:53', '1', '1', '2018-06-11 21:14:56');
-INSERT INTO `sys_users` VALUES ('10', '1', 'songhw', '0', 'system', '4QrcOUm6Wau+VuBX8g+IPg==', '340122199212131815', '1', '18130091249', '0', '2018-06-11 21:14:53', '1', '1', '2018-06-11 21:14:56');
-INSERT INTO `sys_users` VALUES ('12', '1', 'songhw', '0', 'system', '4QrcOUm6Wau+VuBX8g+IPg==', '340122199212131815', '1', '18130091249', '0', '2018-06-11 21:14:53', '1', '1', '2018-06-11 21:14:56');
-INSERT INTO `sys_users` VALUES ('13', '10000000004', '123123', '0', 'Anull', 'Qpf0SxOVUjUkWySXOZ16kw==', '123123123123123', '1', '12312312312', '0', '2018-06-24 16:56:38', '1', '1', null);
-INSERT INTO `sys_users` VALUES ('14', '10000000005', '123123', '0', 'Anull', 'Qpf0SxOVUjUkWySXOZ16kw==', '123123123123123', '1', '12312312312', '0', '2018-06-24 16:56:38', '1', '1', null);
-INSERT INTO `sys_users` VALUES ('15', '10000000006', '123123', '0', 'A1000006', 'Qpf0SxOVUjUkWySXOZ16kw==', '123123123123123', '1', '12312312312', '0', '2018-06-24 16:56:38', '1', '1', null);
-INSERT INTO `sys_users` VALUES ('16', '10000000007', '123123', '0', 'A1000007', 'Qpf0SxOVUjUkWySXOZ16kw==', '123123123123123', '1', '12312312312', '0', '2018-06-24 16:56:38', '1', '1', null);
-INSERT INTO `sys_users` VALUES ('17', '10000000008', '吴尘', '1', 'A1000008', 'vPYLmdQLGsgD18SK7mwfPA==', '340122199415121619', '4', '15988858965', '0', '2018-06-24 17:56:28', '1', '3', null);
-INSERT INTO `sys_users` VALUES ('18', '10000000010', '吴尘', '1', 'A1000010', '6jtDAZxLAe87AjFy0DOpRg==', '340122151951216', '4', '15988856210', '0', '2018-06-24 17:57:09', '1', '3', null);
-INSERT INTO `sys_users` VALUES ('20', '10000000011', '宋宏伟', '0', 'A1000011', '6jtDAZxLAe87AjFy0DOpRg==', '340122151951216', '1', '18130091249', '0', '2018-06-24 18:19:15', '1', '1', null);
-INSERT INTO `sys_users` VALUES ('21', '10000000012', 'songhw', '0', 'A1000012', '41z3tmRJ31Zfk8YH1agdCQ==', '123456789123456789', '1', '1549871654', '0', '2018-06-04 18:42:20', '1', '1', null);
+INSERT INTO `sys_users` VALUES ('1', '0', 'admin', '1', 'system', '4QrcOUm6Wau+VuBX8g+IPg==', '123456', '1', '18130091249', '0', '2018-06-06 17:28:45', '1', '1', '2018-06-24 23:10:25', '2018-06-24 23:09:15');
+INSERT INTO `sys_users` VALUES ('5', '1', 'songhw', '0', 'system', '4QrcOUm6Wau+VuBX8g+IPg==', '340122199212131815', '1', '18130091249', '0', '2018-06-11 21:14:53', '1', '1', null, '2018-06-11 21:14:56');
+INSERT INTO `sys_users` VALUES ('7', '1', 'songhw', '1', 'system', '4QrcOUm6Wau+VuBX8g+IPg==', '340122199212131815', '3', '18130091249', '0', '2018-06-11 21:14:53', '1', '1', null, '2018-06-11 21:14:56');
+INSERT INTO `sys_users` VALUES ('10', '1', 'songhw', '0', 'system', '4QrcOUm6Wau+VuBX8g+IPg==', '340122199212131815', '1', '18130091249', '0', '2018-06-11 21:14:53', '1', '1', null, '2018-06-11 21:14:56');
+INSERT INTO `sys_users` VALUES ('12', '1', 'songhw', '0', 'system', '4QrcOUm6Wau+VuBX8g+IPg==', '340122199212131815', '1', '18130091249', '0', '2018-06-11 21:14:53', '1', '1', null, '2018-06-11 21:14:56');
+INSERT INTO `sys_users` VALUES ('13', '10000000004', '123123', '0', 'Anull', 'Qpf0SxOVUjUkWySXOZ16kw==', '123123123123123', '1', '12312312312', '0', '2018-06-24 16:56:38', '1', '1', null, null);
+INSERT INTO `sys_users` VALUES ('14', '10000000005', '123123', '0', 'Anull', 'Qpf0SxOVUjUkWySXOZ16kw==', '123123123123123', '1', '12312312312', '0', '2018-06-24 16:56:38', '1', '1', null, null);
+INSERT INTO `sys_users` VALUES ('15', '10000000006', '123123', '0', 'A1000006', 'Qpf0SxOVUjUkWySXOZ16kw==', '123123123123123', '1', '12312312312', '0', '2018-06-24 16:56:38', '1', '1', null, null);
+INSERT INTO `sys_users` VALUES ('16', '10000000007', '123123', '0', 'A1000007', 'Qpf0SxOVUjUkWySXOZ16kw==', '123123123123123', '1', '12312312312', '0', '2018-06-24 16:56:38', '1', '1', null, null);
+INSERT INTO `sys_users` VALUES ('17', '10000000008', '吴尘', '1', 'A1000008', 'vPYLmdQLGsgD18SK7mwfPA==', '340122199415121619', '4', '15988858965', '0', '2018-06-24 17:56:28', '1', '3', null, null);
+INSERT INTO `sys_users` VALUES ('18', '10000000010', '吴尘', '1', 'A1000010', '6jtDAZxLAe87AjFy0DOpRg==', '340122151951216', '4', '15988856210', '0', '2018-06-24 17:57:09', '1', '3', null, null);
+INSERT INTO `sys_users` VALUES ('20', '10000000011', '宋宏伟', '0', 'A1000011', '6jtDAZxLAe87AjFy0DOpRg==', '340122151951216', '1', '18130091249', '0', '2018-06-24 18:19:15', '1', '1', null, null);
+INSERT INTO `sys_users` VALUES ('21', '10000000012', 'songhw', '0', 'A1000012', '41z3tmRJ31Zfk8YH1agdCQ==', '123456789123456789', '1', '1549871654', '0', '2018-06-04 18:42:20', '1', '1', null, null);
 
 -- ----------------------------
 -- Table structure for sys_user_role
