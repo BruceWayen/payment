@@ -141,6 +141,7 @@ input[type="checkbox"] {
 .wu-toolbar-button,
 .wu-toolbar-search {
     padding: 3px 5px;
+
 }
 
 .wu-footer {
@@ -150,6 +151,15 @@ input[type="checkbox"] {
     overflow: hidden;
     background: #e0ecff;
 }
-
+.fitem{
+    margin-bottom:5px;
+}
+.fitem label{
+    display:inline-block;
+    width:80px;
+}
+.fitem input{
+    width:160px;
+}
 
 

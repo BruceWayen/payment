@@ -18,3 +18,5 @@
 <script src="${path}/easyui/1.3.4/extEasyUI.js" type="text/javascript"></script>
 <!-- 扩展jQuery -->
 <script src="${path}/easyui/1.3.4//extJquery.js" type="text/javascript"></script>
+<!--公共的js-->
+<script src="${path}/js/common.js" type="text/javascript"></script>

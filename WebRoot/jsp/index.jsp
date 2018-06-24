@@ -80,7 +80,7 @@
     }
     //创建Frame
     function createFrame(url) {
-        var tabHeight = $("#tabs").height() - 35;
+        var tabHeight = $("#wu-tabs").height() - 35;
         var s = '<iframe scrolling="auto" allowTransparency="true" frameborder="0"  src="' + url + '" style="width:100%; height:' + tabHeight + 'px;"></iframe>';
         return s;
     }
