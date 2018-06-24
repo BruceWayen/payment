@@ -3,12 +3,12 @@
 <mapper namespace="com.unit.dao.SysContractInfoMapper">
   <resultMap id="BaseResultMap" type="com.unit.domain.SysContractInfo">
     <id column="id" jdbcType="BIGINT" property="id" />
-    <result column="user_id" jdbcType="INTEGER" property="userId" />
+    <result column="user_id" jdbcType="BIGINT" property="userId" />
     <result column="contract_name" jdbcType="CHAR" property="contractName" />
     <result column="contract_status" jdbcType="INTEGER" property="contractStatus" />
     <result column="contract_passwd" jdbcType="CHAR" property="contractPasswd" />
-    <result column="system_fee" jdbcType="INTEGER" property="systemFee" />
-    <result column="user_fee" jdbcType="INTEGER" property="userFee" />
+    <result column="system_fee" jdbcType="CHAR" property="systemFee" />
+    <result column="user_fee" jdbcType="CHAR" property="userFee" />
     <result column="pay_time" jdbcType="TIMESTAMP" property="payTime" />
     <result column="pay_accept" jdbcType="CHAR" property="payAccept" />
     <result column="pay_type" jdbcType="INTEGER" property="payType" />

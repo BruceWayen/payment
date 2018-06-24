@@ -3,7 +3,7 @@ package com.unit.domain;
 public class SysFeeInfo {
     private Integer id;
 
-    private Integer money;
+    private String money;
 
     private String notes;
 
@@ -15,11 +15,11 @@ public class SysFeeInfo {
         this.id = id;
     }
 
-    public Integer getMoney() {
+    public String getMoney() {
         return money;
     }
 
-    public void setMoney(Integer money) {
+    public void setMoney(String money) {
         this.money = money;
     }
 

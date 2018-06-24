@@ -5,8 +5,8 @@
     <id column="id" jdbcType="BIGINT" property="id" />
     <result column="food_name" jdbcType="CHAR" property="foodName" />
     <result column="food_desc" jdbcType="CHAR" property="foodDesc" />
-    <result column="busi_no" jdbcType="INTEGER" property="busiNo" />
-    <result column="price" jdbcType="INTEGER" property="price" />
+    <result column="busi_no" jdbcType="BIGINT" property="busiNo" />
+    <result column="price" jdbcType="CHAR" property="price" />
     <result column="status" jdbcType="INTEGER" property="status" />
     <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
   </resultMap>

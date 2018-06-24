@@ -3,7 +3,7 @@
 <mapper namespace="com.unit.dao.SysFeeInfoMapper">
   <resultMap id="BaseResultMap" type="com.unit.domain.SysFeeInfo">
     <id column="id" jdbcType="INTEGER" property="id" />
-    <result column="money" jdbcType="INTEGER" property="money" />
+    <result column="money" jdbcType="CHAR" property="money" />
   </resultMap>
   <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.unit.domain.SysFeeInfo">
     <result column="notes" jdbcType="LONGVARCHAR" property="notes" />

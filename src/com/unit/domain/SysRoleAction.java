@@ -3,9 +3,9 @@ package com.unit.domain;
 public class SysRoleAction {
     private Integer id;
 
-    private Integer actionId;
+    private String actionId;
 
-    private Integer userId;
+    private String userId;
 
     public Integer getId() {
         return id;
@@ -15,19 +15,19 @@ public class SysRoleAction {
         this.id = id;
     }
 
-    public Integer getActionId() {
+    public String getActionId() {
         return actionId;
     }
 
-    public void setActionId(Integer actionId) {
+    public void setActionId(String actionId) {
         this.actionId = actionId;
     }
 
-    public Integer getUserId() {
+    public String getUserId() {
         return userId;
     }
 
-    public void setUserId(Integer userId) {
+    public void setUserId(String userId) {
         this.userId = userId;
     }
 }

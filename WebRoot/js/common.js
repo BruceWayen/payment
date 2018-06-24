@@ -59,3 +59,15 @@ function formatDate(now) {
 
     return year + "-" + month + "-" + date + " " + hour + ":" + minute + ":" + second;
 }
+
+
+/**
+ * 格式化性别
+ */
+function sexFormater(value) {
+    if (value == 0) {
+        return "男"
+    } else {
+        return "女"
+    }
+}

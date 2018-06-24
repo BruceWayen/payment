@@ -3,9 +3,9 @@
 <mapper namespace="com.unit.dao.BsShopConsumeMapper">
   <resultMap id="BaseResultMap" type="com.unit.domain.BsShopConsume">
     <id column="id" jdbcType="BIGINT" property="id" />
-    <result column="busi_no" jdbcType="INTEGER" property="busiNo" />
-    <result column="contract_no" jdbcType="INTEGER" property="contractNo" />
-    <result column="price" jdbcType="INTEGER" property="price" />
+    <result column="busi_no" jdbcType="BIGINT" property="busiNo" />
+    <result column="contract_no" jdbcType="BIGINT" property="contractNo" />
+    <result column="price" jdbcType="CHAR" property="price" />
     <result column="login_accept" jdbcType="CHAR" property="loginAccept" />
     <result column="op_time" jdbcType="TIMESTAMP" property="opTime" />
     <result column="food_id" jdbcType="INTEGER" property="foodId" />

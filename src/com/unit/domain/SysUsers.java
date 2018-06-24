@@ -1,15 +1,14 @@
 package com.unit.domain;
 
-import java.util.Date;
-
-public class SysUsers {
+public class SysUsers
+{
     private Long id;
 
     private Long contractNo;
 
     private String userName;
 
-    private Integer sex;
+    private String sex;
 
     private String loginNo;
 
@@ -17,129 +16,216 @@ public class SysUsers {
 
     private String idIccid;
 
-    private Integer deptId;
+    private String deptId;
 
     private String phoneNo;
 
-    private Integer userSatus;
+    private String userSatus;
 
-    private Date registerTime;
+    private String registerTime;
 
-    private Integer registerType;
+    private String registerType;
 
-    private Integer roleId;
+    private String roleId;
 
-    private Date lastLoginTime;
+    private String lastLoginTime;
 
-    public Long getId() {
+    private String roleName;
+
+    private String deptName;
+
+    private String systemFee;
+
+    private String userFee;
+    private String totalFee;
+
+    public Long getId()
+    {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Long id)
+    {
         this.id = id;
     }
 
-    public Long getContractNo() {
+    public Long getContractNo()
+    {
         return contractNo;
     }
 
-    public void setContractNo(Long contractNo) {
+    public void setContractNo(Long contractNo)
+    {
         this.contractNo = contractNo;
     }
 
-    public String getUserName() {
+    public String getUserName()
+    {
         return userName;
     }
 
-    public void setUserName(String userName) {
+    public void setUserName(String userName)
+    {
         this.userName = userName == null ? null : userName.trim();
     }
 
-    public Integer getSex() {
+    public String getSex()
+    {
         return sex;
     }
 
-    public void setSex(Integer sex) {
+    public void setSex(String sex)
+    {
         this.sex = sex;
     }
 
-    public String getLoginNo() {
+    public String getLoginNo()
+    {
         return loginNo;
     }
 
-    public void setLoginNo(String loginNo) {
+    public void setLoginNo(String loginNo)
+    {
         this.loginNo = loginNo == null ? null : loginNo.trim();
     }
 
-    public String getPassWord() {
+    public String getPassWord()
+    {
         return passWord;
     }
 
-    public void setPassWord(String passWord) {
+    public void setPassWord(String passWord)
+    {
         this.passWord = passWord == null ? null : passWord.trim();
     }
 
-    public String getIdIccid() {
+    public String getIdIccid()
+    {
         return idIccid;
     }
 
-    public void setIdIccid(String idIccid) {
+    public void setIdIccid(String idIccid)
+    {
         this.idIccid = idIccid == null ? null : idIccid.trim();
     }
 
-    public Integer getDeptId() {
+    public String getDeptId()
+    {
         return deptId;
     }
 
-    public void setDeptId(Integer deptId) {
+    public void setDeptId(String deptId)
+    {
         this.deptId = deptId;
     }
 
-    public String getPhoneNo() {
+    public String getPhoneNo()
+    {
         return phoneNo;
     }
 
-    public void setPhoneNo(String phoneNo) {
+    public void setPhoneNo(String phoneNo)
+    {
         this.phoneNo = phoneNo == null ? null : phoneNo.trim();
     }
 
-    public Integer getUserSatus() {
+    public String getUserSatus()
+    {
         return userSatus;
     }
 
-    public void setUserSatus(Integer userSatus) {
+    public void setUserSatus(String userSatus)
+    {
         this.userSatus = userSatus;
     }
 
-    public Date getRegisterTime() {
+    public String getRegisterTime()
+    {
         return registerTime;
     }
 
-    public void setRegisterTime(Date registerTime) {
+    public void setRegisterTime(String registerTime)
+    {
         this.registerTime = registerTime;
     }
 
-    public Integer getRegisterType() {
+    public String getRegisterType()
+    {
         return registerType;
     }
 
-    public void setRegisterType(Integer registerType) {
+    public void setRegisterType(String registerType)
+    {
         this.registerType = registerType;
     }
 
-    public Integer getRoleId() {
+    public String getRoleId()
+    {
         return roleId;
     }
 
-    public void setRoleId(Integer roleId) {
+    public void setRoleId(String roleId)
+    {
         this.roleId = roleId;
     }
 
-    public Date getLastLoginTime() {
+    public String getLastLoginTime()
+    {
         return lastLoginTime;
     }
 
-    public void setLastLoginTime(Date lastLoginTime) {
+    public void setLastLoginTime(String lastLoginTime)
+    {
         this.lastLoginTime = lastLoginTime;
+    }
+
+    public String getRoleName()
+    {
+        return roleName;
+    }
+
+    public void setRoleName(String roleName)
+    {
+        this.roleName = roleName;
+    }
+
+    public String getDeptName()
+    {
+        return deptName;
+    }
+
+    public void setDeptName(String deptName)
+    {
+        this.deptName = deptName;
+    }
+
+    public String getSystemFee()
+    {
+        return systemFee;
+    }
+
+    public void setSystemFee(String systemFee)
+    {
+        this.systemFee = systemFee;
+    }
+
+    public String getUserFee()
+    {
+        return userFee;
+    }
+
+    public void setUserFee(String userFee)
+    {
+        this.userFee = userFee;
+    }
+
+    public String getTotalFee()
+    {
+        return totalFee;
+    }
+
+    public void setTotalFee(String totalFee)
+    {
+        this.totalFee = totalFee;
     }
 }

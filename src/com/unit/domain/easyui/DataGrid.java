@@ -1,4 +1,4 @@
-package com.unit.utils;
+package com.unit.domain.easyui;
 
 import java.io.Serializable;
 import java.util.List;

@@ -1,19 +1,17 @@
 package com.unit.domain;
 
-import java.util.Date;
-
 public class BsRechargeInfo {
     private Long id;
 
-    private Integer contractNo;
+    private String contractNo;
 
-    private Integer money;
+    private String money;
 
-    private Date opTime;
+    private String opTime;
 
     private String loginAccept;
 
-    private Integer opType;
+    private String opType;
 
     private String opNotes;
 
@@ -25,51 +23,63 @@ public class BsRechargeInfo {
         this.id = id;
     }
 
-    public Integer getContractNo() {
+    public String getContractNo()
+    {
         return contractNo;
     }
 
-    public void setContractNo(Integer contractNo) {
+    public void setContractNo(String contractNo)
+    {
         this.contractNo = contractNo;
     }
 
-    public Integer getMoney() {
+    public String getMoney()
+    {
         return money;
     }
 
-    public void setMoney(Integer money) {
+    public void setMoney(String money)
+    {
         this.money = money;
     }
 
-    public Date getOpTime() {
+    public String getOpTime()
+    {
         return opTime;
     }
 
-    public void setOpTime(Date opTime) {
+    public void setOpTime(String opTime)
+    {
         this.opTime = opTime;
     }
 
-    public String getLoginAccept() {
+    public String getLoginAccept()
+    {
         return loginAccept;
     }
 
-    public void setLoginAccept(String loginAccept) {
-        this.loginAccept = loginAccept == null ? null : loginAccept.trim();
+    public void setLoginAccept(String loginAccept)
+    {
+        this.loginAccept = loginAccept;
     }
 
-    public Integer getOpType() {
+    public String getOpType()
+    {
         return opType;
     }
 
-    public void setOpType(Integer opType) {
+    public void setOpType(String opType)
+    {
         this.opType = opType;
     }
 
-    public String getOpNotes() {
+    public String getOpNotes()
+    {
         return opNotes;
     }
 
-    public void setOpNotes(String opNotes) {
-        this.opNotes = opNotes == null ? null : opNotes.trim();
+    public void setOpNotes(String opNotes)
+    {
+        this.opNotes = opNotes;
     }
 }

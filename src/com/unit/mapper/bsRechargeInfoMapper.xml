@@ -3,8 +3,8 @@
 <mapper namespace="com.unit.dao.BsRechargeInfoMapper">
   <resultMap id="BaseResultMap" type="com.unit.domain.BsRechargeInfo">
     <id column="id" jdbcType="BIGINT" property="id" />
-    <result column="contract_no" jdbcType="INTEGER" property="contractNo" />
-    <result column="money" jdbcType="INTEGER" property="money" />
+    <result column="contract_no" jdbcType="BIGINT" property="contractNo" />
+    <result column="money" jdbcType="CHAR" property="money" />
     <result column="op_time" jdbcType="TIMESTAMP" property="opTime" />
     <result column="login_accept" jdbcType="CHAR" property="loginAccept" />
     <result column="op_type" jdbcType="INTEGER" property="opType" />

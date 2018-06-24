@@ -3,9 +3,9 @@ package com.unit.domain;
 public class SysRoleFee {
     private Integer id;
 
-    private Integer roleId;
+    private String roleId;
 
-    private Integer feeId;
+    private String feeId;
 
     public Integer getId() {
         return id;
@@ -15,19 +15,19 @@ public class SysRoleFee {
         this.id = id;
     }
 
-    public Integer getRoleId() {
+    public String getRoleId() {
         return roleId;
     }
 
-    public void setRoleId(Integer roleId) {
+    public void setRoleId(String roleId) {
         this.roleId = roleId;
     }
 
-    public Integer getFeeId() {
+    public String getFeeId() {
         return feeId;
     }
 
-    public void setFeeId(Integer feeId) {
+    public void setFeeId(String feeId) {
         this.feeId = feeId;
     }
 }

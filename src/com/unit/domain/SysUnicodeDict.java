@@ -1,7 +1,5 @@
 package com.unit.domain;
 
-import java.util.Date;
-
 public class SysUnicodeDict {
     private Integer id;
 
@@ -11,13 +9,13 @@ public class SysUnicodeDict {
 
     private String codeDesc;
 
-    private Integer codeValue;
+    private String codeValue;
 
-    private Date effDate;
+    private String effDate;
 
-    private Date expDate;
+    private String expDate;
 
-    private Date createTime;
+    private String createTime;
 
     public Integer getId() {
         return id;
@@ -51,35 +49,35 @@ public class SysUnicodeDict {
         this.codeDesc = codeDesc == null ? null : codeDesc.trim();
     }
 
-    public Integer getCodeValue() {
+    public String getCodeValue() {
         return codeValue;
     }
 
-    public void setCodeValue(Integer codeValue) {
+    public void setCodeValue(String codeValue) {
         this.codeValue = codeValue;
     }
 
-    public Date getEffDate() {
+    public String getEffDate() {
         return effDate;
     }
 
-    public void setEffDate(Date effDate) {
+    public void setEffDate(String effDate) {
         this.effDate = effDate;
     }
 
-    public Date getExpDate() {
+    public String getExpDate() {
         return expDate;
     }
 
-    public void setExpDate(Date expDate) {
+    public void setExpDate(String expDate) {
         this.expDate = expDate;
     }
 
-    public Date getCreateTime() {
+    public String getCreateTime() {
         return createTime;
     }
 
-    public void setCreateTime(Date createTime) {
+    public void setCreateTime(String createTime) {
         this.createTime = createTime;
     }
 }

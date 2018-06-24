@@ -1,11 +1,9 @@
 package com.unit.domain;
 
-import java.util.Date;
-
 public class SysOperate {
     private Integer id;
 
-    private Date operTime;
+    private String operTime;
 
     private String operUser;
 
@@ -23,11 +21,11 @@ public class SysOperate {
         this.id = id;
     }
 
-    public Date getOperTime() {
+    public String getOperTime() {
         return operTime;
     }
 
-    public void setOperTime(Date operTime) {
+    public void setOperTime(String operTime) {
         this.operTime = operTime;
     }
 

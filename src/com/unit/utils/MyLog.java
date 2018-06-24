@@ -53,7 +53,7 @@ public class MyLog
         // logger.info(preLog + "操作人：{},操作人ID：{}",
         // user == null ? "" : user.getUserName(), user == null ? ""
         // : user.getUserid());
-        logger.info(preLog + "操作类：{}");
+        logger.info(preLog + "操作类：{}",className);
         logger.info(preLog + "操作方法：{}", methodName);
         logger.info(preLog + "操作参数：{}", params);
         try

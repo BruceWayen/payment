@@ -5,7 +5,7 @@ public class SysSequence {
 
     private String seqName;
 
-    private Double currentVal;
+    private String currentVal;
 
     private Integer incrementVal;
 
@@ -25,11 +25,11 @@ public class SysSequence {
         this.seqName = seqName == null ? null : seqName.trim();
     }
 
-    public Double getCurrentVal() {
+    public String getCurrentVal() {
         return currentVal;
     }
 
-    public void setCurrentVal(Double currentVal) {
+    public void setCurrentVal(String currentVal) {
         this.currentVal = currentVal;
     }
 

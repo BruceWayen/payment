@@ -1,21 +1,19 @@
 package com.unit.domain;
 
-import java.util.Date;
-
 public class BsShopConsume {
     private Long id;
 
-    private Integer busiNo;
+    private String busiNo;
 
-    private Integer contractNo;
+    private String contractNo;
 
-    private Integer price;
+    private String price;
 
     private String loginAccept;
 
-    private Date opTime;
+    private String opTime;
 
-    private Integer foodId;
+    private String foodId;
 
     private String opNote;
 
@@ -27,59 +25,73 @@ public class BsShopConsume {
         this.id = id;
     }
 
-    public Integer getBusiNo() {
+    public String getBusiNo()
+    {
         return busiNo;
     }
 
-    public void setBusiNo(Integer busiNo) {
+    public void setBusiNo(String busiNo)
+    {
         this.busiNo = busiNo;
     }
 
-    public Integer getContractNo() {
+    public String getContractNo()
+    {
         return contractNo;
     }
 
-    public void setContractNo(Integer contractNo) {
+    public void setContractNo(String contractNo)
+    {
         this.contractNo = contractNo;
     }
 
-    public Integer getPrice() {
+    public String getPrice()
+    {
         return price;
     }
 
-    public void setPrice(Integer price) {
+    public void setPrice(String price)
+    {
         this.price = price;
     }
 
-    public String getLoginAccept() {
+    public String getLoginAccept()
+    {
         return loginAccept;
     }
 
-    public void setLoginAccept(String loginAccept) {
-        this.loginAccept = loginAccept == null ? null : loginAccept.trim();
+    public void setLoginAccept(String loginAccept)
+    {
+        this.loginAccept = loginAccept;
     }
 
-    public Date getOpTime() {
+    public String getOpTime()
+    {
         return opTime;
     }
 
-    public void setOpTime(Date opTime) {
+    public void setOpTime(String opTime)
+    {
         this.opTime = opTime;
     }
 
-    public Integer getFoodId() {
+    public String getFoodId()
+    {
         return foodId;
     }
 
-    public void setFoodId(Integer foodId) {
+    public void setFoodId(String foodId)
+    {
         this.foodId = foodId;
     }
 
-    public String getOpNote() {
+    public String getOpNote()
+    {
         return opNote;
     }
 
-    public void setOpNote(String opNote) {
-        this.opNote = opNote == null ? null : opNote.trim();
+    public void setOpNote(String opNote)
+    {
+        this.opNote = opNote;
     }
 }

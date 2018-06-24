@@ -1,27 +1,25 @@
 package com.unit.domain;
 
-import java.util.Date;
-
 public class SysContractInfo {
     private Long id;
 
-    private Integer userId;
+    private String userId;
 
     private String contractName;
 
-    private Integer contractStatus;
+    private String contractStatus;
 
     private String contractPasswd;
 
-    private Integer systemFee;
+    private String systemFee;
 
-    private Integer userFee;
+    private String userFee;
 
-    private Date payTime;
+    private String payTime;
 
     private String payAccept;
 
-    private Integer payType;
+    private String payType;
 
     public Long getId() {
         return id;
@@ -31,75 +29,94 @@ public class SysContractInfo {
         this.id = id;
     }
 
-    public Integer getUserId() {
+    public String getUserId()
+    {
         return userId;
     }
 
-    public void setUserId(Integer userId) {
+    public void setUserId(String userId)
+    {
         this.userId = userId;
     }
 
-    public String getContractName() {
+    public String getContractName()
+    {
+
         return contractName;
     }
 
-    public void setContractName(String contractName) {
-        this.contractName = contractName == null ? null : contractName.trim();
+    public void setContractName(String contractName)
+    {
+        this.contractName = contractName;
     }
 
-    public Integer getContractStatus() {
+    public String getContractStatus()
+    {
         return contractStatus;
     }
 
-    public void setContractStatus(Integer contractStatus) {
+    public void setContractStatus(String contractStatus)
+    {
         this.contractStatus = contractStatus;
     }
 
-    public String getContractPasswd() {
+    public String getContractPasswd()
+    {
         return contractPasswd;
     }
 
-    public void setContractPasswd(String contractPasswd) {
-        this.contractPasswd = contractPasswd == null ? null : contractPasswd.trim();
+    public void setContractPasswd(String contractPasswd)
+    {
+        this.contractPasswd = contractPasswd;
     }
 
-    public Integer getSystemFee() {
+    public String getSystemFee()
+    {
         return systemFee;
     }
 
-    public void setSystemFee(Integer systemFee) {
+    public void setSystemFee(String systemFee)
+    {
         this.systemFee = systemFee;
     }
 
-    public Integer getUserFee() {
+    public String getUserFee()
+    {
         return userFee;
     }
 
-    public void setUserFee(Integer userFee) {
+    public void setUserFee(String userFee)
+    {
         this.userFee = userFee;
     }
 
-    public Date getPayTime() {
+    public String getPayTime()
+    {
         return payTime;
     }
 
-    public void setPayTime(Date payTime) {
+    public void setPayTime(String payTime)
+    {
         this.payTime = payTime;
     }
 
-    public String getPayAccept() {
+    public String getPayAccept()
+    {
         return payAccept;
     }
 
-    public void setPayAccept(String payAccept) {
-        this.payAccept = payAccept == null ? null : payAccept.trim();
+    public void setPayAccept(String payAccept)
+    {
+        this.payAccept = payAccept;
     }
 
-    public Integer getPayType() {
+    public String getPayType()
+    {
         return payType;
     }
 
-    public void setPayType(Integer payType) {
+    public void setPayType(String payType)
+    {
         this.payType = payType;
     }
 }

@@ -9,7 +9,7 @@ public class SysDept {
 
     private String deptPhone;
 
-    private Integer deptSuperId;
+    private String deptSuperId;
 
     public Integer getId() {
         return id;
@@ -43,11 +43,11 @@ public class SysDept {
         this.deptPhone = deptPhone == null ? null : deptPhone.trim();
     }
 
-    public Integer getDeptSuperId() {
+    public String getDeptSuperId() {
         return deptSuperId;
     }
 
-    public void setDeptSuperId(Integer deptSuperId) {
+    public void setDeptSuperId(String deptSuperId) {
         this.deptSuperId = deptSuperId;
     }
 }

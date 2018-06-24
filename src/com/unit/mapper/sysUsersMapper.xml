@@ -11,6 +11,11 @@
         <result column="id_iccid" jdbcType="CHAR" property="idIccid"/>
         <result column="dept_id" jdbcType="INTEGER" property="deptId"/>
         <result column="phone_no" jdbcType="CHAR" property="phoneNo"/>
+        <result column="dept_name" jdbcType="CHAR" property="deptName"/>
+        <result column="role_name" jdbcType="CHAR" property="roleName"/>
+        <result column="system_fee" jdbcType="CHAR" property="systemFee"/>
+        <result column="user_fee" jdbcType="CHAR" property="userFee"/>
+        <result column="total_fee" jdbcType="CHAR" property="totalFee"/>
         <result column="user_satus" jdbcType="INTEGER" property="userSatus"/>
         <result column="register_time" jdbcType="TIMESTAMP" property="registerTime"/>
         <result column="register_type" jdbcType="INTEGER" property="registerType"/>
@@ -49,7 +54,6 @@
     </select>
 
     <select id="getChildrenMenu" resultType="com.unit.domain.SysMenu">
-
         select m.menu_no,m.menu_name,m.parent_no,m.icon_class,m.menu_url,
         (select count(1) from s_menu s where s.parent_no !=0 and s.parent_no=m.menu_no) as countChildrens
         from s_menu m
@@ -62,94 +66,165 @@
         where sp.is_disenable=0 and sp.parent_no=m.menu_no and m.parent_no=0)
         countch from s_menu m where m.parent_no=0) tt where countch=0)
     </select>
-    <update id="editPassword">
-    update s_user set user_password =#{psw} where id=#{userId}
-  </update>
-    <!-- 重置用户密码 -->
-    <update id="resetPassword" parameterType="com.unit.domain.SysUsers">
-    update s_user set user_password=#{user.user_password} where id = #{user.id}
-  </update>
 
-    <!-- 重置用户密码,默认为123456 -->
-    <update id="reset" parameterType="java.lang.Integer">
-    update s_user set user_password='4QrcOUm6Wau+VuBX8g+IPg==' where teach_stu_id = #{id}
-  </update>
-
-    <!-- 新增管理员 -->
-    <insert id="addUser" parameterType="com.unit.domain.SysUsers" useGeneratedKeys="true">
-        insert into s_user(user_account,user_name,phone_no,user_password) values
-        (#{user.user_account},#{user.user_name},#{user.phone_no},#{user.user_password})
-        <selectKey keyProperty="id" resultType="java.lang.Integer">
-            select
-            LAST_INSERT_ID()
-        </selectKey>
-    </insert>
-
-    <!-- 查询报名老师ID -->
-    <select id="getUserId" resultType="int" parameterType="java.lang.String">
-    select id from s_user where user_account=#{userName} and is_disenable = '0'
-  </select>
-
-
-    <!-- 添加权限 -->
-    <insert id="addUserRole" parameterType="com.unit.domain.SysUserRole">
-    insert into s_user_role (user_id,role_id) values
-    (#{userRole.user_id},#{userRole.role_id})
-  </insert>
-
-    <!-- 查询管理员总数 -->
-    <select id="getUserListSize" resultType="long">
-    SELECT COUNT(*) FROM s_user u JOIN s_user_role r ON u.id=r.user_id WHERE r.role_id=2 and u.is_disenable = '0'
-  </select>
-
-    <!-- 查询管理员信息 -->
+    <!-- 查询用户信息 -->
     <select id="getUserList" resultMap="BaseResultMap">
-        SELECT
-            u.*
-        FROM
-            sys_users u
-        JOIN sys_user_role r ON u.id = r.user_id
+       SELECT
+        u.id,
+        u.sex,
+        u.id_iccid,
+        u.contract_no,
+        u.user_name,
+        u.login_no,
+        u.phone_no,
+        u.register_time,
+        d.dept_name AS dept_name,
+        r.role_name,
+        c.system_fee+c.user_fee AS total_fee,
+        c.system_fee,
+        c.user_fee
+    FROM
+        sys_users u
+    LEFT JOIN sys_user_role ur ON u.id = ur.user_id
+    LEFT JOIN sys_contract_info c ON u.contract_no = c.id
+    LEFT JOIN sys_role r ON ur.role_id = r.id
+    LEFT JOIN sys_dept d ON u.dept_id = d.id
     </select>
-
-    <!-- 修改管理员信息 -->
-    <update id="editUser" parameterType="com.unit.domain.SysUsers">
-    update s_user set user_name=#{user.user_name},phone_no=#{user.phone_no} where id=#{user.id}
-  </update>
-
-    <!-- 删除管理员权限 -->
-    <delete id="deleteTeacherRole" parameterType="int">
-    delete from s_user_role where user_id=#{id}
-  </delete>
-    <!-- 逻辑删除管理员 -->
-    <!--
-    <delete id="deleteTeacher">
-        delete from s_user where id=#{id}
-    </delete>
-     -->
-    <update id="deleteTeacher" parameterType="java.lang.Integer">
-    update s_user set is_disenable='1' where id = #{id}
-  </update>
-
-    <!-- 添加操作记录 -->
-    <insert id="addOperate" parameterType="com.unit.domain.SysOperate">
-    insert into t_operate(oper_time,oper_user,oper_module,content,remark)
-    values(now(),#{oper_user},#{oper_module},#{content},#{remark})
-  </insert>
-
-    <!-- 根据账号检查原密码是否正确   这里只做查询-->
-    <select id="findPwdByName" resultType="java.lang.String">
-    select user_password from s_user where user_account = #{user_account}
-  </select>
-
-    <!-- 根据账号修改新的密码 -->
-    <update id="changePwd" parameterType="com.unit.domain.SysUsers">
-    update sys_users set user_password = #{user_password} where user_account = #{user_account}
-  </update>
-
     <!--获取权限ID-->
     <select id="getRoleIdByUserId" resultType="int">
-    select role_id from sys_user_role where user_id=#{userId}
-  </select>
+      select role_id from sys_user_role where user_id=#{userId}
+    </select>
+    <!--插入用户信息-->
+    <insert id="insertSelective" parameterType="com.unit.domain.SysUsers">
+        <selectKey resultType="Long" order="AFTER" keyProperty="id">
+            SELECT LAST_INSERT_ID() as id
+        </selectKey>
+        insert into sys_users
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                id,
+            </if>
+            <if test="contractNo != null">
+                contract_no,
+            </if>
+            <if test="userName != null">
+                user_name,
+            </if>
+            <if test="sex != null">
+                sex,
+            </if>
+            <if test="loginNo != null">
+                login_no,
+            </if>
+            <if test="passWord != null">
+                pass_word,
+            </if>
+            <if test="idIccid != null">
+                id_iccid,
+            </if>
+            <if test="deptId != null">
+                dept_id,
+            </if>
+            <if test="phoneNo != null">
+                phone_no,
+            </if>
+            <if test="userSatus != null">
+                user_satus,
+            </if>
+            <if test="registerTime != null">
+                register_time,
+            </if>
+            <if test="registerType != null">
+                register_type,
+            </if>
+            <if test="roleId != null">
+                role_id,
+            </if>
+            <if test="lastLoginTime != null">
+                last_login_time,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                #{id,jdbcType=BIGINT},
+            </if>
+            <if test="contractNo != null">
+                #{contractNo,jdbcType=INTEGER},
+            </if>
+            <if test="userName != null">
+                #{userName,jdbcType=CHAR},
+            </if>
+            <if test="sex != null">
+                #{sex,jdbcType=INTEGER},
+            </if>
+            <if test="loginNo != null">
+                #{loginNo,jdbcType=CHAR},
+            </if>
+            <if test="passWord != null">
+                #{passWord,jdbcType=CHAR},
+            </if>
+            <if test="idIccid != null">
+                #{idIccid,jdbcType=CHAR},
+            </if>
+            <if test="deptId != null">
+                #{deptId,jdbcType=INTEGER},
+            </if>
+            <if test="phoneNo != null">
+                #{phoneNo,jdbcType=CHAR},
+            </if>
+            <if test="userSatus != null">
+                #{userSatus,jdbcType=INTEGER},
+            </if>
+            <if test="registerTime != null">
+                #{registerTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="registerType != null">
+                #{registerType,jdbcType=INTEGER},
+            </if>
+            <if test="roleId != null">
+                #{roleId,jdbcType=INTEGER},
+            </if>
+            <if test="lastLoginTime != null">
+                #{lastLoginTime,jdbcType=TIMESTAMP},
+            </if>
+        </trim>
+    </insert>
 
+    <delete id="deleteById" parameterType="java.lang.String">
+         delete from sys_users
+       where id = #{userId}
+  </delete>
 
+    <select id="searchUser" parameterType="com.unit.domain.SysUsers" resultMap="BaseResultMap">
+        SELECT
+        u.id,
+        u.sex,
+        u.id_iccid,
+        u.contract_no,
+        u.user_name,
+        u.login_no,
+        u.phone_no,
+        u.register_time,
+        d.dept_name AS dept_name,
+        r.role_name,
+        c.system_fee+c.user_fee AS total_fee,
+        c.system_fee,
+        c.user_fee
+        FROM
+        sys_users u
+        LEFT JOIN sys_user_role ur ON u.id = ur.user_id
+        LEFT JOIN sys_contract_info c ON u.contract_no = c.id
+        LEFT JOIN sys_role r ON ur.role_id = r.id
+        LEFT JOIN sys_dept d ON u.dept_id = d.id
+        WHERE 1=1
+        <if test="roleId !=null ">
+            AND u.role_id= #{roleId}
+        </if>
+        <if test="registerTime !=null ">
+            AND register_time > str_to_date(#{registerTime},'%Y-%m-%d %H:%i:%s')
+        </if>
+        <if test="phoneNo !=null ">
+            AND u.phone_no=#{phoneNo}
+        </if>
+    </select>
 </mapper>

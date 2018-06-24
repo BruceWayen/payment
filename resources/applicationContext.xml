@@ -119,7 +119,7 @@ http://www.springframework.org/schema/data/jpa ">
     <tx:advice id="txAdvice" transaction-manager="txManager">
         <tx:attributes>
             <tx:method name="query*" read-only="true"/>
-            <tx:method name="to*" read-only="true"/>
+            <tx:method name="*to*" read-only="true"/>
             <tx:method name="add*" propagation="REQUIRED" rollback-for="java.lang.Exception"/>
             <tx:method name="update*" propagation="REQUIRED" rollback-for="java.lang.Exception"/>
             <tx:method name="delete*" propagation="REQUIRED" rollback-for="java.lang.Exception"/>

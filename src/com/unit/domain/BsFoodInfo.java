@@ -1,7 +1,5 @@
 package com.unit.domain;
 
-import java.util.Date;
-
 public class BsFoodInfo {
     private Long id;
 
@@ -9,13 +7,13 @@ public class BsFoodInfo {
 
     private String foodDesc;
 
-    private Integer busiNo;
+    private String busiNo;
 
-    private Integer price;
+    private String price;
 
-    private Integer status;
+    private String status;
 
-    private Date createTime;
+    private String createTime;
 
     public Long getId() {
         return id;
@@ -25,51 +23,63 @@ public class BsFoodInfo {
         this.id = id;
     }
 
-    public String getFoodName() {
+    public String getFoodName()
+    {
         return foodName;
     }
 
-    public void setFoodName(String foodName) {
-        this.foodName = foodName == null ? null : foodName.trim();
+    public void setFoodName(String foodName)
+    {
+        this.foodName = foodName;
     }
 
-    public String getFoodDesc() {
+    public String getFoodDesc()
+    {
         return foodDesc;
     }
 
-    public void setFoodDesc(String foodDesc) {
-        this.foodDesc = foodDesc == null ? null : foodDesc.trim();
+    public void setFoodDesc(String foodDesc)
+    {
+        this.foodDesc = foodDesc;
     }
 
-    public Integer getBusiNo() {
+    public String getBusiNo()
+    {
         return busiNo;
     }
 
-    public void setBusiNo(Integer busiNo) {
+    public void setBusiNo(String busiNo)
+    {
         this.busiNo = busiNo;
     }
 
-    public Integer getPrice() {
+    public String getPrice()
+    {
         return price;
     }
 
-    public void setPrice(Integer price) {
+    public void setPrice(String price)
+    {
         this.price = price;
     }
 
-    public Integer getStatus() {
+    public String getStatus()
+    {
         return status;
     }
 
-    public void setStatus(Integer status) {
+    public void setStatus(String status)
+    {
         this.status = status;
     }
 
-    public Date getCreateTime() {
+    public String getCreateTime()
+    {
         return createTime;
     }
 
-    public void setCreateTime(Date createTime) {
+    public void setCreateTime(String createTime)
+    {
         this.createTime = createTime;
     }
 }

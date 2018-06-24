@@ -4,7 +4,7 @@
   <resultMap id="BaseResultMap" type="com.unit.domain.SysRoleAction">
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="action_id" jdbcType="INTEGER" property="actionId" />
-    <result column="user_id" jdbcType="INTEGER" property="userId" />
+    <result column="role_id" jdbcType="INTEGER" property="roleId" />
   </resultMap>
   <sql id="Base_Column_List">
     id, action_id, user_id
