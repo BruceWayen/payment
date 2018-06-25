@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50559
 File Encoding         : 65001
 
-Date: 2018-06-25 10:07:37
+Date: 2018-06-25 11:43:19
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -20,7 +20,7 @@ SET FOREIGN_KEY_CHECKS=0;
 -- ----------------------------
 DROP TABLE IF EXISTS `bs_food_info`;
 CREATE TABLE `bs_food_info` (
-  `id` bigint(14) unsigned zerofill NOT NULL AUTO_INCREMENT COMMENT '菜品标识',
+  `id` bigint(14) NOT NULL AUTO_INCREMENT COMMENT '菜品标识',
   `food_name` char(50) DEFAULT NULL COMMENT '菜品名称',
   `food_desc` char(255) DEFAULT NULL COMMENT '菜品描述',
   `busi_no` bigint(14) NOT NULL COMMENT '商家账户',
@@ -39,7 +39,7 @@ CREATE TABLE `bs_food_info` (
 -- ----------------------------
 DROP TABLE IF EXISTS `bs_recharge_info`;
 CREATE TABLE `bs_recharge_info` (
-  `id` bigint(14) unsigned zerofill NOT NULL AUTO_INCREMENT COMMENT '主键标识',
+  `id` bigint(14) NOT NULL AUTO_INCREMENT COMMENT '主键标识',
   `contract_no` bigint(14) NOT NULL COMMENT '充值账号',
   `money` char(11) NOT NULL COMMENT '充值金额',
   `op_time` datetime NOT NULL COMMENT '充值时间',
@@ -146,13 +146,14 @@ CREATE TABLE `sys_contract_info` (
 -- Records of sys_contract_info
 -- ----------------------------
 INSERT INTO `sys_contract_info` VALUES ('10000000012', '21', 'songhw', '0', '41z3tmRJ31Zfk8YH1agdCQ==', '6.00', '5.00', null, null, null);
+INSERT INTO `sys_contract_info` VALUES ('10000000013', '22', 'songhongwei', '0', 'O1Zt5IOwlgex8mE3vlPpYQ==', '0.00', '0.00', null, null, null);
 
 -- ----------------------------
 -- Table structure for sys_dept
 -- ----------------------------
 DROP TABLE IF EXISTS `sys_dept`;
 CREATE TABLE `sys_dept` (
-  `id` int(11) unsigned zerofill NOT NULL AUTO_INCREMENT COMMENT '部门标识',
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '部门标识',
   `dept_name` char(50) DEFAULT NULL COMMENT '部门名称',
   `dept_address` char(255) DEFAULT NULL COMMENT '部门地址',
   `dept_phone` char(16) DEFAULT NULL COMMENT '部门电话',
@@ -163,17 +164,17 @@ CREATE TABLE `sys_dept` (
 -- ----------------------------
 -- Records of sys_dept
 -- ----------------------------
-INSERT INTO `sys_dept` VALUES ('00000000001', '财务部', '二楼204', '0551-686598', '0');
-INSERT INTO `sys_dept` VALUES ('00000000002', '研发部', '201-203', '0551-686598', '0');
-INSERT INTO `sys_dept` VALUES ('00000000003', '渠道部', '205-206', '0551-686598', '0');
-INSERT INTO `sys_dept` VALUES ('00000000004', '测试部', '207-208', '0551-686598', '0');
+INSERT INTO `sys_dept` VALUES ('1', '财务部', '二楼204', '0551-686598', '0');
+INSERT INTO `sys_dept` VALUES ('2', '研发部', '201-203', '0551-686598', '0');
+INSERT INTO `sys_dept` VALUES ('3', '渠道部', '205-206', '0551-686598', '0');
+INSERT INTO `sys_dept` VALUES ('4', '测试部', '207-208', '0551-686598', '0');
 
 -- ----------------------------
 -- Table structure for sys_fee_info
 -- ----------------------------
 DROP TABLE IF EXISTS `sys_fee_info`;
 CREATE TABLE `sys_fee_info` (
-  `id` int(11) unsigned zerofill NOT NULL AUTO_INCREMENT COMMENT '主键标识',
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键标识',
   `money` char(11) NOT NULL COMMENT '金额大小',
   `notes` text COMMENT '备注信息',
   PRIMARY KEY (`id`)
@@ -188,7 +189,7 @@ CREATE TABLE `sys_fee_info` (
 -- ----------------------------
 DROP TABLE IF EXISTS `sys_menu`;
 CREATE TABLE `sys_menu` (
-  `id` int(11) unsigned zerofill NOT NULL AUTO_INCREMENT COMMENT '菜单标识',
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '菜单标识',
   `menu_super_id` int(11) DEFAULT NULL COMMENT '父及菜单标识',
   `menu_status` int(11) NOT NULL COMMENT '菜单状态',
   `menu_sort` int(11) DEFAULT NULL COMMENT '菜单排序标识',
@@ -201,20 +202,20 @@ CREATE TABLE `sys_menu` (
 -- ----------------------------
 -- Records of sys_menu
 -- ----------------------------
-INSERT INTO `sys_menu` VALUES ('00000000001', '0', '0', '0', '系统管理', 'icon-chart-organisation', '1');
-INSERT INTO `sys_menu` VALUES ('00000000002', '0', '0', '0', '消费管理', 'icon-users', '2');
-INSERT INTO `sys_menu` VALUES ('00000000003', '2', '0', '0', '系统管理', 'icon-user-group', '3');
-INSERT INTO `sys_menu` VALUES ('00000000004', '1', '0', '0', '菜单管理', 'icon-chart-organisation', '4');
-INSERT INTO `sys_menu` VALUES ('00000000005', '2', '0', '0', '用户管理', 'icon-users', 'user/user_list.do');
-INSERT INTO `sys_menu` VALUES ('00000000006', '1', '0', '0', '数据字典', 'icon-book', '7');
-INSERT INTO `sys_menu` VALUES ('00000000008', '1', '0', '0', '日志查询', 'icon-application-osx-error', '8');
-INSERT INTO `sys_menu` VALUES ('00000000009', '2', '0', '0', '账户管理', 'icon-user_business_boss', '9');
-INSERT INTO `sys_menu` VALUES ('00000000010', '0', '0', '0', '商家管理', 'icon-group', '0');
-INSERT INTO `sys_menu` VALUES ('00000000011', '10', '0', '0', '商户管理', 'icon-users', '0');
-INSERT INTO `sys_menu` VALUES ('00000000012', '10', '0', '0', '收支查询', 'icon-arrow_ew', '0');
-INSERT INTO `sys_menu` VALUES ('00000000013', '10', '0', '0', '二维码生成', 'icon-heart', '0');
-INSERT INTO `sys_menu` VALUES ('00000000014', '2', '0', '0', '充值记录', 'icon-application_go', '0');
-INSERT INTO `sys_menu` VALUES ('00000000015', '2', '0', '0', '消费记录', 'icon-bullet_left', '0');
+INSERT INTO `sys_menu` VALUES ('1', '0', '0', '0', '系统管理', 'icon-chart-organisation', '1');
+INSERT INTO `sys_menu` VALUES ('2', '0', '0', '0', '消费管理', 'icon-users', '2');
+INSERT INTO `sys_menu` VALUES ('3', '2', '0', '0', '系统管理', 'icon-user-group', '3');
+INSERT INTO `sys_menu` VALUES ('4', '1', '0', '0', '菜单管理', 'icon-chart-organisation', '4');
+INSERT INTO `sys_menu` VALUES ('5', '2', '0', '0', '用户管理', 'icon-users', 'user/user_list.do');
+INSERT INTO `sys_menu` VALUES ('6', '1', '0', '0', '数据字典', 'icon-book', '7');
+INSERT INTO `sys_menu` VALUES ('8', '1', '0', '0', '日志查询', 'icon-application-osx-error', '8');
+INSERT INTO `sys_menu` VALUES ('9', '2', '0', '0', '账户管理', 'icon-user_business_boss', '9');
+INSERT INTO `sys_menu` VALUES ('10', '0', '0', '0', '商家管理', 'icon-group', '0');
+INSERT INTO `sys_menu` VALUES ('11', '10', '0', '0', '商户管理', 'icon-users', '0');
+INSERT INTO `sys_menu` VALUES ('12', '10', '0', '0', '收支查询', 'icon-arrow_ew', '0');
+INSERT INTO `sys_menu` VALUES ('13', '10', '0', '0', '二维码生成', 'icon-heart', '0');
+INSERT INTO `sys_menu` VALUES ('14', '2', '0', '0', '充值记录', 'icon-application_go', '0');
+INSERT INTO `sys_menu` VALUES ('15', '2', '0', '0', '消费记录', 'icon-bullet_left', '0');
 
 -- ----------------------------
 -- Table structure for sys_operate
@@ -239,7 +240,7 @@ CREATE TABLE `sys_operate` (
 -- ----------------------------
 DROP TABLE IF EXISTS `sys_role`;
 CREATE TABLE `sys_role` (
-  `id` int(11) unsigned zerofill NOT NULL AUTO_INCREMENT COMMENT '角色表示',
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '角色表示',
   `role_name` char(50) NOT NULL COMMENT '角色名称',
   `role_desc` char(255) DEFAULT NULL COMMENT '角色描述',
   PRIMARY KEY (`id`)
@@ -248,11 +249,11 @@ CREATE TABLE `sys_role` (
 -- ----------------------------
 -- Records of sys_role
 -- ----------------------------
-INSERT INTO `sys_role` VALUES ('00000000001', '超级管理员', '获取所有权限');
-INSERT INTO `sys_role` VALUES ('00000000002', '普通员工', '普通员工');
-INSERT INTO `sys_role` VALUES ('00000000003', '经理', '经理');
-INSERT INTO `sys_role` VALUES ('00000000004', '组长', '组长');
-INSERT INTO `sys_role` VALUES ('00000000005', '分管', '分管');
+INSERT INTO `sys_role` VALUES ('1', '超级管理员', '获取所有权限');
+INSERT INTO `sys_role` VALUES ('2', '普通员工', '普通员工');
+INSERT INTO `sys_role` VALUES ('3', '经理', '经理');
+INSERT INTO `sys_role` VALUES ('4', '组长', '组长');
+INSERT INTO `sys_role` VALUES ('5', '分管', '分管');
 
 -- ----------------------------
 -- Table structure for sys_role_action
@@ -261,27 +262,27 @@ DROP TABLE IF EXISTS `sys_role_action`;
 CREATE TABLE `sys_role_action` (
   `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键标识',
   `action_id` int(11) DEFAULT NULL COMMENT '动作标识',
-  `role_id` int(11) unsigned zerofill DEFAULT NULL COMMENT '角色标识',
+  `role_id` int(11) DEFAULT NULL COMMENT '角色标识',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8 COMMENT='系统角色权限关系表';
 
 -- ----------------------------
 -- Records of sys_role_action
 -- ----------------------------
-INSERT INTO `sys_role_action` VALUES ('1', '1', '00000000001');
-INSERT INTO `sys_role_action` VALUES ('2', '2', '00000000001');
-INSERT INTO `sys_role_action` VALUES ('3', '3', '00000000001');
-INSERT INTO `sys_role_action` VALUES ('4', '4', '00000000001');
-INSERT INTO `sys_role_action` VALUES ('5', '5', '00000000001');
-INSERT INTO `sys_role_action` VALUES ('6', '6', '00000000001');
-INSERT INTO `sys_role_action` VALUES ('7', '7', '00000000001');
-INSERT INTO `sys_role_action` VALUES ('8', '8', '00000000001');
-INSERT INTO `sys_role_action` VALUES ('9', '9', '00000000001');
-INSERT INTO `sys_role_action` VALUES ('10', '10', '00000000001');
-INSERT INTO `sys_role_action` VALUES ('11', '11', '00000000001');
-INSERT INTO `sys_role_action` VALUES ('12', '12', '00000000001');
-INSERT INTO `sys_role_action` VALUES ('13', '13', '00000000001');
-INSERT INTO `sys_role_action` VALUES ('14', '14', '00000000001');
+INSERT INTO `sys_role_action` VALUES ('1', '1', '1');
+INSERT INTO `sys_role_action` VALUES ('2', '2', '1');
+INSERT INTO `sys_role_action` VALUES ('3', '3', '1');
+INSERT INTO `sys_role_action` VALUES ('4', '4', '1');
+INSERT INTO `sys_role_action` VALUES ('5', '5', '1');
+INSERT INTO `sys_role_action` VALUES ('6', '6', '1');
+INSERT INTO `sys_role_action` VALUES ('7', '7', '1');
+INSERT INTO `sys_role_action` VALUES ('8', '8', '1');
+INSERT INTO `sys_role_action` VALUES ('9', '9', '1');
+INSERT INTO `sys_role_action` VALUES ('10', '10', '1');
+INSERT INTO `sys_role_action` VALUES ('11', '11', '1');
+INSERT INTO `sys_role_action` VALUES ('12', '12', '1');
+INSERT INTO `sys_role_action` VALUES ('13', '13', '1');
+INSERT INTO `sys_role_action` VALUES ('14', '14', '1');
 
 -- ----------------------------
 -- Table structure for sys_role_fee
@@ -313,15 +314,15 @@ CREATE TABLE `sys_sequence` (
 -- Records of sys_sequence
 -- ----------------------------
 INSERT INTO `sys_sequence` VALUES ('00000000001', 'LOGIN_ACCEPT', '100000000000003', '1');
-INSERT INTO `sys_sequence` VALUES ('00000000004', 'CONTRACT_NO', '10000000013', '1');
-INSERT INTO `sys_sequence` VALUES ('00000000005', 'LOGIN_NO', '1000013', '1');
+INSERT INTO `sys_sequence` VALUES ('00000000004', 'CONTRACT_NO', '10000000014', '1');
+INSERT INTO `sys_sequence` VALUES ('00000000005', 'LOGIN_NO', '1000014', '1');
 
 -- ----------------------------
 -- Table structure for sys_unicode_dict
 -- ----------------------------
 DROP TABLE IF EXISTS `sys_unicode_dict`;
 CREATE TABLE `sys_unicode_dict` (
-  `id` int(11) unsigned zerofill NOT NULL AUTO_INCREMENT,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `code_class` char(50) NOT NULL COMMENT '代码类型',
   `code_name` char(255) NOT NULL COMMENT '配置名称',
   `code_desc` char(255) DEFAULT NULL COMMENT '配置描述',
@@ -335,18 +336,18 @@ CREATE TABLE `sys_unicode_dict` (
 -- ----------------------------
 -- Records of sys_unicode_dict
 -- ----------------------------
-INSERT INTO `sys_unicode_dict` VALUES ('00000000001', 'register_type', '系统注册', '注册类型', '0', '2018-05-25 02:44:30', '2050-01-25 02:44:33', '2018-05-25 02:44:47');
-INSERT INTO `sys_unicode_dict` VALUES ('00000000002', 'user_satus', '正常', '用户状态', '0', '2018-05-25 02:44:30', '2050-01-25 02:44:33', '2018-05-25 02:44:47');
-INSERT INTO `sys_unicode_dict` VALUES ('00000000003', 'register_type', '自助注册', '注册类型', '1', '2018-05-25 02:44:30', '2050-01-25 02:44:33', '2018-05-25 02:44:47');
-INSERT INTO `sys_unicode_dict` VALUES ('00000000004', 'user_status', '离职', '用户状态', '1', '2018-05-25 02:49:20', '2018-05-25 02:49:16', '2018-05-25 02:49:22');
-INSERT INTO `sys_unicode_dict` VALUES ('00000000005', 'contract_status', '正常', '账户状态', '0', '2018-05-25 02:44:30', '2050-01-25 02:44:33', '2018-05-25 02:44:47');
-INSERT INTO `sys_unicode_dict` VALUES ('00000000006', 'contract_status', '冻结', '账户状态', '1', '2018-05-25 02:44:30', '2050-01-25 02:44:33', '2018-05-25 02:44:47');
-INSERT INTO `sys_unicode_dict` VALUES ('00000000007', 'pay_type', '系统充值', '充值方式', '0', '2018-05-25 02:44:30', '2050-01-25 02:44:33', '2018-05-25 02:44:47');
-INSERT INTO `sys_unicode_dict` VALUES ('00000000008', 'pay_type', '自助充值', '充值方式', '1', '2018-05-25 02:49:20', '2018-05-25 02:49:16', '2018-05-25 02:49:22');
-INSERT INTO `sys_unicode_dict` VALUES ('00000000009', 'op_type', '系统充值', '充值方式', '0', '2018-05-25 02:44:30', '2050-01-25 02:44:33', '2018-05-25 02:44:47');
-INSERT INTO `sys_unicode_dict` VALUES ('00000000010', 'op_type', '自助充值', '充值方式', '1', '2018-05-25 02:49:20', '2018-05-25 02:49:16', '2018-05-25 02:49:22');
-INSERT INTO `sys_unicode_dict` VALUES ('00000000011', 'menu_status', 'normal', '菜系状态正常', '0', '2018-05-25 02:44:30', '2050-01-25 02:44:33', '2018-05-25 02:44:47');
-INSERT INTO `sys_unicode_dict` VALUES ('00000000012', 'menu_status', 'abnormal', '菜系状态异常', '1', '2018-05-25 02:49:20', '2018-05-25 02:49:16', '2018-05-25 02:49:22');
+INSERT INTO `sys_unicode_dict` VALUES ('1', 'register_type', '系统注册', '注册类型', '0', '2018-05-25 02:44:30', '2050-01-25 02:44:33', '2018-05-25 02:44:47');
+INSERT INTO `sys_unicode_dict` VALUES ('2', 'user_satus', '正常', '用户状态', '0', '2018-05-25 02:44:30', '2050-01-25 02:44:33', '2018-05-25 02:44:47');
+INSERT INTO `sys_unicode_dict` VALUES ('3', 'register_type', '自助注册', '注册类型', '1', '2018-05-25 02:44:30', '2050-01-25 02:44:33', '2018-05-25 02:44:47');
+INSERT INTO `sys_unicode_dict` VALUES ('4', 'user_status', '离职', '用户状态', '1', '2018-05-25 02:49:20', '2018-05-25 02:49:16', '2018-05-25 02:49:22');
+INSERT INTO `sys_unicode_dict` VALUES ('5', 'contract_status', '正常', '账户状态', '0', '2018-05-25 02:44:30', '2050-01-25 02:44:33', '2018-05-25 02:44:47');
+INSERT INTO `sys_unicode_dict` VALUES ('6', 'contract_status', '冻结', '账户状态', '1', '2018-05-25 02:44:30', '2050-01-25 02:44:33', '2018-05-25 02:44:47');
+INSERT INTO `sys_unicode_dict` VALUES ('7', 'pay_type', '系统充值', '充值方式', '0', '2018-05-25 02:44:30', '2050-01-25 02:44:33', '2018-05-25 02:44:47');
+INSERT INTO `sys_unicode_dict` VALUES ('8', 'pay_type', '自助充值', '充值方式', '1', '2018-05-25 02:49:20', '2018-05-25 02:49:16', '2018-05-25 02:49:22');
+INSERT INTO `sys_unicode_dict` VALUES ('9', 'op_type', '系统充值', '充值方式', '0', '2018-05-25 02:44:30', '2050-01-25 02:44:33', '2018-05-25 02:44:47');
+INSERT INTO `sys_unicode_dict` VALUES ('10', 'op_type', '自助充值', '充值方式', '1', '2018-05-25 02:49:20', '2018-05-25 02:49:16', '2018-05-25 02:49:22');
+INSERT INTO `sys_unicode_dict` VALUES ('11', 'menu_status', 'normal', '菜系状态正常', '0', '2018-05-25 02:44:30', '2050-01-25 02:44:33', '2018-05-25 02:44:47');
+INSERT INTO `sys_unicode_dict` VALUES ('12', 'menu_status', 'abnormal', '菜系状态异常', '1', '2018-05-25 02:49:20', '2018-05-25 02:49:16', '2018-05-25 02:49:22');
 
 -- ----------------------------
 -- Table structure for sys_users
@@ -369,12 +370,12 @@ CREATE TABLE `sys_users` (
   `login_time` datetime DEFAULT NULL COMMENT '本次登录时间',
   `last_login_time` datetime DEFAULT NULL COMMENT '最后一次登录时间',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8 COMMENT='用户信息表';
+) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8 COMMENT='用户信息表';
 
 -- ----------------------------
 -- Records of sys_users
 -- ----------------------------
-INSERT INTO `sys_users` VALUES ('1', '0', 'admin', '1', 'system', '4QrcOUm6Wau+VuBX8g+IPg==', '123456', '1', '18130091249', '0', '2018-06-06 17:28:45', '1', '1', '2018-06-25 10:07:04', '2018-06-25 10:07:04');
+INSERT INTO `sys_users` VALUES ('1', '0', 'admin', '1', 'system', '4QrcOUm6Wau+VuBX8g+IPg==', '123456', '1', '18130091249', '0', '2018-06-06 17:28:45', '1', '1', '2018-06-25 11:38:51', '2018-06-25 11:38:51');
 INSERT INTO `sys_users` VALUES ('5', '1', 'songhw2', '1', 'system', '4QrcOUm6Wau+VuBX8g+IPg==', '340122199212131815', '2', '18130091249', '0', '2018-06-11 21:14:53', '1', '1', null, '2018-06-11 21:14:56');
 INSERT INTO `sys_users` VALUES ('7', '1', 'songhw', '1', 'system', '4QrcOUm6Wau+VuBX8g+IPg==', '340122199212131815', '3', '18130091249', '0', '2018-06-11 21:14:53', '1', '1', null, '2018-06-11 21:14:56');
 INSERT INTO `sys_users` VALUES ('10', '1', 'songhw', '0', 'system', '4QrcOUm6Wau+VuBX8g+IPg==', '340122199212131815', '1', '18130091249', '0', '2018-06-11 21:14:53', '1', '1', null, '2018-06-11 21:14:56');
@@ -387,36 +388,38 @@ INSERT INTO `sys_users` VALUES ('17', '10000000008', '吴尘', '1', 'A1000008', 
 INSERT INTO `sys_users` VALUES ('18', '10000000010', '吴尘', '1', 'A1000010', '6jtDAZxLAe87AjFy0DOpRg==', '340122151951216', '4', '15988856210', '0', '2018-06-24 17:57:09', '1', '3', null, null);
 INSERT INTO `sys_users` VALUES ('20', '10000000011', '宋宏伟', '0', 'A1000011', '6jtDAZxLAe87AjFy0DOpRg==', '340122151951216', '1', '18130091249', '0', '2018-06-24 18:19:15', '1', '1', null, null);
 INSERT INTO `sys_users` VALUES ('21', '10000000012', 'songhw', '0', 'A1000012', '41z3tmRJ31Zfk8YH1agdCQ==', '123456789123456789', '1', '1549871654', '0', '2018-06-04 18:42:20', '1', '1', null, null);
+INSERT INTO `sys_users` VALUES ('22', '10000000013', 'songhongwei', '0', 'A1000013', 'O1Zt5IOwlgex8mE3vlPpYQ==', '340122199212131815', '1', '18130091249', '0', '2018-06-25 11:39:13', '1', '1', null, null);
 
 -- ----------------------------
 -- Table structure for sys_user_role
 -- ----------------------------
 DROP TABLE IF EXISTS `sys_user_role`;
 CREATE TABLE `sys_user_role` (
-  `id` int(11) unsigned zerofill NOT NULL AUTO_INCREMENT COMMENT '主键标识',
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键标识',
   `user_id` bigint(14) NOT NULL COMMENT '用户标识',
   `role_id` int(11) NOT NULL COMMENT '角色标识',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8 COMMENT='用户角色关系表';
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8 COMMENT='用户角色关系表';
 
 -- ----------------------------
 -- Records of sys_user_role
 -- ----------------------------
-INSERT INTO `sys_user_role` VALUES ('00000000001', '1', '1');
-INSERT INTO `sys_user_role` VALUES ('00000000002', '2', '1');
-INSERT INTO `sys_user_role` VALUES ('00000000003', '3', '1');
-INSERT INTO `sys_user_role` VALUES ('00000000004', '4', '1');
-INSERT INTO `sys_user_role` VALUES ('00000000005', '5', '1');
-INSERT INTO `sys_user_role` VALUES ('00000000006', '6', '1');
-INSERT INTO `sys_user_role` VALUES ('00000000007', '7', '1');
-INSERT INTO `sys_user_role` VALUES ('00000000008', '8', '1');
-INSERT INTO `sys_user_role` VALUES ('00000000009', '9', '1');
-INSERT INTO `sys_user_role` VALUES ('00000000010', '10', '1');
-INSERT INTO `sys_user_role` VALUES ('00000000011', '11', '1');
-INSERT INTO `sys_user_role` VALUES ('00000000012', '12', '1');
-INSERT INTO `sys_user_role` VALUES ('00000000013', '18', '3');
-INSERT INTO `sys_user_role` VALUES ('00000000014', '20', '1');
-INSERT INTO `sys_user_role` VALUES ('00000000015', '21', '1');
+INSERT INTO `sys_user_role` VALUES ('1', '1', '1');
+INSERT INTO `sys_user_role` VALUES ('2', '2', '1');
+INSERT INTO `sys_user_role` VALUES ('3', '3', '1');
+INSERT INTO `sys_user_role` VALUES ('4', '4', '1');
+INSERT INTO `sys_user_role` VALUES ('5', '5', '1');
+INSERT INTO `sys_user_role` VALUES ('6', '6', '1');
+INSERT INTO `sys_user_role` VALUES ('7', '7', '1');
+INSERT INTO `sys_user_role` VALUES ('8', '8', '1');
+INSERT INTO `sys_user_role` VALUES ('9', '9', '1');
+INSERT INTO `sys_user_role` VALUES ('10', '10', '1');
+INSERT INTO `sys_user_role` VALUES ('11', '11', '1');
+INSERT INTO `sys_user_role` VALUES ('12', '12', '1');
+INSERT INTO `sys_user_role` VALUES ('13', '18', '3');
+INSERT INTO `sys_user_role` VALUES ('14', '20', '1');
+INSERT INTO `sys_user_role` VALUES ('15', '21', '1');
+INSERT INTO `sys_user_role` VALUES ('16', '22', '1');
 
 -- ----------------------------
 -- Function structure for currval
