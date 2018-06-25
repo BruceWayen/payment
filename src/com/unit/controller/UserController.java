@@ -124,11 +124,12 @@ public class UserController
      *@CLASS_NAME UserController
      **/
     @ResponseBody
-    @RequestMapping("edit_user")
+    @RequestMapping("/user_update.do")
     public Json editUser(HttpServletRequest request)
         throws Exception
     {
         Json j = new Json();
+        String id = request.getParameter("id");
         SysUsers users = new SysUsers();
         users = RequestUtil.request2Bean(request, SysUsers.class);
         //log.debug("穿过来的用户ID为：" + user.getId());
@@ -136,12 +137,13 @@ public class UserController
         {
             userService.updateUser(users);
             j.setSuccess(true);
-            j.setMsg("编辑成功！");
+            j.setMsg("用户修改成功！");
             j.setObj(users);
         }
         catch (Exception e)
         {
             j.setMsg(e.getMessage());
+            e.printStackTrace();
             throw new Exception("修改用户失败,事务回滚!!!");
         }
         return j;

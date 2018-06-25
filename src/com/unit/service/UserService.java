@@ -195,6 +195,7 @@ public class UserService
         }
         catch (Exception e)
         {
+            e.printStackTrace();
             throw new Exception("修改用户出错");
         }
     }

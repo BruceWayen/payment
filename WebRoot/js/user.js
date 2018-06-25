@@ -109,7 +109,7 @@ function openAdd() {
                 $('#adddlg').dialog('close');
             }
         }],
-        onload: allDept(0)
+        onload: allDept(0,0)
     });
 }
 
@@ -142,7 +142,7 @@ function addUser() {
 /**
  * 获取部门列表
  */
-function allDept(flag) {
+function allDept(dept_id,role_id) {
     $.ajax({
         type: "POST",
         url: "all_dept.do",
@@ -151,11 +151,13 @@ function allDept(flag) {
             var result = eval('(' + data + ')');
             data = result.rows;
             $('#depts').combobox('loadData', data);
-            if (flag == 0) {
+            if (dept_id == 0) {
                 $('#depts').combobox('setValue', data[0].id);
                 $('#sex').combobox('setValue', 0);
+            }else{
+                $('#depts').combobox('setValue',dept_id);
             }
-            allRole("role",flag);
+            allRole("role", role_id);
         },
         error: function () {
             console.log("查询部门信息失败.....")
@@ -166,7 +168,7 @@ function allDept(flag) {
 /**
  * 获取角色列表
  */
-function allRole(id, flag) {
+function allRole(id, role_id) {
     $.ajax({
         type: "POST",
         url: "all_role.do",
@@ -177,8 +179,10 @@ function allRole(id, flag) {
             $('#' + id).combobox('loadData', data);
             if (id == "sRoleId") {
                 $('#sRoleId').combobox('setValue', "请选择职称");
-            } else if (flag != 1) {
-                $('#' + id).combobox('setValue', data[0].id);
+            } else if (role_id==0){
+                $('#' + id).combobox('setValue',  data[0].id);
+            }else{
+                $('#' + id).combobox('setValue',  role_id);
             }
         },
         error: function () {
@@ -223,7 +227,6 @@ function searchUser() {
 function openEdit() {
     $('#addfrom').form('clear');
     var count = $('#datagrid').datagrid('getSelections').length;
-    //alert(item.productid);return;
     if (count == 1) {
         var item = $('#datagrid').datagrid('getSelected');
         $('#adddlg').dialog({
@@ -234,9 +237,7 @@ function openEdit() {
                 text: '确定',
                 iconCls: 'icon-ok',
                 handler: function () {
-                    var id = item.id;
-                    // url = path+"/user/editUser?id="+id;
-                    var mesTitle = '编辑用户成功';
+                    userEdit(item.id);
                 }
             }, {
                 text: '取消',
@@ -247,7 +248,7 @@ function openEdit() {
             }]
         });
         $('#addfrom').form('load', item);
-        allDept(1);
+        allDept(item.deptId,item.roleId);
         $('#role').combobox('setValue', item.roleName);
         $('#depts').combobox('setValue', item.deptName);
     } else if (count > 1) {
@@ -255,4 +256,25 @@ function openEdit() {
     } else if (count < 1) {
         $.messager.alert('提示', '请选择要删除的记录！', 'error');
     }
+}
+
+function userEdit(id) {
+    var mesTitle = '修改用户成功';
+    $('#addfrom').form('submit', {
+        url: 'user_update.do?id=' + id,
+        success: function (data) {
+            var result = eval('(' + data + ')');
+            if (result.success) {
+                $('#adddlg').dialog('close');
+                $('#datagrid').datagrid('reload');
+            }
+            else {
+                mesTitle = "修改用户失败！";
+            }
+            $.messager.show({
+                title: mesTitle,
+                msg: result.msg
+            });
+        }
+    });
 }

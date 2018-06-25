@@ -15,7 +15,7 @@
          *  载入数据
          */
         loadData("all_user.do");
-       // allRole("sRoleId",0);
+        allRole("sRoleId",0);
     })
 
 
