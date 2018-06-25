@@ -5,6 +5,7 @@ import com.unit.domain.Tree;
 import com.unit.service.LoginService;
 import com.unit.utils.Const;
 import com.unit.utils.UserCookieUtil;
+import com.unit.utils.annotation.OperateLog;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -42,6 +43,7 @@ public class LoginController
      */
     @RequestMapping("/login.do")
     @ResponseBody
+    @OperateLog(module = "用户登录")
     public ModelAndView login(HttpServletRequest request, HttpServletResponse response, HttpSession session)
         throws Exception
     {
@@ -77,6 +79,7 @@ public class LoginController
      */
     @RequestMapping("/logout.do")
     @ResponseBody
+    @OperateLog(module = "退出登陆")
     public ModelAndView logout(HttpSession session, HttpServletResponse response)
     {
         ModelAndView modelAndView = new ModelAndView();

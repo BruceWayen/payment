@@ -99,6 +99,7 @@ http://www.springframework.org/schema/data/jpa ">
     <!-- 配置使Spring采用CGLIB代理 -->
     <aop:aspectj-autoproxy proxy-target-class="true"/>
     <bean id="myRiZhi" class="com.unit.utils.MyLog"></bean>
+    <!--<bean id="operateAspect" class="com.unit.utils.LogAspect"></bean>-->
     <!-- aop日志监控START -->
     <aop:config>
         <aop:aspect id="aopRiZhiAspect" ref="myRiZhi">
@@ -106,8 +107,6 @@ http://www.springframework.org/schema/data/jpa ">
             <aop:around pointcut-ref="aopRiZhi" method="doAround"/>
         </aop:aspect>
     </aop:config>
-
-
     <!-- aop日志监控START -->
 
 

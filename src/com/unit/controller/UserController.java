@@ -12,6 +12,7 @@ import com.unit.service.UserService;
 import com.unit.utils.Const;
 import com.unit.utils.RequestUtil;
 import com.unit.utils.ResponseUtil;
+import com.unit.utils.annotation.OperateLog;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -52,6 +53,7 @@ public class UserController
      *@CLASS_NAME UserController
      **/
     @RequestMapping("/user_list.do")
+    @OperateLog(module = "跳转用户列表页面")
     public ModelAndView userList(String ids, HttpServletResponse res)
         throws Exception
     {
@@ -62,6 +64,7 @@ public class UserController
 
     @RequestMapping("/user_add.do")
     @ResponseBody
+    @OperateLog(module = "添加用户")
     public Json addUser(HttpServletRequest request)
         throws Exception
     {
@@ -96,6 +99,7 @@ public class UserController
      **/
     @ResponseBody
     @RequestMapping("/user_del.do")
+    @OperateLog(module = "删除用户")
     public Json deleteUser(HttpServletRequest request)
         throws Exception
     {
@@ -125,6 +129,7 @@ public class UserController
      **/
     @ResponseBody
     @RequestMapping("/user_update.do")
+    @OperateLog(module = "更新用户信息")
     public Json editUser(HttpServletRequest request)
         throws Exception
     {
@@ -157,6 +162,7 @@ public class UserController
      **/
     @RequestMapping("/all_user.do")
     @ResponseBody
+    @OperateLog(module = "查询所有用户列表")
     public DataGrid allUserList()
     {
         DataGrid dg = new DataGrid();
@@ -183,6 +189,7 @@ public class UserController
      **/
     @RequestMapping("/search_user.do")
     @ResponseBody
+    @OperateLog(module = "条件查询所有用户列表")
     public DataGrid searchUser(HttpServletRequest request)
     {
         DataGrid dg = new DataGrid();
